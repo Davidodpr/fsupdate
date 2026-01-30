@@ -1,8 +1,17 @@
 'use server'
 
-import type { GoogleReview, GoogleReviewCountAndRating } from './googleReviews.types'
-
 const FLYTTSMART_PLACE_ID = 'ChIJJ9A1BWedX0YRxQLDioTrsH0'
+
+export type GoogleReviewCountAndRating = { rating: number | null; reviewCount: number | null }
+export type GoogleReview = {
+  author_name: string
+  rating: number
+  text?: string
+  time: number
+  profile_photo_url?: string
+  author_url?: string
+  relative_time_description?: string
+}
 
 export async function fetchGoogleReviewCountAndRating(): Promise<GoogleReviewCountAndRating> {
   try {
