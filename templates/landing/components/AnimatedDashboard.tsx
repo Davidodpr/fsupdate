@@ -82,12 +82,12 @@ const AnimatedDashboard = () => {
 
       {/* Celebration overlay */}
       <div className="animate-dashboard-celebration absolute inset-0 z-10 flex flex-col items-center justify-center bg-gradient-to-b from-[#51c8b4] to-[#37ae9a] px-6">
-        {/* Person photo */}
-        <img
-          src="/images/Andreas.png"
-          alt="Din flyttkoordinator"
-          className="w-16 h-16 rounded-full object-cover border-[3px] border-white/30 mb-4"
-        />
+        {/* Coordinator photos */}
+        <div className="flex items-center justify-center mb-4">
+          <img src="/images/Andreas.png" alt="" className="w-12 h-12 rounded-full object-cover border-2 border-white/40 relative z-30" />
+          <img src="/images/hannes.svg" alt="" className="w-12 h-12 rounded-full object-cover border-2 border-white/40 -ml-3 relative z-20" />
+          <img src="/images/Philip.svg" alt="" className="w-12 h-12 rounded-full object-cover border-2 border-white/40 -ml-3 relative z-10" />
+        </div>
         <p className="text-xl font-bold text-white mb-1">Välkommen hem!</p>
         <p className="text-[13px] text-white/80 text-center leading-relaxed">
           Allt är klart — njut av ditt nya hem
