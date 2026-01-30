@@ -35,7 +35,7 @@ const LandingHero = () => {
       <div className="max-w-[1200px] mx-auto px-6 md:px-8 w-full relative z-10">
         <div
           className={clsx(
-            'grid gap-8 lg:gap-16 items-center',
+            'grid gap-4 lg:gap-16 items-center',
             isTabletPortraitOrGreater ? 'grid-cols-2' : 'grid-cols-1'
           )}
         >
@@ -88,7 +88,7 @@ const LandingHero = () => {
           </div>
 
           {/* Phone Mockup */}
-          <div className={clsx('relative flex justify-center lg:justify-end', !isTabletPortraitOrGreater && 'order-2 mt-8')}>
+          <div className={clsx('relative flex justify-center lg:justify-end', !isTabletPortraitOrGreater && 'order-2 -mt-2')}>
             {/* Bright glow effect behind phone */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[400px] md:h-[400px] bg-[var(--color-primary-main)]/30 rounded-full blur-[60px]" />
 

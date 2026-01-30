@@ -17,18 +17,20 @@ const AnimatedDashboard = () => {
           Din flytt
         </p>
         <div className="flex items-center gap-2 mb-3">
-          <div className="flex-1">
+          <div className="flex-1 min-w-0">
             <p className="text-[9px] text-[#214766]/50 font-semibold uppercase">Från</p>
-            <p className="text-[11px] text-[#214766] font-medium">Storgatan 12, Stockholm</p>
+            <p className="text-[11px] text-[#214766] font-medium leading-tight">Storgatan 12,</p>
+            <p className="text-[11px] text-[#214766] font-medium leading-tight">Stockholm</p>
           </div>
-          <div className="text-[#51c8b4]">
+          <div className="text-[#51c8b4] flex-shrink-0">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
           </div>
-          <div className="flex-1 text-right">
+          <div className="flex-1 min-w-0 text-right">
             <p className="text-[9px] text-[#214766]/50 font-semibold uppercase">Till</p>
-            <p className="text-[11px] text-[#214766] font-medium">Ekvägen 8, Göteborg</p>
+            <p className="text-[11px] text-[#214766] font-medium leading-tight">Ekvägen 8,</p>
+            <p className="text-[11px] text-[#214766] font-medium leading-tight">Göteborg</p>
           </div>
         </div>
         <div className="h-[6px] rounded-full bg-[#e8eeef] overflow-hidden">
@@ -79,20 +81,17 @@ const AnimatedDashboard = () => {
       </div>
 
       {/* Celebration overlay */}
-      <div className="animate-dashboard-celebration absolute inset-0 z-10 flex flex-col items-center justify-center bg-gradient-to-b from-[#51c8b4] to-[#37ae9a]">
-        <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center mb-5">
-          <svg
-            className="w-10 h-10 text-white"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={3}
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-        </div>
-        <p className="text-2xl font-bold text-white mb-1">Flytten klar!</p>
-        <p className="text-sm text-white/70">Allt är fixat ✨</p>
+      <div className="animate-dashboard-celebration absolute inset-0 z-10 flex flex-col items-center justify-center bg-gradient-to-b from-[#51c8b4] to-[#37ae9a] px-6">
+        {/* Person photo */}
+        <img
+          src="/images/Andreas.png"
+          alt="Din flyttkoordinator"
+          className="w-16 h-16 rounded-full object-cover border-[3px] border-white/30 mb-4"
+        />
+        <p className="text-xl font-bold text-white mb-1">Välkommen hem!</p>
+        <p className="text-[13px] text-white/80 text-center leading-relaxed">
+          Allt är klart — njut av ditt nya hem
+        </p>
       </div>
     </div>
   )

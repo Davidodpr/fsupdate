@@ -3,7 +3,7 @@ import { clsx } from 'clsx'
 import useResponsive from '@/common/hooks/useResponsive'
 import Carousel from '@/components/organisms/Carousel'
 import Star from '@/public/images/Star.svg'
-import type { GoogleReview, GoogleReviewCountAndRating } from 'app/_actions/googleReviews'
+import type { GoogleReview, GoogleReviewCountAndRating } from 'app/_actions/googleReviews.types'
 
 interface TestimonialsProps {
   googleReviews?: GoogleReview[] | null

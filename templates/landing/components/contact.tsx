@@ -26,9 +26,7 @@ const Contact = () => {
         <div
           className={clsx(
             'bg-[var(--color-background-default)] rounded-2xl p-8',
-            'border border-gray-100',
-            'hover:shadow-lg hover:border-[var(--color-primary-main)]/20',
-            'transition-all duration-300'
+            'border border-gray-100'
           )}
         >
           <h3 className="text-lg font-bold text-[var(--color-secondary-main)] mb-2">
@@ -81,9 +79,7 @@ const Contact = () => {
         <div
           className={clsx(
             'bg-[var(--color-background-default)] rounded-2xl p-8',
-            'border border-gray-100',
-            'hover:shadow-lg hover:border-[var(--color-primary-main)]/20',
-            'transition-all duration-300'
+            'border border-gray-100'
           )}
         >
           <h3 className="text-lg font-bold text-[var(--color-secondary-main)] mb-2">
