@@ -1,0 +1,38 @@
+=== ÄNDRINGAR: Google Reviews + cookie-fix ===
+
+BAKGRUND:
+Lade till riktiga Google Reviews från Places API på landningsidan och
+fixade så cookie-redirect inte blockerar dev-testning.
+
+ÄNDRADE FILER:
+- app/(startpage)/[locale]/page.tsx
+  → Hämtar Google Reviews + rating server-side via fetchReviews('sv')
+    och fetchGoogleReviewCountAndRating() parallellt (Promise.all)
+  → Skickar googleReviews och googleRating som props till LandingPage
+
+- templates/landing/landing.page.tsx
+  → Utökad LandingPageProps med googleReviews? och googleRating?
+  → Skickar vidare till Testimonials-komponenten
+
+- templates/landing/components/testimonials.tsx
+  → Tar emot Google Reviews som optional props
+  → Filtrerar: bara reviews med 3+ stjärnor och text
+  → Visar Google-betyg badge ("4.8 på Google · 230 recensioner")
+  → Fallback: om inga Google Reviews → befintliga hårdkodade recensioner
+  → Samma visuella stil (mörk carousel med kort)
+
+- middleware.ts
+  → Rad 32-36: cookie-redirect till /app/movepage skippas i development
+  → if (process.env.NODE_ENV !== 'development' && cookie)
+  → Landningsidan visas alltid i dev oavsett userToken-cookie
+
+MILJÖVARIABLER (krävs i Vercel):
+- NEXT_PUBLIC_GOOGLE_API_KEY = klient-nyckel (Maps JS API)
+- NEXT_PUBLIC_GOOGLE_MAPS_API_KEY = klient-nyckel (Maps JS API)
+- GOOGLE_API_KEY = server-nyckel (Places API för Reviews)
+
+ONBOARDING-FLÖDE (oförändrat):
+Onboardingen nås via /i/testmode (dev) eller /i/[invite-code] (prod).
+2 steg: 1) Till-adress (Google Places autocomplete) 2) Flyttdatum.
+Skapar sedan användare via LeadProvider context.
+Från-adress samlas INTE in i onboarding — bara till-adress.
