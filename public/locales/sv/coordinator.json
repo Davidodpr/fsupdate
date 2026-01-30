@@ -1,0 +1,28 @@
+{
+  "metaTitle": "Flyttsmart Flyttkoordinator",
+  "metaDescription": "{{name}} ringde dig från Flyttsmart. Ring tillbaka på {{phone}} eller skicka ett mejl.",
+  "pageTitle": "Missat samtal?",
+  "pageSubtitle": "Här är din flyttkoordinator",
+  "coordinator": "Flyttkoordinator",
+  "calledYouFrom": "ringde dig från",
+  "heroImageAlt": "{{name}}, din flyttkoordinator på Flyttsmart",
+  "cta": {
+    "callBack": "Ring tillbaka nu",
+    "email": "Mejla",
+    "sms": "SMS",
+    "callAriaLabel": "Ring {{name}} på {{phone}}",
+    "emailAriaLabel": "Mejla {{name}} på {{email}}",
+    "smsAriaLabel": "Skicka SMS till Flyttsmart"
+  },
+  "description": "Vid inbjudan till <1>Flyttsmart</1> får du en personlig koordinator som guidar dig genom hela flytten – från kontraktskrivning till flytt.",
+  "testimonials": {
+    "title": "+200 000 hjälpta kunder",
+    "subtitle": "Vad säger andra kunder?",
+    "starsRating": "{{rating}} stjärnor"
+  },
+  "notFound": {
+    "title": "Koordinator hittades inte",
+    "description": "Vi kunde inte hitta någon flyttkoordinator med det telefonnumret.",
+    "backToHome": "Tillbaka till startsidan"
+  }
+}

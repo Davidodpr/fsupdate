@@ -1,0 +1,80 @@
+import { Order } from 'types/orders'
+
+const mockMoveHelpOrderResponse: Order = {
+  id: 'afd5ebce-ce7c-483a-944c-0f590b381e15',
+  status: 'locked',
+  userId: '4dc2d0ef-d7e4-49c1-8564-cb4cffc05019',
+  moveId: 'aadd5c14-c9c5-483e-90a0-18a19da31376',
+  salesChannel: 'digital-fs',
+  supplierName: 'Sam Flytt & Städ',
+  salespersonName: undefined,
+  type: 'moveservice',
+  user: {
+    isPrimary: true,
+    pno: '196401186686',
+    firstName: 'Noppe',
+    lastName: 'Partnersson',
+    phone: '+46703004050',
+    email: 'a@a.com',
+    address: {
+      street: 'Krångedevägen 19',
+      apartmentNumber: null,
+      zip: '11543',
+      city: 'Stockholm',
+    },
+  },
+  address: {
+    to: {
+      id: 'c9e49ed1-8905-4554-9199-49f8a2cbecad',
+      street: 'Karlavägen 10',
+      zip: '11425',
+      city: 'Stockholm',
+      apartmentNumber: null,
+      size: 40,
+      elevator: null,
+      floor: null,
+      sizeOfAdditionalSpace: null,
+      isLimitedAccess: null,
+    },
+    from: {
+      id: '9052cf93-7310-4493-b63a-cee1d8ce38ba',
+      street: 'Krångedevägen 19',
+      zip: '11543',
+      city: 'Stockholm',
+      apartmentNumber: null,
+      size: 40,
+      elevator: null,
+      floor: null,
+      sizeOfAdditionalSpace: null,
+      isLimitedAccess: null,
+    },
+  },
+  notes: {
+    flyttsmart: undefined,
+    customer: undefined,
+    supplier: undefined,
+  },
+  totalPrice: 4100,
+  meta: {
+    wantsStorage: false,
+    wantsPackaging: false,
+  },
+  products: [
+    {
+      id: 'baf34a9f-8373-4c9e-8dbd-67474ac3d1cf',
+      parentId: null,
+      price: 4100,
+      deliveryDate: '2023-09-01T00:00:00.000Z',
+      units: 1,
+      description: 'Flytthjälp',
+      service: 'moving',
+      isRutService: true,
+      unitsType: 'pieces',
+      periodType: null,
+      meta: undefined,
+    },
+  ],
+  orderNumber: 9,
+}
+
+export default mockMoveHelpOrderResponse

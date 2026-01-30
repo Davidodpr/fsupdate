@@ -1,0 +1,32 @@
+{
+  "title": "Topplista elavtal",
+  "subtitle": "Topp 25",
+  "description": "Se vilka som ligger i topp just nu ⚡",
+  "leaderboard": {
+    "rank": "Placering",
+    "broker": "Mäklare",
+    "documents": "Signeringar",
+    "noData": "Ingen data tillgänglig",
+    "loading": "Laddar topplista...",
+    "error": "Kunde inte ladda topplistan",
+    "retry": "Försök igen",
+    "unknownBroker": "Okänd mäklare",
+    "topPerformers": "Topppresterare",
+    "otherPositions": "Plats 4-25"
+  },
+  "metrics": {
+    "documentsUnit": "st",
+    "signaturesUnit": "Signeringar"
+  },
+  "footer": {
+    "refreshAutomatically": "Uppdateras automatiskt var 5:e minut"
+  },
+  "rules": {
+    "title": "Tävlingsregler",
+    "content": "Från och med <strong>1 september</strong> har ni möjlighet att hjälpa era kunder med elavtal redan vid kontraktsskrivning. Flyttsmart säkerställer att kunderna får hjälp med både uppsägning och nyteckning.\n\nVarje unik fullmakt ger <strong>1 eller 2 poäng</strong>, vilket innebär att en kontraktsskrivning kan ge högst <strong>2 poäng</strong>. <strong>1 poäng</strong> om köparen signerar fullmakten (nyteckning) och <strong>1 poäng</strong> om säljaren signerar fullmakten (uppsägning).\n\nDen mäklare som samlar ihop flest poäng mellan <strong>1 september</strong> och <strong>30 november</strong> vinner en <span class=\"golden-ticket\">GOLDEN TICKET</span>, värde <span class=\"prize-money\">10 000 kr</span>. Vi kommer även slumpa en bonusvinnare av alla de som skickat in elfullmakter, värde <span class=\"prize-money\">3 000 kr</span>."
+  },
+  "contact": {
+    "title": "Vid frågor?",
+    "text": "Kontakta Sebastian@flyttsmart.se"
+  }
+}

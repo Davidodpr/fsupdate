@@ -1,0 +1,63 @@
+{
+  "header": "Registration of new address: Step {{step}} of {{total}}",
+  "headerAlternative": "Registration of new address",
+  "faqLink": "Here you can find answers to frequently asked questions",
+  "LOGIN": {
+    "title": "Registration of new address",
+    "text": "Identify yourself with BankID to the Swedish Tax Agency to retrieve your current information and submit a change of address notification.<br><br>Do not use this service if you need to apply for confidentiality in connection with the move. Read more on the <a href='https://www.skatteverket.se/privat/folkbokforing/skyddadepersonuppgifter.4.18e1b10334ebe8bc80001711.html' target='_blank'><strong>Swedish Tax Agency's website</strong></a>.",
+    "statusTextStarted": "Connecting to the Swedish Tax Agency",
+    "statusTextPending": "Completing login to the Swedish Tax Agency",
+    "statusTextCancelled": "We are currently unable to establish contact with the Swedish Tax Agency.<br /><br />If the problem persists, you can submit your change of address notification on the <a href='https://skatteverket.se/privat/folkbokforing/flyttanmalan.4.76a43be412206334b89800018531.html'><strong>Swedish Tax Agency's website</strong></a>."
+  },
+  "ADDRESS": {
+    "whereToMove": "Where are you moving to?",
+    "whenToMove": "When are you moving?",
+    "howLong": "How long will you be staying there?",
+    "permanent": "Permanent",
+    "temporary": "Temporary",
+    "currentRecident": "Current residence",
+    "civilRegistrationAddress": "Registered address",
+    "propertyDesignation": "Property designation",
+    "civilRegistrationDate": "Registration date",
+    "personsMoving": "Who will be moving to the new address?",
+    "personsMovingIntro": "You can submit a change of address notification for the following individuals. Select the ones who will be moving with you.",
+    "noOneIsIncludedInMove": "<p>Select at least one person</p>",
+    "allGuardiansAreNotIncludedInMove": "<p>The other legal guardian must consent to the move in the Swedish Tax Agency's e-service 'Provide consent'. Ask them to do so within one week. If the other legal guardian does not provide their consent, the Swedish Tax Agency will investigate the matter and decide where the child should be registered. You can read more about <a href='https://www.skatteverket.se/privat/folkbokforing/flyttanmalan/anmalaflyttforbarn' target='_blank'>Registration of Children</a>.</p>",
+    "childrenAreNotIncludedInMove": "<p>You have children who are registered together with you. Select them if they will be moving with you.</p>",
+    "onlyChildrenAreIncludedInMove": "<p>The Swedish Tax Agency will verify that you are authorized to submit the change of address notification for the individuals you have selected. The other legal guardian must consent to the move in the Swedish Tax Agency's e-service 'Provide consent'. Ask them to do so within one week. If the other legal guardian does not provide their consent, the Swedish Tax Agency will investigate the matter and decide where the child should be registered. You can read more about <a href='https://www.skatteverket.se/privat/folkbokforing/flyttanmalan/anmalaflyttforbarn' target='_blank'>Registration of Children</a>.</p>",
+    "youAreNotIncludedInMove": "<p>The Swedish Tax Agency will verify that you are authorized to submit the change of address notification for the individuals you have selected.</p>",
+    "onlyOtherGuardianIsIncludedInMove": "<p>You have children who are registered together with you. Select them if they will be moving with you. The Swedish Tax Agency will verify that you are authorized to submit the change of address notification for the individuals you have selected.</p>",
+    "apartmentNumberInfo": "The apartment number consists of four digits. You can find it in your rental contract. Leave the field blank if your residence does not have an apartment number.",
+    "apartmentNumberInfoModal": "An apartment number consists of four digits and is used by the Swedish Tax Agency to identify apartments. The first two digits indicate the floor. The ground floor is designated as 10, and the upper floors are numbered 11, 12, and so on. Floors below the ground floor are designated 09, 08, and so on. The last two digits indicate the position of the dwelling on the floor. The dwelling immediately to the left of the stairs, when viewed from the floor below, is designated as 01. The numbering continues clockwise.",
+    "numberOfMonth": "Number of months",
+    "selectMovingDate": "Select the moving date",
+    "viewOurGuide": "Read our guide",
+    "personsMovingModal": "<p><strong>Which individuals can I submit a change of address notification for?</strong></p><ul><li>Yourself</li><li>Individuals who are registered together with you and whom you have a relationship with: spouse, registered partner, and children under 18 years of age</li><li>Your cohabiting partner, if you have shared children.</li></ul><p><strong>What if I am registered as 'At the municipality' or 'Without domicile'?</strong></p><p>In this service, you can only submit a change of address notification for yourself. Use the form <a href='https://www.skatteverket.se/skv7845' target='_blank' rel='noopener'>Moving within Sweden</a> if you want to submit a change of address notification for other individuals.<br></p><p><strong>What if the other legal guardian is not moving?</strong></p><ul><li>The other legal guardian must consent to your change of address notification for the child in the Swedish Tax Agency's e-service 'Provide consent'. Ask them to do so within one week.</li><li>If the other legal guardian does not provide their consent, the Swedish Tax Agency will investigate the matter and decide where the child should be registered. You can read more about <a href='https://www.skatteverket.se/privat/folkbokforing/flyttanmalan/anmalaflyttforbarn' target='_blank' rel='noopener'>Registration of Children</a>.</li></ul>"
+  },
+  "CONTACT": {
+    "title": "Contact Information"
+  },
+  "SUMMARY": {
+    "title": "Summary",
+    "moveDate": "Move-in date",
+    "newAddress": "New address",
+    "personsMoving": "Persons moving",
+    "button": "Submit to the Swedish Tax Agency",
+    "confirm": "I confirm that the above information is correct."
+  },
+  "CONFIRMATION": {
+    "title1": "Perfect, one less thing to",
+    "title2": "worry about!",
+    "subTitle": "The Swedish Tax Agency has received your change of address notification.",
+    "receiptNumber": "Receipt Number",
+    "button": "Go to Service Finder",
+    "information": "You will receive an email from the Swedish Tax Agency once they have registered your new registered address. This process may take up to two weeks."
+  },
+  "MANUAL": {
+    "subTitle1": "Here's what you need to do before the move:",
+    "text1": "- Change your registered address so that authorities can reach you.",
+    "subTitle2": "Here's how you can do it:",
+    "text2": "Log in to the Swedish Tax Agency's e-service 'Change of Address Notification' to change the registered address for yourself and any family members. It's quick and free of charge.",
+    "linkText": "Go to the Swedish Tax Agency's e-service"
+  }
+}

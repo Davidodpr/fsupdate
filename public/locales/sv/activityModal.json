@@ -1,0 +1,18 @@
+{
+  "FREQUENCIES": {
+    "1": "Varje",
+    "2": "Varannan",
+    "4": "Var fjärde"
+  },
+  "ADDON_SERVICES": {
+    "storage": "Tillfällig förvaringsplats",
+    "packaging": "Packning",
+    "handyman": "Enklare hantverk"
+  },
+  "consentInfo": "Den andre vårdnadshavaren måste samtycka till flytten i Skatteverkets E-tjänst “Lämna samtycke”. Be hen att göra det inom en vecka.",
+  "deliveryBy": "Levereras av",
+  "hemfixarna": "Hemfixarna",
+  "suggestedDate": "Förslaget datum för utförande",
+  "products": "Bokade produkter och tjänster: ",
+  "talkToPro": "Dryft"
+}

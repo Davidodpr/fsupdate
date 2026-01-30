@@ -1,0 +1,90 @@
+{
+  "header": "Fix & Renovation",
+  "topText": "Prepare your home for a showing or moving in. We can help you with most things!",
+  "USPS": {
+    "happyCustomer": "Satisfied customer guarantee",
+    "directBooking": "Price and order directly",
+    "weekends": "Also weekends and evenings",
+    "domesticService": "RUT and ROT deductable"
+  },
+  "PRO": {
+    "title": "Want to talk with an expert?",
+    "description": "Get help planning and realising your dreams with an expert. We offer a free advice-session for all types of projects, in collaboration with Dryft (page in Swedish).",
+    "link": "Book a free advice appointment"
+  },
+  "PAINTING": {
+    "title": "Move to a freshly painted home",
+    "description": "Get help with painting and wallpapering by experienced decorators, we’ll make sure you get the help you require!",
+    "link": "Get started!"
+  },
+  "CATEGORIES": {
+    "renovation": "Handyman work",
+    "assemblingFurniture": "Furniture assembling",
+    "techbuddy": "Tech support",
+    "painting": "Painting & wallpapering",
+    "heatWater": "Heat, water & drainage",
+    "electricity": "Electricity",
+    "assembling": "Assembling service",
+    "building": "Construction, renovations & carpentry",
+    "bookPro": "Book a free advice appointment",
+    "help": "Get help & advice",
+    "flooring": "Flooring"
+  },
+  "MODAL": {
+    "paintingTitle1": "Painting and wallpapering",
+    "paintingTitle2": "Painting",
+    "wallpaperingTitle": "Wallpapering",
+    "flooringTitle": "Flooring",
+    "buildingTitle": "Construction, renovations & carpentry",
+    "helpTitle": "Get help & advice",
+    "modalDescriptionTop": "Describe what you need help with and we’ll get back to you with a proposal within short.",
+    "helpDescriptionTop": "Do you need advice related to renovations, or are you uncertain what service to book?",
+    "helpDescriptionBottom": "Describe what you need help with and we’ll get back to you within short.",
+    "modalDescriptionBottom": "Examples of what we can help you with:",
+
+    "paintingList1": "Removal of wallpaper",
+    "paintingList2": "Plastering walls",
+    "paintingList3": "Applying up wallpaper",
+    "paintingList4": "Repainting walls and ceilings",
+    "flooringList1": "Repainting floors",
+    "flooringList2": "Installing new floorboards",
+    "buildingList1": "Bases and moldings",
+    "buildingList2": "Custom build furniture",
+    "buildingList3": "Various simple constructions",
+    "buildingList4": "Various larger renovations",
+    "textAreaPlaceholder": "Description",
+    "datePlaceholder": "When do you want help?",
+    "confirmationText": "We have recieved your request and will get back to you shortly!",
+    "toMovepageButton": "To the movepage",
+    "talkToProTitle": "Want to talk with an expert?",
+    "talkToProLink": "Book a free advice appointment"
+  },
+  "talkToPro": "Talk to a pro",
+  "talkToProFormHeader": "Do you prefer to send a written request?",
+  "talkToProFormText": "No problems! Using the form below, you can send your question to us and we will get back to you in a few hours. Feel free to add images.",
+  "SIMPLIFIED": {
+    "header": "Fix & Renovation",
+    "description": "Do you need help with renovation or fixes in your home? Tell us what you need help with and we'll get back to you with suggestions and pricing.",
+    "formTitle": "Describe your renovation needs",
+    "formDescription": "Fill in the form below and a move coordinator will contact you shortly to discuss your needs and provide you with a quote.",
+    "textareaLabel": "What do you need help with?",
+    "textareaPlaceholder": "Describe what you need help with, e.g. painting, wallpapering, flooring, carpentry etc.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone number",
+    "whenLabel": "When do you need help?",
+    "whenPlaceholder": "E.g. 'within 2 weeks' or 'after move on March 15'",
+    "submitButton": "Send request",
+    "successTitle": "Thank you for your request!",
+    "successMessage": "We have received your request and a move coordinator will contact you shortly.",
+    "backButton": "Back to move page",
+    "errors": {
+      "descriptionRequired": "Please describe what you need help with",
+      "emailRequired": "Please enter your email address",
+      "phoneRequired": "Please enter your phone number",
+      "phoneInvalid": "Please enter a valid phone number",
+      "phoneMax": "Phone number must be at most 12 digits",
+      "phoneMin": "Phone number must be at least 5 digits",
+      "whenRequired": "Please specify when you need help"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+export { FAQCard } from './FAQCard'
+export type { FAQCardProps, QNAData } from './FAQCard'
+export { FAQCard as NewFAQCard } from './NewFAQCard'
+export type { FAQData } from './NewFAQCard'
+export { AnswerTemplate } from './AnswerTemplate'

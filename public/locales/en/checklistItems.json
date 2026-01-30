@@ -1,0 +1,193 @@
+{
+  "CHECKLIST_ITEMS": [
+    {
+      "name": "addresschange",
+      "title": "Registration of new address",
+      "subtitle": "Free of charge",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Will you stay at your new address for more than six months? Then you have to report the move to the Swedish Tax Agency."
+        },
+        {
+          "text": "Get it done quickly and easily here at Flyttsmart, and you will have one less thing to think about."
+        }
+      ],
+      "linkText:": "",
+      "linkUrl": "/addresschange"
+    },
+    {
+      "name": "power",
+      "title": "Electricity agreement",
+      "subtitle": "From [price] kr/month",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Compare estimated electricity prices for your new home and sign a contract in two minutes."
+        },
+        {
+          "text": "Also, do not forget to cancel your current contract - double billing makes no one happy."
+        }
+      ],
+      "linkText:": "",
+      "linkUrl": "/electricity"
+    },
+    {
+      "name": "showCleaning",
+      "title": "Visningsstädning",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "linkText:": "",
+      "linkUrl": "/showcleaning"
+    },
+    {
+      "name": "internet",
+      "title": "Internet",
+      "subtitle": "From [price] kr/month",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "See all available broadband options at our new address and pick one that suits your needs. Cancel your current broadband while you are at it – this is as smooth as it gets.  "
+        }
+      ],
+      "linkText:": "",
+      "linkUrl": "/broadband?new=true"
+    },
+    {
+      "name": "insurance",
+      "title": "Home insurance",
+      "subtitle": "10% off IF home insurance",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Sign up for home insurance with If and get a 10 % discount for the first full year!  "
+        },
+        {
+          "text": "Cancel your current home insurance as well – you will not need it much longer."
+        }
+      ],
+      "linkText:": "",
+      "linkUrl": "/insurance"
+    },
+    {
+      "name": "movehelp",
+      "title": "Move help",
+      "subtitle": "Book move help from [price] kr",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Let one of our handpicked and quality-assured moving companies do the heavy lifting."
+        },
+        {
+          "text": "Your back will thank you – and your things will definitely be in safe hands."
+        }
+      ],
+      "linkText:": "",
+      "linkUrl": "/movehelp?product=moving"
+    },
+    {
+      "name": "moveclean",
+      "title": "Move cleaning",
+      "subtitle": "Book move cleaning from [price] kr",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Most people who choose to do the move cleaning themselves regret their decision. "
+        },
+        {
+          "text": "Hire one of our quality-assured cleaning companies instead of being wise in hindsight. "
+        }
+      ],
+      "linkText:": "",
+      "linkUrl": "/movehelp?product=cleaning"
+    },
+    {
+      "name": "movehelpCombined",
+      "title": "Move help / Move cleaning",
+      "subtitle": "Book move help from [price] kr",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Let one of our handpicked and quality-assured moving companies do the heavy lifting. "
+        },
+        {
+          "text": "Your back will thank you – and your things will definitely be in safe hands."
+        }
+      ],
+      "linkText:": "",
+      "linkUrl": "/movehelp"
+    },
+    {
+      "name": "diy",
+      "title": "Get moving boxes",
+      "subtitle": "Home delivery included!",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Banana boxes and paper bags are a bad idea if you want your things to arrive uncracked."
+        },
+        {
+          "text": "Order our high-quality moving boxes and a moving kit today – start packing tomorrow!"
+        }
+      ],
+      "linkText:": "",
+      "linkUrl": "/flyttkartonger"
+    }
+  ],
+  "CHECKLIST_ITEMS_MOVEPAGE": [
+    {
+      "name": "addresschange",
+      "title": "Registration of new address",
+      "subtitle": "Report your move to the Swedish Tax Agency here",
+      "linkText": "Report your move",
+      "linkUrl": "/app/addresschange"
+    },
+    {
+      "name": "power",
+      "title": "Electricity agreement",
+      "subtitle": "Compare, sign and cancel electricity contracts - All in one place",
+      "linkText": "Manage electricity contracts",
+
+      "linkUrl": "/app/electricity"
+    },
+    {
+      "name": "internet",
+      "title": "Internet",
+      "subtitle": "See and compare available broadband to {{address}}",
+      "linkText": "Manage broadband",
+
+      "linkUrl": "/app/broadband"
+    },
+    {
+      "name": "insurance",
+      "title": "Home insurance",
+      "subtitle": "Get help with your home insurance to {{address}}",
+      "linkText": "Move home insurance",
+      "linkUrl": "/app/insurance"
+    },
+    {
+      "name": "showCleaning",
+      "title": "Show cleaning",
+      "subtitle": "",
+      "linkText": "Report your move",
+      "linkUrl": "/app/showcleaning"
+    },
+    {
+      "name": "movehelp",
+      "title": "Move help",
+      "subtitle": "Get an affordable moving quote - tailored for your specific move.",
+      "linkText": "Get quote",
+      "linkUrl": "/app/movehelp"
+    },
+    {
+      "name": "moveclean",
+      "title": "Move cleaning",
+      "subtitle": "Compare the best, most affordable cleaning companies and book directly!",
+      "linkText": "Book move cleaning",
+      "linkUrl": "/app/moveclean"
+    },
+    {
+      "name": "movehelpCombined",
+      "title": "Move help/Move cleaning"
+    }
+  ]
+}

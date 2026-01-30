@@ -1,0 +1,357 @@
+{
+  "addMoreItems": "Lägg till fler saker i din checklista",
+  "addToChecklist": "Lägg till i checklistan",
+  "ready": "Klart!",
+  "hidden": "Gömd",
+  "addToChecklistToast": "Aktivitet tillagd i checklistan",
+  "TODO_ITEMS": [
+    {
+      "name": "homefix",
+      "title": "Fix & Renovering",
+      "subtitle": "Innan och efter flytten",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Tummen mitt i handen eller händerna fulla? Ta hjälp av en av våra kvalificerade hantverkare eller proffsfixare! "
+        },
+        {
+          "text": "Vi kan lösa allt från att borra upp en hylla till att helrenovera ditt nya hem. De flesta av tjänsterna är berättigade till rutavdrag eller rotavdrag. "
+        }
+      ],
+      "linkText": "Läs mer och beställ",
+      "linkUrl": "/fixarenovera"
+    },
+    {
+      "name": "alarmservice",
+      "title": "Hemlarm",
+      "subtitle": "från 5 490 kr",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Alla kan drabbas av otur! Ta det säkra före det osäkra, genom att installera ett smart hemlarm."
+        },
+        {
+          "text": "Vårt erbjudande är ett av de mest prisvärda på marknaden – så vad väntar du på?"
+        }
+      ],
+      "linkText": "Läs mer och beställ",
+      "linkUrl": "/hemlarm"
+    },
+    {
+      "name": "homecleaningoffer",
+      "title": "Hemstädning",
+      "subtitle": "240 kr/timme",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Det tråkigaste med att städa är att man måste göra det igen och igen. Håller du med? "
+        },
+        {
+          "text": "Låt oss göra jobbet istället och njut av att komma hem till nystädat, så ofta du vill!"
+        }
+      ],
+      "linkText": "Läs mer och beställ",
+      "linkUrl": "/hemstadning"
+    },
+    {
+      "name": "familylaw",
+      "title": "Juridisk Rådgivning",
+      "subtitle": "20 min kostnadsfritt",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Få hjälp av en juridisk expert via telefon eller videosamtal. Rådgivning och upprättande av avtal ingår."
+        }
+      ],
+      "linkText": "Läs mer och beställ",
+      "linkUrl": "/familylaw"
+    },
+    {
+      "name": "techbuddy",
+      "title": "Tekniksupport",
+      "subtitle": "499 kr/timme",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Vill du ha hjälp att installera TV:n, optimera bredbandet eller få igång någon annan teknisk pryl i ditt nya hem?"
+        }
+      ],
+      "linkText": "Läs mer och beställ",
+      "linkUrl": "/fixarenovera?techbuddy=true"
+    },
+    {
+      "name": "mail",
+      "title": "Post",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Se till att din post hittar fram till din nya adress, redan från dag ett."
+        },
+        {
+          "text": "<b>Här är våra bästa tips:</b>"
+        },
+        {
+          "text": "<listItem>Passa på att lägga till ett TV-paket när du tecknar bredband. Vi har flera prisvärda alternativ att välja bland.<br /><aTaxAgency>Gör flyttanmälan till Skatteverket</aTaxAgency></listItem>"
+        },
+        {
+          "text": "<listItem>Hör av dig till de företag och privatpersoner du brukar få post från och meddela din nya adress.</listItem>"
+        },
+        {
+          "text": "<listItem>Skaffa en digital brevlåda, som <aKivra>Kivra</aKivra>, <aDigimail>Digimail</aDigimail> eller <aEBoks>e-Boks</aEBoks>. Då får du en stor del av din post digitalt och gör även miljön en tjänst.</listItem>"
+        },
+        {
+          "text": "<listItem>Du kan även beställa eftersändning av din post på <aAddresschange>adressändring.se</aAddresschange>. Det kostar 598 kr för 12 månader (299 kr om du är student eller under 26 år). Det brukar dock inte behövas om du följer våra övriga tips.</listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "loan",
+      "title": "Bolån",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Behöver du ta ett bolån för att finansiera ditt bostadsköp eller bekosta en utbyggnad eller renovering?"
+        },
+        {
+          "text": "<b>Här är våra bästa tips:</b>"
+        },
+        {
+          "text": "<listItem>Låneutgivarna konkurrerar om att ha dig som kund, så det lönar sig ofta att jämföra olika alternativ.</listItem>"
+        },
+        {
+          "text": "<listItem>Det kan också vara värt att se över ditt bolån med jämna mellanrum, för att få bästa möjliga villkor.</listItem>"
+        },
+        {
+          "text": "<listItem><aKonsumenterna>Konsumenterna.se</aKonsumenterna> erbjuder oberoende fakta och vägledning kring bolån. Här finns även en lånekalkyl, där du kan räkna på hur stort lån du kan komma att få. Tjänsten är helt kostnadsfri, precis som vår.</listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "alarm",
+      "title": "Säkerhet",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Ta det säkra för det osäkra! Du kommer inte att ångra dig, om oturen är framme."
+        },
+        {
+          "text": "<b>Här är våra bästa tips:</b>"
+        },
+        {
+          "text": "<listItem>Installera ett smart hemlarm, som minimerar skadorna vid brand, inbrott och vattenläckor. Just nu har vi ett riktigt bra erbjudande på en av marknadens bästa lösningar.Skaffa <aHomeAlarm>hemlarm</aHomeAlarm> från 5 490 kr.</listItem>"
+        },
+        {
+          "text": "<listItem>Se till att det finns fungerande brandvarnare, brandsläckare och brandfilt i din nya bostad, innan du flyttar in.</listItem>"
+        },
+        {
+          "text": "<listItem>Kontrollera batterierna i brandvarnarna regelbundet.</listItem>"
+        },
+        {
+          "text": "<listItem>Överväg att installera en säkerhetsdörr och fönsterlås.</listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "tv",
+      "title": "TV & Telefoni",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Idag finns det nästan ett oändligt utbud av lösningar för TV & telefoni, så det är inte alltid så lätt att välja."
+        },
+        {
+          "text": "<b>Här är våra bästa tips:</b>"
+        },
+        {
+          "text": "<listItem>Passa på att lägga till ett TV-paket när du tecknar bredband. Vi har flera prisvärda alternativ att välja bland. <aTv>Se förslag på bredband + TV-paket.</aTv></listItem>"
+        },
+        {
+          "text": "<listItem>Vill du ta med de lösningar du har idag till din nya adress? Kontakta leverantören och hör om det är möjligt.</listItem>"
+        },
+        {
+          "text": "<listItem>Kontrollera att din mobiloperatör har bra täckning på din nya adress. Annars kanske det är läge att byta till en annan?</listItem>"
+        },
+        {
+          "text": "<listItem>Säg upp de abonnemang du inte vill eller kan flytta med till din nya adress i tid. Försök att förhandla ner eventuell bindningstid, så slipper du betala för något du inte använder.</listItem>"
+        },
+        {
+          "text": "<listItem><aTelekom>Telekområdgivarna<aTelekom> erbjuder opartisk och kostnadsfri rådgivning om bland annat tv, telefoni och bredband.</listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "school",
+      "title": "Förskola & Skola",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Flyttar du med barn i förskole- eller skolåldern?"
+        },
+        {
+          "text": "<b>Här är våra bästa tips:</b>"
+        },
+        {
+          "text": "<listItem>Vill du att ditt barn ska gå kvar i samma förskola/skola? Vid flytt inom samma kommun är det ofta möjligt. Hör dig för med kommunen, vad som gäller.</listItem>"
+        },
+        {
+          "text": "<listItem>Vill eller behöver ni byta förskola/skola? Gör ordentlig research och jämför olika alternativ i god tid innan flytten.<br><aPreschool>Hitta och jämför förskolor.</a><br><aSchool>Hitta och jämför grundskolor.</aSchool><br><aHighSchool>Hitta och jämför gymnasieskolor.</aHighSchool></listItem>"
+        },
+        {
+          "text": "<listItem>Besök de skolor/förskolor ni är mest intresserade av, innan ni bestämmer er. Be om att få ta del av styrdokument och läroplan och prata med både lärare och föräldrar.</listItem>"
+        },
+        {
+          "text": "<listItem>Ansökan till skola och förskola görs i de flesta fall via kommunens webbplats. Vissa friskolor har egna ansökningsförfaranden.</listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "parking",
+      "title": "Parkering",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Ska du flytta till lägenhet i en större stad? Då kan det vara en riktig utmaning att hitta parkeringsplats, så börja se över olika alternativ i god tid."
+        },
+        {
+          "text": "<b>Här är våra bästa tips:</b>"
+        },
+        {
+          "text": "<listItem>Fråga de som bodde i bostaden innan dig, hur de löste parkeringen.</listItem>"
+        },
+        {
+          "text": "<listItem>Vissa bostadsrättsföreningar och hyresvärdar har garage eller utomhusparkering. Platserna räcker dock inte alltid till alla, så ställ dig i en eventuell kö så snart som möjligt.</listItem>"
+        },
+        {
+          "text": "<listItem>Ansök om boendeparkeringstillstånd via kommunen. Tillståndet ger dig rätt att parkera till en lägre taxa i ditt bostadsområde.<br><aParking>Se vår guide här</aParking>.</listItem>"
+        },
+        {
+          "text": "<listItem>Glöm inte att se över andra behov du kan ha som bilägare. Du kanske behöver tillgång till laddare eller förvaring av vinterdäck?</listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "waste",
+      "title": "Sophantering",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Det är skillnad på sophantering och sophantering. Med några enkla knep kan du spara både pengar och miljö!"
+        },
+        {
+          "text": "<b>Här är våra bästa tips:</b>"
+        },
+        {
+          "text": "<listItem>Om du ska flytta till villa eller radhus behöver du teckna ett abonnemang för sophämtning. Det gör du genom att kontakta kommunen.</listItem>"
+        },
+        {
+          "text": "<listItem>Sortera ditt avfall. Med mindre “vanliga sopor” kan du välja ett glesare intervall mellan hämtningarna och komma ner i pris.</listItem>"
+        },
+        {
+          "text": "<listItem>Ordna en sorteringsstation i ditt nya hem, med separata kärl för matavfall, papper, plast, glas, metall och pant.</listItem>"
+        },
+        {
+          "text": "<listItem>På <aWaste>sopor.nu</aWaste> hittar du mer information om varför och hur du bör sortera ditt avfall och var du ska lämna det. Du kan även läsa mer på kommunens webbplats.</listItem>"
+        },
+        {
+          "text": "<listItem>Glöm inte att säga upp eventuella abonnemang på adressen du flyttar från i god tid.</listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "gas",
+      "title": "Energibesparing",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Energiförbrukning står för en stor del av  boendekostnaden i många hem. Här finns det med andra ord pengar att spara."
+        },
+        {
+          "text": "<b>Här är våra bästa tips:</b>"
+        },
+        {
+          "text": "<listItem>Hos <aEnergimyndigheten>Energimyndigheten</aEnergimyndigheten> kan du läsa om hur du kan sänka din energiförbrukning och hitta energi- och klimatrådgivare i din kommun.</listItem>"
+        },
+        {
+          "text": "<listItem><aEnergimarknadsbyrå>Konsumenternas Energimarknadsbyrå</aEnergimarknadsbyrå> erbjuder oberoende och kostnadsfri vägledning i frågor som rör el, solceller, gas och fjärrvärme.</listItem>"
+        },
+        {
+          "text": "<listItem>Här har vi samlat konkreta tips på hur du kan minska energiförbrukningen i din nya bostad:<br><aVillaTips>Tips för dig som bor i villa.</aVillaTips><br><aApartmentTips>Tips för dig som bor i lägenhet.</aApartmentTips></listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "heat",
+      "title": "Uppvärmning",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Ska du flytta till villa? Som husägare äger du även husets värmesystem, så sätt dig in i hur det funkar redan nu."
+        },
+        {
+          "text": "<b>Här är våra bästa tips:</b>"
+        },
+        {
+          "text": "<listItem>Börja med att lära dig mer om hur ditt hus värms upp. Hos <aVillaAgarna>Villaägarna</aVillaAgarna> kan du läsa om för- och nackdelarna med olika värmesystem.</listItem>"
+        },
+        {
+          "text": "<listItem>Har du gasvärme eller fjärrvärme i din nya bostad? Anmäl ägarbyte hos leverantören i god tid – gärna 30 dagar innan flytten.</listItem>"
+        },
+        {
+          "text": "<listItem>Värms ditt hus upp med direktverkande el?<br><aSavingsTip>Här hittar du våra bästa spartips.</aSavingsTip></listItem>"
+        },
+        {
+          "text": "<listItem><aKonsumentMarknad>Konsumenternas Energimarknadsbyrå</aKonsumentMarknad> erbjuder oberoende och kostnadsfri vägledning i frågor som rör el, solceller, gas och fjärrvärme.</listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "water",
+      "title": "Vatten och avlopp",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Vatten och avlopp är en hel vetenskap. Du behöver inte kunna allt, men några saker är bra att ha koll på inför flytten."
+        },
+        {
+          "text": "<b>Här är våra bästa tips:</b>"
+        },
+        {
+          "text": "<listItem>Glöm inte att anmäla ägarbyte för bostaden du flyttar från. Det gör du hos den aktör som är ansvarig för vatten och avlopp i området, vilket oftast är kommunen. Läs av vattenmätaren samma dag som ägarbytet.</listItem>"
+        },
+        {
+          "text": "<listItem>Du behöver inte anmäla ägarbyte för bostaden du flyttar till. Det sköter den som bodde där innan dig.</listItem>"
+        },
+        {
+          "text": "<listItem>Har du frågor eller funderingar kring anläggning eller skötsel av enskilt vatten och avlopp? På <aAvloppsguiden>Avloppsguiden<aAvloppsguiden> hittar du samlad information och kan söka efter rådgivare i din kommun.</listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "transportation",
+      "title": "Flyttbil/Släp",
+      "subtitle": "Kör grejer från 255 kr",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Vill du sköta hela flytten själv? Behöver du köra till tippen eller hämta upp en soffa? Vi erbjuder prisvärda hyrbilar för små och stora transportbehov, i samarbete med OKQ8."
+        }
+      ],
+      "linkText": "Läs mer och beställ",
+      "linkUrl": "/renttruck"
+    }
+  ]
+}

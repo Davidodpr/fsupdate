@@ -1,0 +1,96 @@
+{
+  "pageTitle": "Flyttsmart | Movepage",
+  "pageLoadingText": "Loading your movepage...",
+  "powerWithFortum": "Fix the electricity with Fortum",
+  "rentYourselfActivity": "Do it yourself. Rent from 625/255 kr",
+  "seePriceAndBook": "Click here to see your price",
+  "buyResidence": "Buy a home through",
+  "sellResidence": "Sell ​​a home through",
+  "showAll": "Show all",
+  "showLess": "Show less",
+  "quotationsRequested": "Quotes requested",
+  "SELLERMODAL": {
+    "welcome": "Welcome to Flyttsmart",
+    "whereToMove": "Do you know where to move?",
+    "noNewAddress": "I don't have a new address/will not be moving",
+    "newAddress": "I have a new address to move to"
+  },
+  "ONBOARDINGMODAL": {
+    "welcome": "Welcome to Flyttsmart!",
+    "whereToMove": "Do you have a new address?",
+    "noNewAddress": "I don’t have a new address yet",
+    "newAddress": "Add an address",
+    "beforeWeStartWeWonder": "Before we start, we just want to know...",
+    "disclaimerCanDoItLater": "You can add and change the info later.",
+    "fillFromAddressResidenceSize": "How big is your current home?",
+    "skip": "Skip",
+    "letsGo": "Let's go!",
+    "confirm": "Confirm",
+    "continueStep": "Continue",
+    "showMyMove": "Show my move",
+    "change": "Edit",
+    "abort": "Cancel",
+    "save": "Save",
+    "twoMovingDates": "I move out and in on different dates",
+    "movingOutDate": "Date moving out:",
+    "movingInDate": "Date moving in:"
+  },
+  "CONTACT": {
+    "contactViaFlyttsmart": "Contact us at Flyttsmart"
+  },
+  "WELCOME_SECTION": {
+    "welcome": "Welcome to your move page!",
+    "welcomeText": "Time to make your move smooth and stress-free.",
+    "welcomeTextSubSection": "Get started by getting free quotes from local moving companies!",
+    "getQuotations": "Get your quotes",
+    "currentForYourMove": "Next step for your move",
+    "movingCoordinator": "/{{name}}, movecoordinator"
+  },
+  "recommendedForYou": "Recommended for you [price] [priceUnit]",
+  "CHECKLIST_SECTION": {
+    "completed": "Completed",
+    "quickOverview": "Quick overview",
+    "progressTitle": "Your progress",
+    "progressCount": "{{completed}} of {{total}} completed",
+    "clickForDetails": "Click for details",
+    "leftToDo": "Left to do",
+    "emptyChecklistTitle": "Nice work!",
+    "emptyChecklistDescription": "You have now done everything you need before your move!",
+    "internetAlternativeSubtitle": "Hire a selected and quality-assured moving company for your move",
+    "awaitingResponse": "Awaiting response from provider",
+    "removeFromChecklistToast": "Activity hidden from checklist",
+    "dropZoneText": "Drop here to hide from checklist",
+    "notarPriceUnavailable": "Please contact your local brokeroffice for your personal offer",
+    "buyerPreCheckLabel": "Buy a",
+    "sellerPreCheckLabel": "Sell a",
+    "invitedByPreChecked": "residence through",
+    "questionsAboutBooking": "Question about the order?",
+    "broadbandGroupOfferLabel": "This address has a groupoffer",
+    "lansforsakringarPriceLabel": "Please contact your local broker office for your personal offer",
+    "excludedService": "Please contact your broker for your personal offer.",
+    "excludedServicesContact": "If you have any questions about this, feel free to contact us via chat, email or phone.",
+    "personalMovecleanOffer": "You have a personal offer for move cleaning via Mäklarhuset and Städgiganten.",
+    "personalMovecleanOfferDescription": "Click <1>here</1> to view the offer.",
+    "cleaningGiant": "Om Städgiganten",
+    "cleaningGiantHeader": "\"When you choose us, you choose cost-effective and reliable cleaning that is carried out with precision and care.\"",
+    "cleaningGiantDescription": "\"Of course, we follow strict cleaning procedures to ensure the best possible efficiency and safety in everything we do. Our cleaning teams are made up of skilled professionals with many years of experience in the industry, so you can feel confident that your home is in professional hands.\""
+  },
+  "STARTNEWMOVEMODAL": {
+    "startNewMoveTitle": "Start new move",
+    "startedNewMoveTitle": "New move started!",
+    "startNewMoveText": "Are you sure you want to start a new move? All your current location information will be deleted and finished activities will be reset.",
+    "startedNewMoveText": "Your old move has been archived and we have started a new one for you, remember to update your new information!",
+    "startNewBtnText": "Start new"
+  },
+  "RESETCHECKLISTITEMMODAL": {
+    "confirmMessage": "Do you want to restore this activity? It will then be displayed in your checklist again.",
+    "resetButton": "Restore",
+    "cancelButton": "Cancel"
+  },
+  "URGENT_SERVICES": {
+    "title": "Your move is approaching!",
+    "description": "You're moving within 7 days and haven't ordered any services yet. If you want to order services for your move, we recommend doing so as soon as possible.",
+    "contactSupport": "If it's very urgent, contact our support directly for assistance.",
+    "contactButton": "Contact support"
+  }
+}

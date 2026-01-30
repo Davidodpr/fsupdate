@@ -1,0 +1,22 @@
+{
+  "prepareMovepage": "Förbereder din flyttsida",
+  "welcomeToFlyttsmart": "Välkommen till Flyttsmart!",
+  "welcomeText": "En tjänst för dig som vill ha en enkel, smidig och trygg flyttupplevelse!",
+  "welcomeTextFastighetsbyran": "I samarbete med Fastighetsbyrån.",
+  "getItDone": "Få det gjort",
+  "terms": "Genom att fortsätta godkänner jag ",
+  "termsLinkText": "Flyttsmarts användarvillkor.",
+  "tryAgainText": "Vi kunde inte hämta din flyttsida",
+  "contactUsText": "Kontakta oss, om det fortsätter att krångla.",
+  "login": "Logga in på flyttsmart.se",
+  "loginFailed": "Inloggningen misslyckades",
+  "10Seconds": "Det kan ta upp till 10 sekunder",
+  "loginFailedText": "Något gick fel vid inloggningen, det kan bero på att länken redan är använd. Försök gärna att logga in igen eller kontakta oss så hjälper vi dig.",
+  "LOGIN_TEXTS": {
+    "1": "Förbereder din flytt",
+    "2": "Hittar flyttfirmor",
+    "3": "Samlar elavtal",
+    "4": "Sammanställer städfirmor",
+    "5": "Jämför bredband"
+  }
+}

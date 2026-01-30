@@ -1,0 +1,63 @@
+{
+  "header": "Flyttanmälan till Skatteverket: steg {{step}} av {{total}}",
+  "headerAlternative": "Flyttanmälan till Skatteverket | Flyttsmart",
+  "faqLink": "Här hittar du svar på vanliga frågor",
+  "LOGIN": {
+    "title": "Flyttanmälan till Skatteverket",
+    "text": "Identifiera dig med BankID mot Skatteverket, för att hämta dina nuvarande uppgifter och göra en flyttanmälan.<br><br>Använd inte den här tjänsten om du ska söka sekretessmarkering i samband med flytten. Läs mer på <a href='https://www.skatteverket.se/privat/folkbokforing/skyddadepersonuppgifter.4.18e1b10334ebe8bc80001711.html' target='_blank'><strong>Skatteverkets webbplats</strong></a>.",
+    "statusTextStarted": "Ansluter till Skatteverket",
+    "statusTextPending": "Slutför inloggning till Skatteverket",
+    "statusTextCancelled": "Vi får ingen kontakt med Skatteverket just nu.<br /><br /> Du kan göra din flyttanmälan på <a href='https://skatteverket.se/privat/folkbokforing/flyttanmalan.4.76a43be412206334b89800018531.html'><strong>Skatteverkets webbplats</strong></a> om problemet kvarstår."
+  },
+  "ADDRESS": {
+    "whereToMove": "Vart ska du flytta?",
+    "whenToMove": "När flyttar du in?",
+    "howLong": "Hur länge ska du bo där?",
+    "permanent": "Tillsvidare",
+    "temporary": "Tillfälligt",
+    "currentRecident": "Nuvarande uppgifter",
+    "civilRegistrationAddress": "Folkbokföringsadress",
+    "propertyDesignation": "Fastighetsbeteckning",
+    "civilRegistrationDate": "Folkbokföringsdatum",
+    "personsMoving": "Vilka ska flytta med till den nya adressen?",
+    "personsMovingIntro": "Du kan göra en flyttanmälan för följande personer. Markera de som ska flytta med.",
+    "noOneIsIncludedInMove": "<p>Markera minst en person</p>",
+    "allGuardiansAreNotIncludedInMove": "<p>Den andre vårdnadshavaren måste samtycka till flytten i Skatteverkets E-tjänst “Lämna samtycke”. Be hen att göra det inom en vecka. Om den andra vårdnadshavaren inte lämnar sitt samtycke utreder Skatteverket frågan och beslutar sedan var barnet ska vara folkbokförd. Här kan du läsa mer om <a href='https://www.skatteverket.se/privat/folkbokforing/flyttanmalan/anmalaflyttforbarn' target='_blank'>Folkbokföring av barn</a>.</p>",
+    "childrenAreNotIncludedInMove": "<p>Du har barn som är folkbokförda tillsammans med dig. Markera dem om de ska flytta med.</p>",
+    "onlyChildrenAreIncludedInMove": "<p>Skatteverket kommer att kontrollera att du är behörig att göra flyttanmälan för de personer du har markerat. Den andre vårdnadshavaren måste samtycka till flytten i Skatteverkets E-tjänst “Lämna samtycke”. Be hen att göra det inom en vecka. Om den andra vårdnadshavaren inte lämnar sitt samtycke utreder Skatteverket frågan och beslutar sedan var barnet ska vara folkbokförd. Här kan du läsa mer om <a href='https://www.skatteverket.se/privat/folkbokforing/flyttanmalan/anmalaflyttforbarn' target='_blank'>Folkbokföring av barn</a>.</p>",
+    "youAreNotIncludedInMove": "<p>Skatteverket kommer att kontrollera att du är behörig att göra flyttanmälan för de personer du har markerat.</p>",
+    "onlyOtherGuardianIsIncludedInMove": "<p>Du har barn som är folkbokförda tillsammans med dig. Markera dem om de ska flytta med. Skatteverket kommer att kontrollera att du är behörig att göra flyttanmälan för de personer du har markerat.</p>",
+    "apartmentNumberInfo": "Lägenhetsnumret består av fyra siffror. Du hittar det i ditt bostadskontrakt.",
+    "apartmentNumberInfoModal": "<p>Ett lägenhetsnummer består av fyra siffror och används av Skatteverket för att identifiera lägenheter.</p><p>De två första siffrorna anger våningen. Entréplan sätts till 10 och våningar ovan numreras 11, 12 osv. Våningsplan under entrén sätts till 09, 08 osv.</p><p>De två sista siffrorna anger bostadens position på våningen. Bostaden direkt till vänster om trappan, när man kommer till våningsplanet nedifrån, sätts till 01. Numrering fortsätter sedan medsols.</p>",
+    "numberOfMonth": "Antal månader",
+    "selectMovingDate": "Välj flyttdatum",
+    "viewOurGuide": "Se vår guide",
+    "personsMovingModal": "<p><strong>Vilka personer kan jag göra flyttanmälan för?</strong></p><ul><li>Dig själv</li><li>Personer som är folkbokförda tillsammans med dig och som du har en relation till: make, maka, registrerad partner och barn under 18 år </li><li>Din sambo, om ni har gemensamma barn.</li></ul><p><strong>Vad gäller om jag är folkbokförd “På kommunen” eller “Utan hemvist”?</strong></p><p>Du kan bara göra flyttanmälan för dig själv i den här tjänsten. Använd blanketten <a href='https://www.skatteverket.se/skv7845' target='_blank' rel='noopener'>Flyttning inom Sverige</a>, om du vill göra flyttanmälan för andra personer<br></p><p><strong>Vad gäller vid sekretessmarkering?</strong></p><p>Gör inte flyttanmälan i den här tjänsten om du eller någon av de som ska flytta med har sekretessmarkering, eller ska söka sekretess i samband med flytten. Använd istället blanketten <a href='https://www.skatteverket.se/skv7845' target='_blank' rel='noopener'>Flyttning inom Sverige</a>.<br></p><p><strong>Vad gäller om den andra vårdnadshavaren inte ska flytta med?</strong></p><ul><li>Den andre vårdnadshavaren måste samtycka till din flyttanmälan för barnet i Skatteverkets E-tjänst “Lämna samtycke”. Be hen att göra det inom en vecka. </li><li>Om den andra vårdnadshavaren inte lämnar sitt samtycke utreder Skatteverket frågan och beslutar sedan var barnet ska vara folkbokförd. Här kan du läsa mer om <a href='https://www.skatteverket.se/privat/folkbokforing/flyttanmalan/anmalaflyttforbarn' target='_blank' rel='noopener'>Folkbokföring av barn</a>.</li></ul>"
+  },
+  "CONTACT": {
+    "title": "Kontaktuppgifter"
+  },
+  "SUMMARY": {
+    "title": "Sammanfattning",
+    "moveDate": "Inflyttningsdatum",
+    "newAddress": "Ny adress",
+    "personsMoving": "Personer som ska flytta",
+    "button": "Skicka till Skatteverket",
+    "confirm": "Jag bekräftar att ovanstående uppgifter är riktiga."
+  },
+  "CONFIRMATION": {
+    "title1": "Perfekt, en sak mindre att ",
+    "title2": "tänka på!",
+    "subTitle": "Skatteverket har tagit emot din flyttanmälan.",
+    "receiptNumber": "Kvittensnummer",
+    "button": "Till Hitta service",
+    "information": "Du får ett mejl från Skatteverket när de har registrerat din nya folkbokföringsadress. Det kan ta upp till två veckor."
+  },
+  "MANUAL": {
+    "subTitle1": "Det här behöver du lösa inför flytten:",
+    "text1": "– Ändra din folkbokföringsadress, så att myndigheterna kan nå dig.",
+    "subTitle2": "Så här får du det gjort:",
+    "text2": "Logga in i Skatteverkets e-tjänst Flyttanmälan, för att ändra folkbokföringsadress för dig och eventuella familjemedlemmar. Det går snabbt och kostar ingenting.",
+    "linkText": "Till Skatteverkets e-tjänst"
+  }
+}

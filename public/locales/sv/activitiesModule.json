@@ -1,0 +1,15 @@
+{
+  "questionsAboutBookingDescription": "Tveka inte att kontakta oss i chatten eller ring till ",
+  "weHelpYou": ", så hjälper vi dig!",
+  "phone": "08-120 088 22",
+  "bookedServices": "Dina bokade tjänster",
+  "starts": "Startar den",
+  "preformed": "Utförs den",
+  "ADDON_SERVICES": {
+    "storage": "Tillfällig förvaringsplats",
+    "packaging": "Packning",
+    "handyman": "Enklare hantverk"
+  },
+  "consentInfo": "Den andre vårdnadshavaren måste samtycka till flytten i Skatteverkets E-tjänst “Lämna samtycke”. Be hen att göra det inom en vecka.",
+  "noBookings": "Du har inte bokat något ännu."
+}

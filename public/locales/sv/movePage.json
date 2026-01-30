@@ -1,0 +1,93 @@
+{
+  "pageTitle": "Flyttsmart | Min flyttsida",
+  "pageLoadingText": "Hämtar din flyttsida...",
+  "powerWithFortum": "Fixa elen med Fortum",
+  "rentYourselfActivity": "Flytta själv. Hyr från 625/255kr",
+  "seePriceAndBook": "Klicka här för att se ditt pris",
+  "buyResidence": "Köp en bostad genom",
+  "sellResidence": "Sälj en bostad genom",
+  "showAll": "Visa alla",
+  "showLess": "Visa färre",
+  "quotationsRequested": "Offerter efterfrågade",
+  "SELLERMODAL": {
+    "welcome": "Välkommen till Flyttsmart",
+    "whereToMove": "Vet du vart du ska flytta?",
+    "noNewAddress": "Jag saknar ny adress/ska ej flytta",
+    "newAddress": "Jag har en ny adress att flytta till"
+  },
+  "ONBOARDINGMODAL": {
+    "welcome": "Välkommen till Flyttsmart!",
+    "whereToMove": "Vet du vart du ska flytta?",
+    "noNewAddress": "Jag har inte en ny adress ännu",
+    "newAddress": "Lägg till adress",
+    "beforeWeStartWeWonder": "Innan vi sätter igång undrar vi bara...",
+    "disclaimerCanDoItLater": "Du kan fylla i och ändra uppgifterna senare",
+    "fillFromAddressResidenceSize": "Hur stor är din nuvarande bostad?",
+    "skip": "Hoppa över",
+    "letsGo": "Nu kör vi!",
+    "confirm": "Bekräfta",
+    "continueStep": "Fortsätt",
+    "showMyMove": "Visa min flytt",
+    "change": "Ändra",
+    "abort": "Avbryt",
+    "save": "Spara",
+    "twoMovingDates": "Jag flyttar ut- och in på olika datum",
+    "movingOutDate": "Datum för utflytt:",
+    "movingInDate": "Datum för inflytt:"
+  },
+  "recommendedForYou": "Rekommenderat för dig [price] [priceUnit]",
+  "WELCOME_SECTION": {
+    "welcome": "Välkommen till din flyttsida!",
+    "welcomeText": "Dags att göra din flytt smidig och stressfri.",
+    "welcomeTextSubSection": "Börja med att få kostnadsfria offerter från lokala flyttfirmor!",
+    "getQuotations": "Få kostnadsfria offerter",
+    "currentForYourMove": "Aktuellt för din flytt",
+    "movingCoordinator": "/{{name}}, flyttkoordinator"
+  },
+  "CHECKLIST_SECTION": {
+    "completed": "Klart",
+    "quickOverview": "Snabböversikt",
+    "progressTitle": "Dina framsteg",
+    "progressCount": "{{completed}} av {{total}} klara",
+    "clickForDetails": "Klicka för detaljer",
+    "leftToDo": "Kvar att göra",
+    "emptyChecklistTitle": "Snyggt jobbat!",
+    "emptyChecklistDescription": "Nu är du klar med allt inför flytten!",
+    "internetAlternativeSubtitle": "Anlita en utvald och kvalitetssäkrad flyttfirma till din flytt",
+    "awaitingResponse": "Väntar svar från leverantör",
+    "removeFromChecklistToast": "Aktivitet gömd från checklistan",
+    "dropZoneText": "Släpp här för att gömma från checklistan",
+    "notarPriceUnavailable": "Vänligen kontakta er mäklare för ert personliga erbjudande",
+    "buyerPreCheckLabel": "Köp en",
+    "sellerPreCheckLabel": "Sälj en",
+    "invitedByPreChecked": "bostad genom",
+    "questionsAboutBooking": "Frågor om bokningen?",
+    "broadbandGroupOfferLabel": "Denna adress har ett grupperbjudande",
+    "lansforsakringarPriceLabel": "Vänligen kontakta er mäklare för ert personliga erbjudande",
+    "excludedService": "Vänligen kontakta er mäklare för ert personliga erbjudande.",
+    "excludedServicesContact": "Om du har några frågor kring detta, kontakta oss gärna via chat, mail eller telefon.",
+    "personalMovecleanOffer": "Du har ett personligt erbjudande för flyttstädning via Mäklarhuset och Städgiganten.",
+    "personalMovecleanOfferDescription": "Klicka <1>här</1> för att komma till erbjuandet.",
+    "cleaningGiant": "Om Städgiganten",
+    "cleaningGiantHeader": "\"När du väljer oss, väljer du kostnadseffektiv och pålitlig städning som är utförd med precision och omtanke.\"",
+    "cleaningGiantDescription": "\"Självfallet följer vi strikta städrutiner för att säkerställa bästa möjliga effektivitet och säkerhet i allt vi gör. Våra städteam består av skickliga proffs med många års erfarenhet inom branschen, så du kan känna dig trygg med att ditt hem är i professionella händer.\""
+  },
+  "STARTNEWMOVEMODAL": {
+    "startNewMoveTitle": "Starta ny flytt",
+    "startedNewMoveTitle": "Ny flytt startad!",
+    "startNewMoveText": "Är du säker på att du vill starta en ny flytt? All din nuvarande flyttinformation kommer att tas bort och klarmarkerade aktiviteter nollställs.",
+    "startedNewMoveText": "Din gamla flytt har arkiverats och vi har startat en ny åt dig, kom ihåg att uppdatera dina nya uppgifter!",
+    "startNewBtnText": "Starta ny"
+  },
+  "RESETCHECKLISTITEMMODAL": {
+    "confirmMessage": "Vill du återställa denna aktivitet? Den kommer då att visas i din checklista igen.",
+    "resetButton": "Återställ",
+    "cancelButton": "Avbryt"
+  },
+  "URGENT_SERVICES": {
+    "title": "Din flytt närmar sig!",
+    "description": "Du flyttar inom 7 dagar och har ännu inte beställt några tjänster. Om du vill beställa tjänster för din flytt rekommenderar vi att du gör det så snart som möjligt.",
+    "contactSupport": "Om det är mycket bråttom, kontakta vår support direkt för hjälp.",
+    "contactButton": "Kontakta support"
+  }
+}

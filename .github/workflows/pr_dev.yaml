@@ -1,0 +1,30 @@
+name: Pull Request CI
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build & Lint 🛠️
+    env:
+      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        uses: ./.github/actions/install-with-cache
+      - name: Build project
+        run: npm run build
+  integration-test:
+    runs-on: ubuntu-latest
+    name: Integration Tests 🧪
+    needs:
+      - build
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        uses: ./.github/actions/install-with-cache
+      - name: Run tests
+        run: npm run test

@@ -1,0 +1,9 @@
+/blueprint-templates/*
+/testhelpers/*
+*.min.js
+node_modules
+.next
+out
+public/assets
+build
+dist

@@ -1,0 +1,101 @@
+{
+  "headerTitle": "Move help & move cleaning",
+  "introSectionTitle": "We’re here to help - all the way!",
+  "introSectionText": "Choose us for a safe, simple and affordable move, without hassle! We have helped over 200,000 customers into their new homes since 2020, with great reviews. Our customer satisfaction guarantee ensures that we exceed all your expectations, while our experienced staff is always available for all your questions and concerns.",
+  "included": "Included!",
+  "whatDoYouNeed": "What do you need help with?",
+  "movehelpDiscount": "Add move help and get a {{discountAmount}} kr discount!",
+  "movecleanDiscount": " Add move cleaning and get a {{discountAmount}} kr discount!",
+  "rutDeductionPrice": "All prices are shown after: RUT-deduction",
+  "addProductToContinue": "Add move help or cleaning to continue!",
+  "summary": "Summary",
+  "packingOrderSummaryText": "Including loan of moving boxes. We will contact you with more information after you have booked.",
+  "serviceAlreadyBooked": "You’ve already booked this service",
+  "SELLING_POINTS": {
+    "moves": "200,000+ moves",
+    "satisfiedCustomers": "Satisfied customer guarantee",
+    "qualityAssured": "Quality assured"
+  },
+  "SERVICECARDTEXTS": {
+    "movehelp": "Efficient and safe transportation of your things by Sweden’s best movers.",
+    "moveclean": "7 out of 10 regret not getting help with the cleaning, so let the pros handle it!",
+    "packaging": "Professional packing of your things into moving boxes. Rent boxes for free!",
+    "moveexpert": "Get access to Flyttsmart’s experienced move experts! Always included."
+  },
+  "POPUPTEXTS": {
+    "MOVEHELP": {
+      "title": "This is included in move help:",
+      "firstListItem": "Pick-up of all your things",
+      "secondListItem": "Carrying assistance",
+      "thirdListItem": "Transport to your new address or other designated location",
+      "fourthListItem": "Liability insurance",
+      "linkText": "Read more about what’s included",
+      "linkUrl": "https://help.flyttsmart.se/en/collections/3305716-flytthjalp-och-flyttstadning"
+    },
+    "MOVEHELP_PRICE": {
+      "firstSection": "The price refers to the cost per hour for one mover including moving vehicle. A fee for transport and materials may be added.",
+      "secondSection": "The estimated working time is approx. {{time}} hours, if you have a normally furnished home without additional storage space."
+    },
+    "MOVECLEAN_PRICE": {
+      "firstSection": "The price refers to the cost per hour for one cleaner. A smaller fee for cleaning supplies may be added.",
+      "secondSection": "The estimated working time is approx. {{time}} hours."
+    },
+    "PACKAGING_PRICE": {
+      "firstSection": "The price refers to the cost per hour for one mover. A fee for packing materials may be added.",
+      "secondSection": "The estimated working time is approx. {{time}} hours, if you have a normally furnished home without additional storage space."
+    },
+    "MOVECLEAN": {
+      "text": "We follow the real estate association's recommendations for moving cleaning. All rooms in the residence are thoroughly cleaned, and windows are polished.",
+      "linkText": "Read more about what’s included",
+      "linkUrl": "https://help.flyttsmart.se/en/collections/3305716-flytthjalp-och-flyttstadning"
+    },
+    "PACKAGING": {
+      "text": "The most time consuming part of moving is packing, on average 70 hours for a two room apartment. Avoid stress and sore backs and let the pros pack for you, the moving firm will provide moving boxes for the move and everything packed by them will be covered by the liability insurance."
+    },
+    "MOVEEXPERT": {
+      "title": "Access to move expert",
+      "text": "Get support and help from Flyttsmart’s experienced move experts! We’re by your side the entire move - all the way home."
+    }
+  },
+  "ORDERSUMMARY": {
+    "overview": "Overview of your booking",
+    "movingBoxes": "Moving boxes",
+    "qualityAssurance": "Liability assurance",
+    "helpFromMovingExpert": "Access to move expert",
+    "accessToMovingExpert": "Access to move expert",
+    "happyCustomerGarantee": "Satisfied customer guarantee",
+    "discount": "Combination discount",
+    "movehelp": "Move help",
+    "moveclean": "Move cleaning",
+    "packaging": "Packaging",
+    "alwaysIncluded": "Always included with Flyttsmart",
+    "price": "Price:",
+    "timeSpent": "Time spent:",
+    "circaTime": "approx. {{time}} h",
+    "priceExplanation": "Total price",
+    "priceExplanationPopupText": "As the services' hourly prices and time consumption vary, we have put together a combined price to give you a better overview of the total cost.",
+    "orderInformation": "Make sure that your information is correct, after you complete the booking you will receive an email confirmation with more information."
+  },
+  "ORDERSUMMARYPOPUPS": {
+    "movingBoxes": "When booking packing moving boxes will be provided by the moving firm for free, including delivery and pickup. Costs for certain packing materials may be added.",
+    "qualityAssurance": "Everything packed by the moving firm is covered by the liability insurance. If you booked the packing service, things inside moving boxes are also covered.",
+    "helpFromMovingExpert": "Get support and help from Flyttsmart’s experienced move experts! We’re by your side the entire move - all the way home.",
+    "happyCustomerGarantee": "Satisfied customer guarantee is included in all ou services so that you can feel safe in your choice. As an example, is something would be missed in the cleaning, we’ll make sure it is fixed, free of charge."
+  },
+  "CONFIRMATION": {
+    "service": "Service",
+    "addons": "Add on service",
+    "movehelpDate": "Move help date",
+    "movecleanDate": "Move clean date",
+    "soldBy": "Sold by",
+    "deliveredBy": "Delivered by",
+    "yourPrice": "Your price",
+    "confirmationHeader": "Smart of you to choose a quality assured",
+    "movingCompany": " cleaning company!",
+    "receivedOrder": "We have received your booking!",
+    "orderMailText": "You will receive a confirmation by email shortly, with information about what is happening now.",
+    "toMovepage": "To move page",
+    "waitingOnSupplier": "Awaiting response from supplier",
+    "flyttsmart": "Flyttsmart"
+  }
+}

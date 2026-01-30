@@ -1,0 +1,71 @@
+{
+  "bestAccordingToOurCustomers": "Bäst enligt våra kunder!",
+  "chooseDate": "Välj datum",
+  "holidayDateInfo": "Tänk på att priserna ofta är högre på helger och andra röda dagar.",
+  "to": "Till:",
+  "from": "Från:",
+  "addressDoesNotContainZip": "Din adress måste innehålla en postkod",
+  "howBigDoYouLive": "Hur stort bor du?",
+  "whereDoMoveFrom": "Var flyttar du från?",
+  "whereDoYouMoveTo": "Vart flyttar du till?",
+  "whenDoYouWantToMove": "När vill du flytta?",
+  "whenDoYouWantHelp": "När vill du ha hjälp?",
+  "specialRequest": "Har du särskilda önskemål?",
+  "showingMovingNear": "Visar flyttfirmor nära:",
+  "showingCleaningNear": "Visar städfirmor nära:",
+  "change": "ändra",
+  "REDIRECTION_MOVECLEAN": {
+    "title": "Vill du också ha flytthjälp?",
+    "text": "Låt proffsen sköta flytten."
+  },
+  "REDIRECTION_MOVEHELP": {
+    "title": "Vill du bara ha flyttstädning?",
+    "text": "Låt proffsen sköta städningen."
+  },
+  "tooBigResidenceTitle": "Bor du lite större?",
+  "tooLongDistanceTitle": "Ska du flytta lite längre?",
+  "noSuppliersFoundTitle": "Vi har inga flyttfirmor nära dig.",
+  "noCleanSuppliersFoundTitle": "Vi har inga städfirmor nära dig.",
+  "errorCardDescription": "Oroa dig inte, din flyttexpert hjälper dig till rätt lösning.",
+  "CONTACT_FORM": {
+    "title": "Kontaktinformation",
+    "popupTitle": "Varför krävs personnummer?",
+    "popupText1": "Vi behöver ditt personnummer för att du ska få rutavdrag på dina bokade tjänster.",
+    "popupText2": "Alla våra priser visas efter rutavdrag och vi sköter registreringen till Skatteverket åt dig.",
+    "linkUrl": "https://www.skatteverket.se/privat/fastigheterochbostad/rotarbeteochrutarbete.4.2e56d4ba1202f95012080002966.html",
+    "linkText": "Läs mer på Skatteverkets hemsida."
+  },
+  "GET_QUOTATION_CARD": {
+    "title": "Svårt att välja? Få en offert!",
+    "text": "Att få en offert är inte bindande och självklart helt utan kostnad.",
+    "buttonText": "Få en offert"
+  },
+  "ABOUT": {
+    "title": "Om Flyttsmart",
+    "text1": "Flyttsmart är en kostnadsfri digital tjänst som samlar allt som behövs kring flytten och ditt nya hem på ett och samma ställe. Genom noggranna kontroller väljer vi ut de bästa leverantörerna och kan därför erbjuda hållbara och prisvärda alternativ, vilket gör din flytt snabbare, enklare och tryggare.",
+    "text2": "På den här sidan presenterar vi våra bästa flytt- och städfirmor men om du loggar in på <0>flyttsmart.se</0> kan du även göra en flyttanmälan till Skatteverket, teckna elavtal och bredband, försäkra ditt nya hem och mycket mer!",
+    "text3": "Lycka till med flytten!"
+  },
+  "SELLING_POINTS": {
+    "moves": "200 000+ flyttar",
+    "satisfiedCustomers": "94% kundnöjdhet",
+    "qualityAssured": "Kvalitetssäkrat"
+  },
+  "PROS": {
+    "satisfiedCustomer": "Nöjd-kund-garanti",
+    "responsible": "Ansvarsförsäkring",
+    "movingExpert": "Personlig flyttexpert",
+    "text1": "Så att du slipper oroa dig",
+    "text2": "Så dina saker kommer fram säkert",
+    "text3": "Så att du får den hjälp du behöver"
+  },
+  "USPS": {
+    "satisfiedCustomer": "Nöjd-kund-garanti",
+    "responsible": "Ansvarsförsäkring",
+    "trafficPermit": "Yrkestrafiktillstånd"
+  },
+  "SEO": {
+    "title": "Professionell Flytthjälp och Flyttstädning - Direkt bokning online",
+    "description": "Boka direkt med nöjd kundgaranti!"
+  }
+}

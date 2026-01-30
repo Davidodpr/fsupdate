@@ -1,0 +1,70 @@
+{
+  "bestAccordingToOurCustomers": "Best according to our customers!",
+  "chooseDate": "Choose date",
+  "holidayDateInfo": "Keep in mind that prices are often higher on weekends and other public holidays.",
+  "to": "To:",
+  "from": "From:",
+  "addressDoesNotContainZip": "Your address must include a zip code",
+  "howBigDoYouLive": "How big do you live?",
+  "whereDoMoveFrom": "Where do you move from?",
+  "whereDoYouMoveTo": "Where do you move to?",
+  "whenDoYouWantToMove": "When do you want to move?",
+  "whenDoYouWantHelp": "When do you want help?",
+  "specialRequest": "Do you have any special request?",
+  "showingMovingNear": "Showing moving firms near:",
+  "showingCleaningNear": "Showing cleaning firms near:",
+  "change": "change",
+  "REDIRECTION_MOVEHELP": {
+    "title": "Do you also want moving help?",
+    "text": "Let the professionals handle the move."
+  },
+  "REDIRECTION_MOVECLEAN": {
+    "title": "Do you just want move cleaning?",
+    "text": "Let the professionals handle the cleaning."
+  },
+  "tooBigResidenceTitle": "Do you live a little bigger?",
+  "noSuppliersFoundTitle": "There's no suppliers close to you.",
+  "tooLongDistanceTitle": "Are you moving further away?",
+  "errorCardDescription": "Don't worry, your moving expert will help you find the right solution.",
+  "CONTACT_FORM": {
+    "title": "Contact information",
+    "popupTitle": "Why is my personal identity number required?",
+    "popupText1": "We require your personal identity number so you can get the RUT-deduction  on your booked services.",
+    "popupText2": "All prices displayed are after the RUT-deduction and we fix the registration to the Swedish Tax Agency for you.",
+    "linkUrl": "https://www.skatteverket.se/servicelankar/otherlanguages/inenglishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/rotandrutwork.4.8dcbbe4142d38302d793f.html",
+    "linkText": "Read more at the Swedish Tax Agency"
+  },
+  "GET_QUOTATION_CARD": {
+    "title": "Trouble picking? Get a quote!",
+    "text": "Getting a quote is not a binding agreement and completely free.",
+    "buttonText": "Get a quote"
+  },
+  "ABOUT": {
+    "title": "About Flyttsmart",
+    "text1": "Flyttsmart is a free digital service that collects everything related to the move and your new home in one place. By thorough controls we select the best service providers and suppliers and can therefore offer sustainable and affordable options, making your move quicker, easier, and safer.",
+    "text2": "On this site we present our best moving and cleaning firms but if you log into <0>flyttsmart.se</0> you can also register your new address to the Swedish tax agency, sign electricity agreements, find a internet service provider, insure your new home, and lots more!",
+    "text3": "Best of luck with the move!"
+  },
+  "SELLING_POINTS": {
+    "moves": "200,000+ moves",
+    "satisfiedCustomers": "94% satisfied users",
+    "qualityAssured": "Quality assured"
+  },
+  "PROS": {
+    "satisfiedCustomer": "Satisfied customer guarantee",
+    "responsible": "Liability insurance",
+    "movingExpert": "Personal moving expert",
+    "text1": "So that you don't have to worry",
+    "text2": "So your things arrive safely",
+    "text3": "So that you get the help you need"
+  },
+  "USPS": {
+    "satisfiedCustomer": "Satisfied customer guarantee",
+    "responsible": "Fully insured",
+    "trafficPermit": "Professional traffic permit"
+  },
+  "SEO": {
+    "title": "Professional Moving Assistance and Moving Cleaning - Direct booking online",
+    "description": "Book directly with a satisfied customer guarantee!"
+  }
+}

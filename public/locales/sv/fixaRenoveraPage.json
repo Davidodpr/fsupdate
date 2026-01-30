@@ -1,0 +1,88 @@
+{
+  "header": "Fix & Renovering",
+  "topText": "Få hjälp att ordna allt hemma, innan och efter flytten. Vi kan lösa det mesta!",
+  "USPS": {
+    "happyCustomer": "Nöjd-kund-garanti",
+    "directBooking": "Pris och bokning direkt",
+    "weekends": "Även kvällar och helger",
+    "domesticService": "Rut- och rotavdrag"
+  },
+  "PRO": {
+    "title": "Vill du prata med ett proffs?",
+    "description": "Få hjälp att planera och realisera dina drömmar tillsammans med en expert. Vi erbjuder kostnadsfri rådgivning inför alla typer av uppdrag, i samarbete med Dryft.",
+    "link": "Boka tid för gratis rådgivning"
+  },
+  "PAINTING": {
+    "title": "Flytta in i ett nymålat hem?",
+    "description": "Få hjälp med målning och tapetsering av erfarna målare, vi ser till att du får den hjälp du behöver!",
+    "link": "Få prisförslag och kom igång!"
+  },
+  "CATEGORIES": {
+    "renovation": "Enklare hantverk",
+    "assemblingFurniture": "Möbelmontering",
+    "techbuddy": "Teknikhjälp",
+    "painting": "Målning & tapetsering",
+    "heatWater": "Värme, vatten & avlopp",
+    "electricity": "El",
+    "assembling": "Montageservice",
+    "building": "Snickeri, bygg & renovering",
+    "bookPro": "Få kostnadsfri rådgivning",
+    "help": "Få hjälp & råd",
+    "flooring": "Golv"
+  },
+  "MODAL": {
+    "paintingTitle1": "Målning & tapetsering",
+    "paintingTitle2": "Målning",
+    "wallpaperingTitle": "Tapetsering",
+    "flooringTitle": "Golv",
+    "buildingTitle": "Snickeri, bygg & renovering",
+    "helpTitle": "Få hjälp & råd",
+    "modalDescriptionTop": "Beskriv vad du vill ha hjälp med, så återkommer vi till dig inom kort!",
+    "helpDescriptionTop": "Behöver du goda råd inför din renovering, eller är du osäker på vilken av våra tjänster du ska boka?",
+    "helpDescriptionBottom": "Beskriv vad du vill ha hjälp med, så återkommer vi till dig inom kort! Det är helt kostnadsfritt.",
+    "modalDescriptionBottom": "Du kan bland annat få hjälp med:",
+    "paintingList1": "Uppsättning och rivning av tapeter",
+    "paintingList2": "Spackling",
+    "paintingList3": "Målning av väggar och tak",
+    "flooringList1": "Slipning och vaxning av golv",
+    "flooringList2": "Lägga klickparkett",
+    "buildingList1": "Helrenovering",
+    "buildingList2": "Rivning av väggar",
+    "buildingList3": "Platsbyggda lösningar",
+    "buildingList4": "Andra enklare eller större projekt",
+    "textAreaPlaceholder": "Beskrivning",
+    "datePlaceholder": "När vill du ha hjälp?",
+    "confirmationText": "Vi har tagit emot din förfrågan och hör av oss med ett förslag inom kort!",
+    "toMovepageButton": "Till flyttsidan",
+    "talkToProTitle": "Vill du prata med ett proffs?",
+    "talkToProLink": "Få kostnadsfri rådgivning."
+  },
+  "talkToPro": "Prata med proffs",
+  "talkToProFormHeader": "Föredrar du att skicka in din fråga?",
+  "talkToProFormText": "Inga problem! Här kan du skicka in din fråga genom formuläret så återkommer vi inom några timmar till din mail. Bifoga gärna bilder.",
+  "SIMPLIFIED": {
+    "header": "Fixa & Renovera",
+    "description": "Behöver du hjälp med renovering eller fix i ditt hem? Berätta vad du behöver hjälp med så återkommer vi med förslag och pris.",
+    "formTitle": "Beskriv ditt renoveringsbehov",
+    "formDescription": "Fyll i formuläret nedan så kontaktar en flyttkoordinator dig inom kort för att diskutera dina behov och ge dig ett prisförslag.",
+    "textareaLabel": "Vad behöver du hjälp med?",
+    "textareaPlaceholder": "Beskriv vad du vill ha hjälp med, t.ex. målning, tapetsering, golvläggning, snickeri etc.",
+    "emailLabel": "E-post",
+    "phoneLabel": "Telefonnummer",
+    "whenLabel": "När vill du ha hjälp?",
+    "whenPlaceholder": "T.ex. 'inom 2 veckor' eller 'efter flytt den 15 mars'",
+    "submitButton": "Skicka förfrågan",
+    "successTitle": "Tack för din förfrågan!",
+    "successMessage": "Vi har tagit emot din förfrågan och en flyttkoordinator kommer att kontakta dig inom kort.",
+    "backButton": "Tillbaka till flyttsidan",
+    "errors": {
+      "descriptionRequired": "Vänligen beskriv vad du behöver hjälp med",
+      "emailRequired": "Vänligen ange din e-postadress",
+      "phoneRequired": "Vänligen ange ditt telefonnummer",
+      "phoneInvalid": "Vänligen ange ett giltigt telefonnummer",
+      "phoneMax": "Telefonnumret får max vara 12 siffror",
+      "phoneMin": "Telefonnumret måste vara minst 5 siffror",
+      "whenRequired": "Vänligen ange när du behöver hjälp"
+    }
+  }
+}

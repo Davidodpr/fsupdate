@@ -1,0 +1,15 @@
+{
+  "questionsAboutBookingDescription": "Don't hesitate to contact us in our chat or on ",
+  "weHelpYou": ", and we will help you!",
+  "phone": "08-120 088 22",
+  "bookedServices": "Your booked services",
+  "starts": "Starts on",
+  "preformed": "Job done on",
+  "ADDON_SERVICES": {
+    "storage": "Temporary storage",
+    "packaging": "Packing",
+    "handyman": "Handyman"
+  },
+  "consentInfo": "The other legal guardian must consent to this move in the Swedish Tax Agency service “Consent to the moving of a child”. Ask them to do so within a week.",
+  "noBookings": "You haven't booked anything yet."
+}

@@ -1,0 +1,132 @@
+{
+  "pageTitle": "Försäkring",
+  "homeInsurance": "Hemförsäkring",
+  "insure": "Försäkra",
+  "yourHome": "ditt hem",
+  "home": "hemmet",
+  "introductionTextTop": "Du behöver teckna en hemförsäkring till din nya bostad. En hemförsäkring ger dig trygghet och hjälp om något oväntat skulle hända, som brand, stöld eller vattenskada.",
+  "introductionTextBottom": "Du kan alltid teckna en ny försäkring och säga upp din nuvarande, men oftast är det smidigast att bara flytta över den till ditt nya boende!",
+  "currentInsuranceCompany": "Nuvarande försäkringsbolag",
+  "weWillHelp": "Vi hjälper dig oavsett om du vill säga upp, teckna nytt eller behålla nuvarande försäkring.",
+  "insuranceCompany": "Försäkringsbolag",
+  "chooseAlternativ": "Välj ett av följande alternativ:",
+  "phoneCopy": "Ring till",
+  "emailCopy": "Maila",
+  "noSupplier": "Vi hittar inte försäkringsbolaget. Kontrollera stavningen och försök igen.",
+  "viewYourPrice": "Se ditt pris",
+  "insureYourHomeWith": "Försäkra ditt hem med",
+  "hedvigIntroText": "Med Hedvigs hemförsäkring får du ett riktigt bra skydd för både dig, ditt hem och dina saker.",
+  "withoutBindingTime": "Utan bindningstid.",
+  "hedvigInsurance": "Med Hedvigs hemförsäkring får du ett riktigt bra skydd för både dig, ditt hem och dina saker.",
+  "exclusiveOffer": "Exklusivt erbjudande på hemförsäkring hos Hedvig, för dig som användare av Flyttsmart.",
+  "firstMonthFree": "Första månaden gratis!",
+  "keepInsurance": "Önskar du behålla ditt nuvarande försäkringsbolag och flytta det till din nya bostad?",
+  "bottomText": "Ange nuvarande försäkringsbolag, så hjälper vi dig kostnadsfritt!",
+  "PROVIDERDETAILS": {
+    "Dina": {
+      "name": "Dina Försäkringar",
+      "phone": "",
+      "email": "mitt@dina.se",
+      "website": "www.dina.se",
+      "websiteCopy": "Logga in på deras hemsida"
+    },
+    "Folksam": {
+      "name": "Folksam",
+      "phone": "0771-950 950",
+      "email": "kundservice@folksam.se",
+      "website": "https://www.folksam.se/forsakringar/hemforsakring",
+      "websiteCopy": "Logga in på deras hemsida"
+    },
+    "Gjensidige": {
+      "name": "Gjensidige",
+      "phone": "",
+      "email": "info@gjensidige.se",
+      "website": "https://www.gjensidige.se/",
+      "websiteCopy": "Logga in på deras hemsida"
+    },
+    "Gofido": {
+      "name": "Gofido",
+      "phone": "010-551 39 00",
+      "email": "kundteam@gofido.se",
+      "website": "https://www.gofido.se/",
+      "websiteCopy": "Logga in på deras hemsida"
+    },
+    "Hedvig": {
+      "name": "Hedvig",
+      "phone": "010-45 99 200",
+      "email": "hedvig@hedvig.com",
+      "website": "",
+      "websiteCopy": ""
+    },
+    "ICA Försäkring": {
+      "name": "ICA Försäkring",
+      "phone": " 033-47 47 90",
+      "email": "",
+      "website": "https://www.icaforsakring.se/kundservice/andra-forsakring/",
+      "websiteCopy": "Kontakta dem på deras hemsida"
+    },
+    "If": {
+      "name": "If",
+      "phone": " 08-40 00 86 20",
+      "email": "",
+      "website": "https://www.if.se/privat/forsakringar/hemforsakring",
+      "websiteCopy": "Logga in på deras hemsida"
+    },
+    "Länsförsäkringar": {
+      "name": "Länsförsäkringar",
+      "phone": "021-19 01 00",
+      "email": "",
+      "website": "https://www.lansforsakringar.se/",
+      "websiteCopy": "Kontakta dem på deras hemsida"
+    },
+    "Lärarförsäkringar": {
+      "name": "Lärarförsäkringar",
+      "phone": "0771-21 09 09",
+      "email": "",
+      "website": "https://www.lararforsakringar.se/",
+      "websiteCopy": "Logga in på deras hemsida"
+    },
+    "Moderna Försäkringar": {
+      "name": "Moderna Försäkringar",
+      "phone": "010-219 10 80",
+      "email": "info@modernaforsakringar.se",
+      "website": "https://www.modernaforsakringar.se/",
+      "websiteCopy": "Logga in på deras hemsida"
+    },
+    "Sveland Försäkringar": {
+      "name": "Sveland Försäkringar",
+      "phone": "0771-388 300",
+      "email": "",
+      "website": "",
+      "websiteCopy": ""
+    },
+    "Swedbank": {
+      "name": "Swedbank",
+      "phone": " 0771-22 11 23",
+      "email": "",
+      "website": "https://www.swedbank.se/privat/forsakra/hemforsakring",
+      "websiteCopy": "Logga in på deras hemsida"
+    },
+    "Tre Kronor": {
+      "name": "Tre Kronor",
+      "phone": "0771-23 33 33",
+      "email": "",
+      "website": "",
+      "websiteCopy": ""
+    },
+    "Trygg-Hansa": {
+      "name": "Trygg-Hansa",
+      "phone": "0771-111 110",
+      "email": "",
+      "website": "https://www.trygghansa.se/",
+      "websiteCopy": "Logga in på deras hemsida"
+    },
+    "SBAB": {
+      "name": "SBAB",
+      "phone": "0771-45 30 00",
+      "email": "",
+      "website": "https://secure.sbab.se/logga-in",
+      "websiteCopy": "Logga in på deras hemsida"
+    }
+  }
+}

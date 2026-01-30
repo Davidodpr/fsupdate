@@ -1,0 +1,295 @@
+{
+  "intro_1": "Det",
+  "intro_2": "enklaste",
+  "intro_3": "sättet att flytta!",
+  "start": "KOM IGÅNG",
+  "testamonial_title": "Vi har hjälpt fler än 200 000 personer att flytta",
+  "stats_title": "Inte övertygad än?",
+  "faq_title": "Vanliga frågor",
+  "faq_link": "https://help.flyttsmart.se/sv",
+  "faq_more_questions": "Fler vanliga frågor",
+  "flyttsmart_email": "hej@flyttsmart.se",
+  "flyttsmart_phone": "08-12 00 88 22",
+  "flyttsmart_chat": "eller i chatten.",
+  "HERO": {
+    "badge": "200 000+ nöjda flyttare",
+    "headline_1": "Slipp stressen -",
+    "headline_2": "vi fixar",
+    "headline_3": "flytten åt dig",
+    "subheadline": "Personlig service och smart teknik som hjälper dig hela vägen. Kostnadsfritt.",
+    "cta": "KOM IGÅNG",
+    "ctaSubtext": "Kostnadsfritt • 2 min"
+  },
+  "PRESS_AND_PARTNERS": {
+    "seenIn": "Som sett i",
+    "partners": "Våra samarbetspartners"
+  },
+  "HOW_WE_HELP": {
+    "title": "Så hjälper vi dig flytta",
+    "subtitle": "Personlig service och smart teknik - kombinationen som gör din flytt enkel",
+    "step1": {
+      "title": "Din personliga plan",
+      "description": "Logga in med BankID och få en checklista anpassad efter just din flytt. Allt du behöver tänka på, samlat på ett ställe.",
+      "benefit": "Missa aldrig något viktigt"
+    },
+    "step2": {
+      "title": "Leverantörer du kan lita på",
+      "description": "Vi har valt ut de bästa leverantörerna åt dig. Jämför och välj enkelt - helt kostnadsfritt.",
+      "benefit": "Spara tid och pengar"
+    },
+    "step3": {
+      "title": "Riktiga människor hjälper",
+      "description": "Våra flyttexperter finns tillgängliga via chatt, mejl och telefon. Snabb hjälp utan krångel.",
+      "benefit": "Du är aldrig ensam"
+    }
+  },
+  "CONTACT": {
+    "title": "Hej! 👋",
+    "opening_hours": "Måndag - Fredag: 09:00 - 16:00",
+    "differentOpeningHours": "Avvikande öppettider:",
+    "differentOpeningHoursDates": "23/12, 27/12, 30/12",
+    "differentOpeningHoursTimes": "Telefon: 9-13 (tillgängliga via mejl 9-16)",
+    "monday": "Måndag",
+    "tuesday": "Tisdag",
+    "wednesday": "Onsdag",
+    "thursday": "Torsdag",
+    "friday": "Fredag",
+    "customer_service": "Kundservice",
+    "partnership": "Partnerskap",
+    "partners_contact_email": "partner@flyttsmart.se"
+  },
+  "FAQITEMS": [
+    {
+      "question": "Vad är Flyttsmart?",
+      "answer": "Flyttsmart är en kostnadsfri digital tjänst där du löser allt kring flytten och ditt nya hem - snabbt, enkelt och tryggt. Visste du att 1,3 miljoner svenskar flyttar varje år? Vi har själva upplevt hur jobbigt det kan vara att ordna allt kring flytten - och hur mycket tid och energi som krävs. Därför startade vi Flyttsmart. Med vår unika bakgrund från underhållnings-, service- och bostadsbranschen har vi tagit fram en unik tjänst, som skapar värde åt både användare och samarbetspartners."
+    },
+    {
+      "question": "Vad kan jag göra på Flyttsmart?",
+      "answer": "På Flyttsmart ordnar du allt kring flytten och ditt nya hem - snabbt, enkelt, tryggt och helt kostnadsfritt. Logga in med BankID och få förslag som passar dig och din flytt. På bara 10 minuter kan du:",
+      "list_item_1": "Göra en flyttanmälan till Skatteverket (obligatoriskt)",
+      "list_item_2": "Boka flytthjälp och flyttstädning",
+      "list_item_3": "Fixa elen",
+      "list_item_4": "Skaffa internet",
+      "list_item_5": "Försäkra hemmet",
+      "list_item_6": "Ordna hjälp med hemteknik och enklare hantverk",
+      "list_item_7": "Boka juridisk rådgivning",
+      "answer_last": "Och mycket mer."
+    },
+    {
+      "question": "Hur långt innan flytten bör jag använda Flyttsmart?",
+      "answer": "Vi rekommenderar att du börjar så tidigt som möjligt, gärna två månader innan ditt inflyttningsdatum. Då hinner du teckna nya avtal och säga upp dina nuvarande i tid, och slipper onödiga kostnader kopplade till uppsägningstid.",
+      "answer_last_header": "Är det mindre än 14 dagar kvar till din flytt?",
+      "answer_last": "Kontakta oss på ",
+      "answer_last_second_part": " Vi ska försöka hjälpa dig att ordna allt i tid."
+    },
+    {
+      "question": "Vad kostar det att använda Flyttsmart?",
+      "answer": "Tjänsten är gratis att använda och fri från dolda avgifter. Vi erbjuder samma priser som våra leverantörer - eller lägre. Priserna varierar mellan olika leverantörer och kan även påverkas av faktorer som hur långt du ska flytta och hur stort ditt boende är."
+    },
+    {
+      "question": "Vilka leverantörer samarbetar ni med?",
+      "answer": "Vi väljer noga ut en eller ett par riktigt bra leverantörer inom varje område - alltid med hållbara och prisvärda erbjudanden. Du kan med andra ord vara säker på att du gör trygga och smarta val i vår tjänst. "
+    }
+  ],
+  "HOWITWORKS": {
+    "title": "Så funkar det",
+    "checklist": "Få en personlig checklista",
+    "how_to_checklist": "Logga in med BankID för att få en översikt av vad du behöver ordna inför flytten. Börja bocka av din checklista direkt och bli klar på 10 minuter.",
+    "smart_choices": "Gör smarta och trygga val",
+    "suppliers": "Våra leverantörer är noga utvalda och kvalitetssäkrade. Det kostar inte mer att boka via oss - vår tjänst är helt kostnadsfri.",
+    "help": "Få hjälp hela vägen hem",
+    "moving_experts": "Glöm krångel och långa telefonköer. Våra flyttexperter svarar snabbt på dina frågor via chatt, mejl och telefon."
+  },
+  "STATSITEMS": [
+    {
+      "image": "/images/stats_item_1.svg",
+      "value": "94,5%",
+      "text": "Tycker att de fick bra och relevanta förslag på leverantörer."
+    },
+    {
+      "image": "/images/stats_item_2.svg",
+      "value": "96,4%",
+      "text": "Är nöjda med den personliga servicen Flyttsmart erbjuder."
+    },
+    {
+      "image": "/images/stats_item_3.svg",
+      "value": "92%",
+      "text": "Skulle rekommendera Flyttsmart till vänner och familj."
+    },
+    {
+      "image": "/images/stats_item_4.svg",
+      "value": "93,1%",
+      "text": "Har en mycket positiv helhetsupplevelse!"
+    }
+  ],
+  "TESTAMONIALS": [
+    {
+      "words": "Lätt att hitta info och skönt med en överblick över vad som behöver göras. Skönt att ha alternativ, t ex el samlat på ett ställe för att slippa leta runt själv. Bra service via telefon och mejl.",
+      "rating": "5",
+      "name": "Fredrika",
+      "bio": "Flyttade till Årsta"
+    },
+    {
+      "words": "Smart, enkelt. Fick förmedlat en mycket bra flyttfirma och i appen en process att följa för att inte glömma något viktigt i samband med flytten. Mycket bra!",
+      "rating": "5",
+      "name": "Per",
+      "bio": "Flyttade till Stockholm"
+    },
+    {
+      "words": "It was great to have everything one needs to sort out when moving in a single platform. This was particularly relevant for me as I am foreign and I do no speak Swedish.",
+      "rating": "5",
+      "name": "Diogo",
+      "bio": "Flyttade till Stockholm"
+    },
+    {
+      "words": "Jeg valgte IF forsikring. Er kjent med de og synes at de har et godt produkt. Hele prosessen til Flyttsmart var god og enkel.",
+      "rating": "5",
+      "name": "Marie",
+      "bio": "Flyttade till Saltsjö-Boo"
+    },
+    {
+      "words": "Incredibly easy process online and helpful phone conversations",
+      "rating": "5",
+      "name": "Peter",
+      "bio": "Flyttade till Stockholm"
+    },
+    {
+      "words": "Snabba, smidiga o serviceminded (samt personliga) service, tack för all hjälp med flytten!",
+      "rating": "5",
+      "name": "Paulina",
+      "bio": "Flyttade till Sundbyberg"
+    },
+    {
+      "words": "Det är så mycket att tänka på och checklista från er gjorde allt så mycket lättare",
+      "rating": "5",
+      "name": "Lina",
+      "bio": "Flyttade till Stockholm"
+    },
+    {
+      "words": "Jag visste inte att sån här typ av tjänst fanns, och i och med att jag köpte min första lägenhet så fick jag reda på allt jag behövde ha koll på via er. Supernöjd med det, och att allt var kopplat till brfen så att vi tex fick reda på att vi hade gruppavtal på bredband. 10/10 har inget dåligt att säga",
+      "rating": "5",
+      "name": "Tina",
+      "bio": "Flyttade till Stockholm"
+    },
+    {
+      "words": "Allt samlat på ett ställe som man behöver fixa när man flyttar. Samt att sidan var enkel att använda och lättöverskådligt utseende.",
+      "rating": "4",
+      "name": "Catharina",
+      "bio": "Flyttade till Kil"
+    },
+    {
+      "words": "Det sparar tid och energy. Bra med checklista så att man har allt under kontroll under en period då det händer så mycket",
+      "rating": "4",
+      "name": "Marija",
+      "bio": "Flyttade till Norrköping"
+    },
+    {
+      "words": "Flyttsmart fixade hela upplägget med flytt och flyttstädning Jättesnabbt - snyggt! Precis den hjälpen som behövs, när man står mitt i sin flytt med allt som ska göras!",
+      "rating": "5",
+      "name": "Anna",
+      "bio": "Flyttade till Slite"
+    },
+    {
+      "words": "Superbra och framförallt smidig och enkel tjänst som påminde om allt som behövs inför en flytt",
+      "rating": "5",
+      "name": "Erik",
+      "bio": "Flyttade till Göteborg"
+    },
+    {
+      "words": "Superbra tjänst helt enkelt. Kände att jag verkligen kan lita på er och så bra med en checklista inför flytt. Kändes tryggt att boka leverantörer genom er och bra pris!",
+      "rating": "5",
+      "name": "Anna",
+      "bio": "Flyttade till Stockholm"
+    },
+    {
+      "words": "Känslan av trygghet gällande allt man behöver hålla koll på i en flytt.",
+      "rating": "5",
+      "name": "Claes",
+      "bio": "Flyttade till Borås"
+    },
+    {
+      "words": "Otroligt smidigt med all hjälp på samma ställe.",
+      "rating": "5",
+      "name": "Madeleine",
+      "bio": "Flyttade till Västerås"
+    },
+    {
+      "words": "Överraskande bra! Inget har strulat. Lätta att få kontakt med. Personligt!",
+      "rating": "4",
+      "name": "Andreas",
+      "bio": "Flyttade till Stockholm"
+    },
+    {
+      "words": "Gjorde det mycket enklare och gav en bra överblick över alla olika saker att fixa inför flytt.",
+      "rating": "4",
+      "name": "Terje",
+      "bio": "Flyttade till Sundbyberg"
+    },
+    {
+      "words": "Everything looks good, I loved it and suggested it to some of my friends",
+      "rating": "5",
+      "name": "Ranga",
+      "bio": "Flyttade till Hässelby"
+    },
+    {
+      "words": "Trevliga, samarbetstvilliga, måna om att lösa uppgiften, snabb återkoppling",
+      "rating": "5",
+      "name": "Anna-Greta",
+      "bio": "Flyttade till Östersund"
+    },
+    {
+      "words": "Fick hjälp med alla 'problem' som jag träffade på. Som utlandssvensk träffar man på hinder av olika slag som är svåra att lösa själv. Flyttsmart löste allt med gott humör och professionalism.",
+      "rating": "5",
+      "name": "Eva-Marie",
+      "bio": "Flyttade till Bromma"
+    },
+    {
+      "words": "Everything was great. Many thanks for your provided help and support!",
+      "rating": "5",
+      "name": "Zhuldyz",
+      "bio": "Flyttade till Solna"
+    },
+    {
+      "words": "Smidigt sätt att få en överblick över de saker man behöver göra inför en flytt och när man inte tagit tag i saker får man en påminnelse och erbjudande om att de ska göra saker åt en. Nöjd!",
+      "rating": "5",
+      "name": "Felix",
+      "bio": "Flyttade till Johanneshov"
+    },
+    {
+      "words": "Allt fungerade jättebra!",
+      "rating": "4",
+      "name": "Ingvar",
+      "bio": "Flyttade till Kungsbacka"
+    },
+    {
+      "words": "Tjänsten är väldigt smidig att använda och ger en väldigt bra överblick över vad som behöver göras vare sig man bokar och fixar tjänster via er eller externt. Det har helt klart gjort våran flytt enklare och varit ett väldigt bra stöd.",
+      "rating": "4",
+      "name": "Daniel",
+      "bio": "Flyttade till Vallentuna"
+    },
+    {
+      "words": "Det var väldigt enkelt och smidigt att använda tjänsten.",
+      "rating": "5",
+      "name": "Roger",
+      "bio": "Flyttade till Nynäshamn"
+    },
+    {
+      "words": "Smart tjänst, väldigt bra hjälp",
+      "rating": "5",
+      "name": "Gertrud",
+      "bio": "Flyttade till Åkersberga"
+    },
+    {
+      "words": "Bra tjänst som hjälper mycket bra med allt som rör en flytt. Den personliga kontakten är oerhörd viktig . Att ni rekommenderar tex flyttfirmor ger trygghet.",
+      "rating": "5",
+      "name": "Patricia",
+      "bio": "Flyttade till Töreboda"
+    },
+    {
+      "words": "Drömtjänst. Så tydligt vad man måste fixa med och uppskattade verkligen att man kan boka avtal direkt via Flyttsmart!",
+      "rating": "5",
+      "name": "Eline",
+      "bio": "Flyttade till Johanneshov"
+    }
+  ]
+}

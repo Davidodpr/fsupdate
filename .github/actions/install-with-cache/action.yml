@@ -1,0 +1,32 @@
+name: 'Yarn install with cache'
+description: 'Setup node 22.9.x, cache node_modules and yarn install.'
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 22.9.x
+        cache: yarn
+    - name: Cache node modules
+      id: cache
+      uses: actions/cache@v3
+      env:
+        cache-name: cache-node-modules
+      with:
+        # yarn cache files are stored in `~/.cache/yarn` on Linux/macOS
+        path: |
+          ./node_modules
+          ~/.cache/yarn
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
+
+    - if: steps.cache.outputs.cache-hit == 'false'
+      name: List the state of node modules
+      continue-on-error: true
+      run: yarn list
+      shell: bash
+
+    - name: Install dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: yarn install --frozen-lockfile
+      shell: bash

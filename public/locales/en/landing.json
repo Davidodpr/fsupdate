@@ -1,0 +1,263 @@
+{
+  "intro_1": "The",
+  "intro_2": "easiest",
+  "intro_3": "way to move!",
+  "start": "GET STARTED",
+  "testamonial_title": "We have helped more than 200,000 people to move",
+  "stats_title": "Not convinced yet?",
+  "faq_title": "Frequently asked questions",
+  "faq_link": "https://help.flyttsmart.se/en",
+  "faq_more_questions": "More frequently asked questions",
+  "flyttsmart_email": "hej@flyttsmart.se",
+  "flyttsmart_phone": "08-12 00 88 22",
+  "flyttsmart_chat": "or in the chat.",
+  "CONTACT": {
+    "title": "Hi! 👋",
+    "opening_hours": "Monday - Friday from 9:00 - 16:00",
+    "differentOpeningHours": "Different opening hours",
+    "differentOpeningHoursDates": "23/12, 27/12, 30/12",
+    "differentOpeningHoursTimes": "Phone: 9-13 (available via email 9-16)",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "customer_service": "Customer service",
+    "partnership": "Partnership",
+    "partners_contact_email": "partner@flyttsmart.se"
+  },
+  "FAQITEMS": [
+    {
+      "question": "What is Flyttsmart?",
+      "answer": "Flyttsmart is a free digital service where you solve everything about the move and your new home - quickly, easily and safely. Did you know that 1.3 million Swedes move every year? We have experienced ourselves how difficult it can be to arrange everything around the move - and how much time and energy is required. That's why we started Flyttsmart. With our unique background from the entertainment, service and housing industry, we have developed a unique service that creates value for both users and partners."
+    },
+    {
+      "question": "What can I do at Flyttsmart?",
+      "answer": "At Flyttsmart you can arrange your entire move and set up your new home - fast, easy, secure and free of charge. Log in with BankID and get suggestions tailored for you and your move. In only 10 minutes you can:",
+      "list_item_1": "Register your new adress with the Swedish Tax Agency (mandatory)",
+      "list_item_2": "Hire move help and cleaning",
+      "list_item_3": "Fix the electricity",
+      "list_item_4": "Get internet",
+      "list_item_5": "Insure your home",
+      "list_item_6": "Arrange help with home technology and simple crafts",
+      "list_item_7": "Book legal advice",
+      "answer_last": "And much more."
+    },
+    {
+      "question": "How long before moving should I use Flyttsmart?",
+      "answer": "We recommend that you start as soon as possible, preferably around two months prior to your moving date. You will have plenty of time to sign new agreements and cancel your current agreements in time, and you will not have to deal with unnecessary costs connected to your notice period.",
+      "answer_last_header": "Are you moving within 14 days? ",
+      "answer_last": "Please contact us at ",
+      "answer_last_second_part": " We will try to help you get ready in time."
+    },
+    {
+      "question": "What does it cost to use Flyttsmart?",
+      "answer": "It is free of charge to use our service and there are no hidden fees. We offer the same prices as our providers, and sometimes even lower. The prices vary between providers and can be affected by factors such as how far you're moving and the size of your home."
+    },
+    {
+      "question": "Which providers do you collaborate with?",
+      "answer": "We are thoroughly choosing one or a few of the most reliable providers in every area - always with sustainable and price worthy offers. You can rest assure that you are making safe and smart choices in our service."
+    }
+  ],
+  "HOWITWORKS": {
+    "title": "How it works",
+    "checklist": "Get a personalized checklist",
+    "how_to_checklist": "Log in with BankID to get an overview of what you need to do before your move. Start checking things off straight away and get it all done within 10 minutes.",
+    "smart_choices": "Make smart and safe choices",
+    "suppliers": "Our partners are all handpicked and quality assured by us. There are no extra fees for booking via us - our service is free to use.",
+    "help": "Get help - all the way home",
+    "moving_experts": "No more hassle and phone queues! Our moving experts swiftly answer any questions via chat, email or phone."
+  },
+  "STATSITEMS": [
+    {
+      "image": "/images/stats_item_1.svg",
+      "value": "94,5%",
+      "text": "Think they got good and relevant suggestions of service providers."
+    },
+    {
+      "image": "/images/stats_item_2.svg",
+      "value": "96,4%",
+      "text": "Are satisfied with the personal service provided by Flyttsmart."
+    },
+    {
+      "image": "/images/stats_item_3.svg",
+      "value": "92%",
+      "text": "Would recommend Flyttsmart to family and friends."
+    },
+    {
+      "image": "/images/stats_item_4.svg",
+      "value": "93,1%",
+      "text": "Are very happy with the overall experience!"
+    }
+  ],
+  "TESTAMONIALS": [
+    {
+      "words": "Easy to find info and nice with an overview of what needs to be done. Nice with alternatives for electricity etc. in one place . Good service when contacting via phone and email.",
+      "rating": "5",
+      "name": "Fredrika",
+      "bio": "Moved to Årsta"
+    },
+    {
+      "words": "Smart, simple. Got recommended an excellent moving company. The app made the process easy to follow and made me not forget anything during the move. Very good!",
+      "rating": "5",
+      "name": "Per",
+      "bio": "Moved to Stockholm"
+    },
+    {
+      "words": "It was great to have everything one needs to sort out when moving in a single platform. This was particularly relevant for me as I am foreign and I do no speak Swedish.",
+      "rating": "5",
+      "name": "Diogo",
+      "bio": "Moved to Stockholm"
+    },
+    {
+      "words": "I chose IF insurance. You are familiar with them and it seems that they have a good product. The whole process for Flyttsmart was good and simple.",
+      "rating": "5",
+      "name": "Marie",
+      "bio": "Moved to Saltsjö-Boo"
+    },
+    {
+      "words": "Incredibly easy process online and helpful phone conversations",
+      "rating": "5",
+      "name": "Peter",
+      "bio": "Moved to Stockholm"
+    },
+    {
+      "words": "Fast, flexible and service-minded (and personal) service, thanks for all the help with the move!",
+      "rating": "5",
+      "name": "Paulina",
+      "bio": "Moved to Sundbyberg"
+    },
+    {
+      "words": "There is so much to think about and your checklist made everything so much easier",
+      "rating": "5",
+      "name": "Lina",
+      "bio": "Moved to Stockholm"
+    },
+    {
+      "words": "I didn't know this kind of service existed, and when I bought my first apartment, I found out everything I needed to know through you. Super happy with it, and that everything was connected to the brfen so that we found out, for example, that we had a group agreement on broadband. 10/10 have nothing bad to say",
+      "rating": "5",
+      "name": "Tina",
+      "bio": "Moved to Stockholm"
+    },
+    {
+      "words": "Everything gathered in one place that you need to fix when you move. And that the page was easy to use and easy to understand.",
+      "rating": "4",
+      "name": "Catharina",
+      "bio": "Moved to Kil"
+    },
+    {
+      "words": "It saves time and energy. Good to have a checklist so that you have everything under control during a period when so much is happening",
+      "rating": "4",
+      "name": "Marija",
+      "bio": "Moved to Norrköping"
+    },
+    {
+      "words": "Flyttsmart fixed the whole arrangement with moving and moving cleaning Very quickly - nicely! Exactly the help you need, when you are in the middle of your move with everything to do!",
+      "rating": "5",
+      "name": "Anna",
+      "bio": "Moved to Slite"
+    },
+    {
+      "words": "Excellent and, above all, smooth and simple service that reminded me of everything needed before a move",
+      "rating": "5",
+      "name": "Erik",
+      "bio": "Moved to Göteborg"
+    },
+    {
+      "words": "Simply superb service. Felt that I can really trust you and so good with a checklist before moving. Felt safe to book suppliers through you and good price!",
+      "rating": "5",
+      "name": "Anna",
+      "bio": "Moved to Stockholm"
+    },
+    {
+      "words": "The feeling of security regarding everything you need to keep track of in a move.",
+      "rating": "5",
+      "name": "Claes",
+      "bio": "Moved to Borås"
+    },
+    {
+      "words": "Incredibly smooth with all help in one place.",
+      "rating": "5",
+      "name": "Madeleine",
+      "bio": "Moved to Västerås"
+    },
+    {
+      "words": "Surprisingly good! Nothing has messed up. Easy to get in touch with. Personal!",
+      "rating": "4",
+      "name": "Andreas",
+      "bio": "Moved to Stockholm"
+    },
+    {
+      "words": "Made it much easier and gave a good overview of all the different things to fix before moving.",
+      "rating": "4",
+      "name": "Terje",
+      "bio": "Moved to Sundbyberg"
+    },
+    {
+      "words": "Everything looks good, I loved it and suggested it to some of my friends",
+      "rating": "5",
+      "name": "Ranga",
+      "bio": "Moved to Hässelby"
+    },
+    {
+      "words": "Pleasant, cooperative, interested in solving the task, quick feedback",
+      "rating": "5",
+      "name": "Anna-Greta",
+      "bio": "Moved to Östersund"
+    },
+    {
+      "words": "Got help with all the 'problems' I encountered. As a Swede abroad, you encounter obstacles of various kinds that are difficult to solve yourself. Flyttsmart solved everything with good humor and professionalism.",
+      "rating": "5",
+      "name": "Eva-Marie",
+      "bio": "Moved to Bromma"
+    },
+    {
+      "words": "Everything was great. Many thanks for your provided help and support!",
+      "rating": "5",
+      "name": "Zhuldyz",
+      "bio": "Moved to Solna"
+    },
+    {
+      "words": "Easy way to get an overview of the things you need to do before a move and when you haven't taken care of things, you get a reminder and offer that they will do things for you. Satisfied!",
+      "rating": "5",
+      "name": "Felix",
+      "bio": "Moved to Johanneshov"
+    },
+    {
+      "words": "Everything worked great!",
+      "rating": "4",
+      "name": "Ingvar",
+      "bio": "Moved to Kungsbacka"
+    },
+    {
+      "words": "The service is very easy to use and gives a very good overview of what needs to be done, whether you book and arrange services through you or externally. It has clearly made our move easier and has been a very good support.",
+      "rating": "4",
+      "name": "Daniel",
+      "bio": "Moved to Vallentuna"
+    },
+    {
+      "words": "It was very easy and smooth to use the service.",
+      "rating": "5",
+      "name": "Roger",
+      "bio": "Moved to Nynäshamn"
+    },
+    {
+      "words": "Smart service, very good help",
+      "rating": "5",
+      "name": "Gertrud",
+      "bio": "Moved to Åkersberga"
+    },
+    {
+      "words": "Good service that helps very well with everything related to a move. The personal contact is extremely important. The fact that you recommend, for example, moving companies provides security.",
+      "rating": "5",
+      "name": "Patricia",
+      "bio": "Moved to Töreboda"
+    },
+    {
+      "words": "Dream service. So clear what needs to be fixed and really appreciated that you can book an agreement directly via Flyttsmart!",
+      "rating": "5",
+      "name": "Eline",
+      "bio": "Moved to Johanneshov"
+    }
+  ]
+}

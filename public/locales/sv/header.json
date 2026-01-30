@@ -1,0 +1,42 @@
+{
+  "profile": "Mina kontaktuppgifter",
+  "logout": "Logga ut",
+  "poweredBy": "powered by",
+  "fortumLogo": "/Fortum/Fortum_logo_nAKLuCPrn.svg",
+  "DOMESTICSERVICEBALANCE": {
+    "modalContent": "Rutavdrag är en skattereduktion för hushållsnära tjänster, som till exempel flytthjälp och flyttstädning. Om du har rätt till rutavdrag betalar du bara 50 % av arbetskostnaden.<1 /><1 />Rotavdrag är en skattereduktion för reparation, underhåll och ombyggad. Om du har rätt till rotavdrag betalar du 70 % av arbetskostnaden.<1 /><1 />Den maximala summan för rut- och rotavdrag är 75 000 kronor per år (varav högst 50 000 kronor rotavdrag).\n\nDu kan hämta dina uppgifter från Skatteverket, om du vill se ditt aktuella rutsaldo här på Flyttsmart.<1 /><1 />Läs mer på <0 href=\"https://www.skatteverket.se/privat/fastigheterochbostad/rotarbeteochrutarbete.4.2e56d4ba1202f95012080002966.html\" target=\"_blank\">Skatteverkets hemsida.</0>",
+    "headerText": "Outnyttjat rutavdrag:",
+    "headerPlaceholderText": "Rot-/rutavdrag kvar?",
+    "headerPlaceholderUnderlineText": "Hämta från Skatteverket.",
+    "usedAmountTitle": "Använt belopp {{year}}",
+    "rut": "Rutarbete:",
+    "rot": "Rotarbete",
+    "updatedAt": "Hämtat från Skatteverket:",
+    "modalLink": "Läs mer om rot- och rutavdrag",
+    "modalHeader": "Rot- och rutavdrag",
+    "STATUS": {
+      "LOGIN_STATUS_STARTED": "Ansluter till skatteverket",
+      "SKATTEVERKET_STATUS_STARTED": "Ansluter till skatteverket",
+      "SKATTEVERKET_STATUS_PENDING": "Slutför inloggning till Skatteverket",
+      "SKATTEVERKET_STATUS_BANK_ID_REQUIRED": "Starta BankID-appen på din mobil och skanna QR-koden på skärmen.",
+      "LOGIN_STATUS QR": "Starta BankID-appen på din mobil och skanna QR-koden på skärmen.",
+      "LOGIN_STATUS_PENDING": "Slutför inloggning till Skatteverket",
+      "LOGIN_STATUS_COMPLETED": "...",
+      "LOGIN_STATUS_CANCELLED": "...",
+      "TIMEOUT_ERROR": "Vi får ingen kontakt med Skatteverket just nu.",
+      "USER_TIMEOUT_ERROR": "Vi får ingen kontakt med Skatteverket just nu.",
+      "BANK_ID_ERROR": "Någonting gick fel, försök igen."
+    }
+  },
+  "EXTERNAL": {
+    "toMovehelp": "TILL FLYTTHJÄLP",
+    "toMoveclean": "TILL FLYTTSTÄDNING",
+    "toFlyttsmart": "TILL FLYTTSMART.SE "
+  },
+  "MENU": {
+    "faq": "FAQ",
+    "jobs": "Jobb",
+    "login": "LOGGA IN",
+    "contact": "Kontakt"
+  }
+}

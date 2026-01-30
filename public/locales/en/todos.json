@@ -1,0 +1,357 @@
+{
+  "addMoreItems": "Add more items to your checklist",
+  "addToChecklist": "Add to the checklist",
+  "ready": "Finished!",
+  "hidden": "Hidden",
+  "addToChecklistToast": "Acitivity added to checklist",
+  "TODO_ITEMS": [
+    {
+      "name": "homefix",
+      "title": "Fix & Renovation",
+      "subtitle": "Before and after the move",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Not very handy, or just got your hands full? Get help from one of our qualified tradespersons or handymen."
+        },
+        {
+          "text": "We can assist with everything from installing some shelves to complete renovations of your new home. Most services are eligible for RUT and ROT deductions."
+        }
+      ],
+      "linkText": "Read more and order",
+      "linkUrl": "/fixarenovera"
+    },
+    {
+      "name": "alarmservice",
+      "title": "Home Security",
+      "subtitle": "From 5 490 kr",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Better safe than sorry! Install a smart home alarm to minimize the damage if bad luck strikes. "
+        },
+        {
+          "text": "Our offer is one of the most affordable on the market - so what are you waiting for?"
+        }
+      ],
+      "linkText": "Read more and order",
+      "linkUrl": "/hemlarm"
+    },
+    {
+      "name": "homecleaningoffer",
+      "title": "Home Cleaning",
+      "subtitle": "240 kr/hour",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "The worst thing about cleaning is that you have to do it over and over again. Don’t you agree?"
+        },
+        {
+          "text": "Let us do the work instead and come home to a freshly cleaned home as often as you like!"
+        }
+      ],
+      "linkText": "Read more and order",
+      "linkUrl": "/hemstadning"
+    },
+    {
+      "name": "familylaw",
+      "title": "Legal Help",
+      "subtitle": "20 min free of charge",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Get help from a legal expert, by phone or video call.Legal advice and establishing off agreements included."
+        }
+      ],
+      "linkText": "Read more and order",
+      "linkUrl": "/familylaw"
+    },
+    {
+      "name": "techbuddy",
+      "title": "Tech Support",
+      "subtitle": "499 kr/hour",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Do you need help setting up the TV, optimizing the internet or getting started with some other tech in your new home?"
+        }
+      ],
+      "linkText": "Read more and order",
+      "linkUrl": "/fixarenovera?techbuddy=true"
+    },
+    {
+      "name": "mail",
+      "title": "Mail",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Make sure your mail finds its way to your new address, as soon as you’ve moved in."
+        },
+        {
+          "text": "<b>Here are our top tips:</b>"
+        },
+        {
+          "text": "<listItem>Start by registering your change of address to the Swedish Tax Agency, if you have not already done so. Authorities and many companies, such as banks and insurance companies, will then receive information about your new address automatically.<br><aTaxAgency>Register your new address to the Swedish Tax Agency.</aTaxAgency></listItem>"
+        },
+        {
+          "text": "<listItem>Contact the companies and people you usually receive mail from and let them know your new address.</listItem>"
+        },
+        {
+          "text": "<listItem>Get a digital mailbox, such as <aKivra>Kivra</aKivra>, <aDigimail>Digimail</aDigimail> eller <aEBoks>e-Boks</aEBoks>. You’ll then receive a large part of your mail digitally and do the environment a favor.</listItem>"
+        },
+        {
+          "text": "<listItem>You can also order forwarding of your mail at <aAddresschange>adressändring.se</aAddresschange>. It costs 598 kr for 12 months (299 kr if you are a student or under the age of 26). However, it is usually not necessary if you follow our other tips.</listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "loan",
+      "title": "Mortgage",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Do you need to take out a mortgage to finance your new home or pay for an extension or renovation?"
+        },
+        {
+          "text": "<b>Here are our top tips:</b>"
+        },
+        {
+          "text": "<listItem>The loan brokers compete to have you as a customer, so it is often worth comparing different options.</listItem>"
+        },
+        {
+          "text": "<listItem>It may also be worth reviewing your mortgage at regular intervals, to get the best possible terms.</listItem>"
+        },
+        {
+          "text": "<listItem><aKonsumenterna>Konsumenterna.se</aKonsumenterna> offers independent information and guidance about mortgages. They also have a loan calculator, where you can calculate how big a loan you may get. The service is completely free of charge, just like ours.</listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "alarm",
+      "title": "Security",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Better safe than sorry! You will not regret it if bad luck strikes."
+        },
+        {
+          "text": "<b>Here are our top tips:</b>"
+        },
+        {
+          "text": "<listItem>Install a smart home alarm, which minimizes damage in the event of a fire, burglary, or water leak. Right now we have a great offer on one of the best solutions on the market.<br><aHomeAlarm>Get a smart home alarm system</aHomeAlarm> from 5 490 kr.</listItem>"
+        },
+        {
+          "text": "<listItem>Make sure there are working smoke detectors, fire extinguishers, and fire blankets in your new home before you move in.</listItem>"
+        },
+        {
+          "text": "<listItem>Check the batteries of the smoke detectors regularly.</listItem>"
+        },
+        {
+          "text": "<listItem>Consider installing a security door and window locks.</listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "tv",
+      "title": "TV & Telephony",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Today there is an almost endless amount of TV & telephony options, and it is not always easy to pick one. "
+        },
+        {
+          "text": "<b>Here are our top tips:</b>"
+        },
+        {
+          "text": "<listItem>Take the opportunity to add a TV package when you purchase an internet plan. We have several affordable options to choose from. <aTv>See our offers on internet plans + TV packages.</aTv></listItem>"
+        },
+        {
+          "text": "<listItem>Do you want to bring your current subscriptions to your new address? Contact the provider and find out if it is possible.</listItem>"
+        },
+        {
+          "text": "<listItem>Check that your mobile operator has good coverage at your new address. Otherwise, maybe it's time to switch to another one.</listItem>"
+        },
+        {
+          "text": "<listItem>Cancel the subscriptions you do not want or cannot move to your new address in time. Try to renegotiate any binding period, so you don't have to pay for something you don't use.</listItem>"
+        },
+        {
+          "text": "<listItem><aTelekom>Telekområdgivarna<aTelekom> offers impartial and free advice on, among other things, television, telephony, and internet plans.</listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "school",
+      "title": "School & Preschool",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Flyttar du med barn i förskole- eller skolåldern?"
+        },
+        {
+          "text": "<b>Are you moving and have children in school or preschool?</b>"
+        },
+        {
+          "text": "<listItem>Do you want your child to stay in the same preschool/school? When moving within the same municipality, it is often possible. Check with the municipality what applies in your case.</listItem>"
+        },
+        {
+          "text": "<listItem>Do you want or need to change preschool/school? Do proper research and compare different options well in advance of the move.<br><aPreschool>Find and compare preschools.</a><br><aSchool>Find and compare primary schools.</aSchool><br><aHighSchool>Find and compare high schools.</aHighSchool></listItem>"
+        },
+        {
+          "text": "<listItem>Visit the schools/preschools you are most interested in before you decide. Ask to see the regulatory documents and curriculum and talk to both teachers and parents.</listItem>"
+        },
+        {
+          "text": "<listItem>Applications for school and preschool are in most cases made via the municipality's website. Some private schools have their own application procedures.</listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "parking",
+      "title": "Parking",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Are you moving to an apartment in a bigger city? If so, finding parking space can be a real challenge, so start looking at different options well in advance."
+        },
+        {
+          "text": "<b>Here are our top tips:</b>"
+        },
+        {
+          "text": "<listItem>Ask how those who lived in the home before you solved parking.</listItem>"
+        },
+        {
+          "text": "<listItem>Some tenant-owner's associations and landlords have garages or outdoor parking. However, there are not always enough spaces for everyone, so get in a potential queue as soon as possible.</listItem>"
+        },
+        {
+          "text": "<listItem>Apply for a residential parking permit via the municipality. The permit entitles you to park at a lower rate in your residential area.<br><aParking>Find out where you can park here.</aParking>.</listItem>"
+        },
+        {
+          "text": "<listItem>Don't forget to review other needs you may have as a car owner. Maybe you need access to a charger or storage of winter tires?</listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "waste",
+      "title": "Waste management",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Don’t let your waste go to waste! With a few simple tricks, you can save both money and the environment."
+        },
+        {
+          "text": "<b>Here are our top tips:</b>"
+        },
+        {
+          "text": "<listItem>If you are moving to a villa or townhouse, you need to sign up for a subscription for trash collection. You do this by contacting the municipality.</listItem>"
+        },
+        {
+          "text": "<listItem>Sort your waste. With less \"regular garbage\", you can choose a less frequent interval between trash collections and lower the price.</listItem>"
+        },
+        {
+          "text": "<listItem>Set up a sorting station in your new home, with separate bins for food waste, paper, plastic, glass, metal, and deposit.</listItem>"
+        },
+        {
+          "text": "<listItem>At <aWaste>sopor.nu</aWaste>, you will find more information about why and how you should sort your waste and where you should leave it. You can also read more on the municipality's website.</listItem>"
+        },
+        {
+          "text": "<listItem>Don't forget to cancel any subscriptions at the address you are moving from well in advance.</listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "gas",
+      "title": "Energy saving",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Energy consumption accounts for a large part of the cost of living in many homes. In other words, there is money to be saved here."
+        },
+        {
+          "text": "<b>Here are our top tips:</b>"
+        },
+        {
+          "text": "<listItem>At <aEnergimyndigheten>Energimyndigheten</aEnergimyndigheten>, you can read about how you can reduce your energy consumption and find energy and climate advisors in your municipality.</listItem>"
+        },
+        {
+          "text": "<listItem><aEnergimarknadsbyra>Konsumenternas Energimarknadsbyrå</aEnergimarknadsbyra> offers independent and free guidance in matters relating to electricity, solar cells, gas, and district heating.</listItem>"
+        },
+        {
+          "text": "<listItem>We have collected some tips on how to reduce your energy consumption in your new home:<br><aVillaTips>Tips if you live in a villa.</aVillaTips><br><aApartmentTips>Tips if you live in an apartment.</aApartmentTips></listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "heat",
+      "title": "Heating",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Are you moving to a villa? As a homeowner, you also own the house's heating system, so familiarize yourself with how it works now already."
+        },
+        {
+          "text": "<b>Here are our top tips:</b>"
+        },
+        {
+          "text": "<listItem>Start by learning more about how your house is heated. At <aVillaAgarna>Villaägarna</aVillaAgarna> you can read about the pros and cons of different heating systems.</listItem>"
+        },
+        {
+          "text": "<listItem>Do you have gas heating or district heating in your new home? Report the change of ownership to the provider well in advance - preferably 30 days before the move.</listItem>"
+        },
+        {
+          "text": "<listItem>Is your house heated with direct electricity?<br><aSavingsTip>Here you will find our best tips for saving energy.</aSavingsTip></listItem>"
+        },
+        {
+          "text": "<listItem><aKonsumentMarknad>Konsumenternas Energimarknadsbyrå</aKonsumentMarknad> offers independent and free guidance in matters relating to electricity, solar cells, gas, and district heating.</listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "water",
+      "title": "Water & Sewage",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Water and sewage is a science on its own. You don't need to know everything, but you should be aware of some things before the move."
+        },
+        {
+          "text": "<b>Here are our top tips:</b>"
+        },
+        {
+          "text": "<listItem>Don't forget to report a change of ownership for the home you are moving from. You do this with the operator responsible for water and sewage in the area, which is usually the municipality. Check the water meter the day you change ownership of the house.</listItem>"
+        },
+        {
+          "text": "<listItem>You do not need to report a change of ownership for the home you are moving to. The person who lived there before you takes care of that.</listItem>"
+        },
+        {
+          "text": "<listItem>Do you have questions or concerns about the installation or maintenance of individual water and sewage systems? At <aAvloppsguiden>Avloppsguiden<aAvloppsguiden> you will find collected information and can search for advisers in your municipality.</listItem>"
+        }
+      ],
+      "linkText": "",
+      "linkUrl": ""
+    },
+    {
+      "name": "transportation",
+      "title": "Moving truck/Trailer",
+      "subtitle": "Move stuff from 255 kr",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Do you manage the move yourself? Do you need to get rid of trash or pick up a sofa? We offer affordable rental cars for both small and big transportation needs, in collaboration with OKQ8."
+        }
+      ],
+      "linkText": "Read more and order",
+      "linkUrl": "/renttruck"
+    }
+  ]
+}

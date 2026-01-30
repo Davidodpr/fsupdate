@@ -1,0 +1,63 @@
+import React from 'react'
+
+export interface MoltoBeneIconProps {
+  color?: string
+  width?: number
+  height?: number
+  className?: string
+}
+
+const MoltoBeneIcon = ({ color, width = 42, height = 56, className }: MoltoBeneIconProps) => {
+  // Use CSS custom property as default, but allow override with color prop
+  const strokeColor = color || 'var(--color-secondary-main)'
+
+  return (
+    <svg width={width} height={height} viewBox="0 0 42 56" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M19.2166 45.5487L21.3534 50.2713C28.2905 49.5917 34.7318 46.6423 40.5537 40.8543L37.5193 36.2025C32.9428 40.7874 26.9228 43.9809 19.2166 45.5487Z"
+        stroke={strokeColor}
+        strokeWidth="1.5"
+        strokeMiterlimit="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        data-testid="icon-path"
+      />
+      <path
+        d="M21.3641 44.7781C19.7063 42.6502 17.6714 40.5969 15.6061 40.4956C10.3094 40.236 -1.68352 30.5378 1.84329 25.7997C3.60301 23.4357 5.05463 26.2454 7.45605 28.7424C9.85747 31.2394 12.4507 32.6133 13.9378 28.6896C15.4249 24.7656 13.2294 21.3486 11.186 20.8828C9.14258 20.417 7.7945 20.2221 5.69379 23.7935C4.22911 26.2839 1.42003 25.1997 1.43705 22.4042C1.4762 15.9699 10.9412 12.6022 16.6231 17.8334C17.1406 18.3095 17.4776 18.676 17.9077 19.2879"
+        stroke={strokeColor}
+        strokeWidth="1.5"
+        strokeMiterlimit="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M15.3342 16.8104C15.3342 16.8104 14.1333 12.7514 6.27689 7.56528C3.0837 5.4572 6.55122 2.50542 8.62696 3.47336C10.7027 4.44131 17.9489 8.93663 21.3626 16.3565"
+        stroke={strokeColor}
+        strokeWidth="1.5"
+        strokeMiterlimit="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M15.4096 8.262C15.4096 8.262 13.4198 5.09093 13.4868 3.79107C13.554 2.49122 14.6848 1.17689 16.236 1.83363C17.7872 2.49008 23.9917 12.5636 24.1364 13.8319"
+        stroke={strokeColor}
+        strokeWidth="1.5"
+        strokeMiterlimit="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M20.4126 7.14038C20.4126 7.14038 20.4038 4.42435 22.6361 4.58152C24.8688 4.73868 27.0875 10.754 28.2549 16.4774C29.9181 24.6314 35.0231 30.2561 35.4466 37.379"
+        stroke={strokeColor}
+        strokeWidth="1.5"
+        strokeMiterlimit="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
+export default MoltoBeneIcon

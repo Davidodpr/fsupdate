@@ -1,0 +1,29 @@
+{
+  "shareOptions": [
+    {
+      "key": "EMAIL",
+      "value": "Epost",
+      "url": "/images/Email2.svg"
+    },
+    {
+      "key": "MESSENGER",
+      "value": "Messenger",
+      "url": "/images/Messenger.svg"
+    },
+    {
+      "key": "WHATSAPP",
+      "value": "Whatsapp",
+      "url": "/images/Whatsapp.svg"
+    },
+    {
+      "key": "MESSAGES",
+      "value": "Meddelanden",
+      "url": "/images/ChatOutlined.svg"
+    },
+    {
+      "key": "COPY_LINK",
+      "value": "Kopiera länk",
+      "url": "/images/Copy.svg"
+    }
+  ]
+}

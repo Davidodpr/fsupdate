@@ -1,0 +1,10 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24.5391 16.1069V9.48438H20.983M24.5391 23.5894V24.4188H6.5332V9.48438H15.9946" stroke="#3879AD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.6875 21.9513V14.7773H21.2969V21.9513H9.6875Z" stroke="#3879AD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="9.68821" cy="12.1294" rx="0.920635" ry="0.920455" fill="#3879AD"/>
+<ellipse cx="15.5359" cy="12.1294" rx="0.920635" ry="0.920455" fill="#3879AD"/>
+<ellipse cx="21.2976" cy="12.1294" rx="0.920635" ry="0.920455" fill="#3879AD"/>
+<path d="M17.857 5.6582L18.457 3.6582L19.057 5.6582L20.457 6.6582L19.057 7.6582L18.457 9.6582L17.857 7.6582L16.457 6.6582L17.857 5.6582Z" stroke="#3879AD" stroke-width="1.5"/>
+<path d="M26.2891 18.4245L27.0391 15.7578L27.7891 18.4245L29.5391 19.7578L27.7891 21.0911L27.0391 23.7578L26.2891 21.0911L24.5391 19.7578L26.2891 18.4245Z" stroke="#3879AD" stroke-width="1.5"/>
+<path d="M2.23906 21.4512L2.53906 20.4512L2.83906 21.4512L3.53906 21.9512L2.83906 22.4512L2.53906 23.4512L2.23906 22.4512L1.53906 21.9512L2.23906 21.4512Z" stroke="#3879AD" stroke-width="1.5"/>
+</svg>

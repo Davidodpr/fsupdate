@@ -1,0 +1,57 @@
+{
+  "pageTitle": "Flyttbil/Släp",
+  "heroTitle": "Flyttbil/Släp ",
+  "heroDescription": "Vi erbjuder prisvärda hyrbilar för små och stora transportbehov, i samarbete med OKQ8.",
+  "heroImageUrl": "",
+  "USPs": {
+    "1": "15% rabatt på hyra av flyttbil under 2024",
+    "2": "Använd kampanjkod FLYTT15",
+    "3": "Fri avbokning och ombokning"
+  },
+  "truck": "Flyttbil",
+  "trailer": "Släpvagn",
+  "trailerFromPrice": "från 255 kr",
+  "truckFromPrice": "från 625 kr",
+  "truckButtonText": "Läs mer och boka",
+  "trailerButtonText": "Läs mer och boka",
+  "truckDescription": "Passar dig som vill sköta hela flytten själv, eller transportera något skrymmande. Välj mellan flera olika modeller, där den största rymmer en normalt möblerad etta på en vända. Allt du behöver är ett B-körkort.",
+  "trailerDescription": "Passar dig som har bil med dragkrok och klarar dig med ett lite mindre lastutrymme. Perfekt när du behöver åka till tippen, förrådet, möbelvaruhuset eller liknande ärenden innan, under och efter flytten.",
+  "exitPopupTitle": "Hur gick det?",
+  "exitPopupDescription": "Har du bokat en flyttbil eller ett släp? Annars hjälper vi dig gärna!",
+  "exitPopupCompleteAction": "Det är bokat och klart",
+  "exitPopupCancelAction": "Jag behöver hjälp",
+  "QNA": [
+    {
+      "question": "Behöver jag något särskilt körkort?",
+      "answer": {
+        "type": "text",
+        "value": "Nej, du får köra alla OKQ8:s flyttbilar och släp med vanligt B-körkort."
+      }
+    },
+    {
+      "question": "Var hämtar jag upp flyttbilen/släpet?",
+      "answer": {
+        "type": "text",
+        "value": "Upphämtning och återlämning sker på någon av OKQ8:s 300 stationer runt om i landet. Du väljer vilken, när du bokar. "
+      }
+    },
+    {
+      "question": "Hur ska jag lasta flyttbilen/släpet?",
+      "answer": {
+        "type": "bullets",
+        "value": [
+          "Börja med de största möblerna och spänn fast dem med spännband.",
+          "Rulla gärna in ömtåliga möbler i mattor eller madrasser. ",
+          "Fyll på med mindre möbler och flyttkartonger. ",
+          "Måste du stapla kartongerna? Ställ de tyngsta underst.",
+          "Behöver du något direkt när du kommer fram? Packa in det sist."
+        ]
+      }
+    }
+  ],
+  "chatDescription": "Har du några andra frågor? Våra flyttexperter finns här för dig.",
+  "chatButtonText": "Chatta",
+  "callButtonText": "Ring",
+  "callCenterNumber": "0812008822",
+  "FAQHeader": "Snabba svar på vanliga frågor"
+}

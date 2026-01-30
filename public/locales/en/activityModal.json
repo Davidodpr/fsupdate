@@ -1,0 +1,18 @@
+{
+  "FREQUENCIES": {
+    "1": "Each",
+    "2": "Every other",
+    "4": "Every fourth"
+  },
+  "ADDON_SERVICES": {
+    "storage": "Temporary storage",
+    "packaging": "Packing",
+    "handyman": "Handyman"
+  },
+  "consentInfo": "The other legal guardian must consent to this move in the Swedish Tax Agency service “Consent to the moving of a child”. Ask them to do so within a week.",
+  "deliveryBy": "Delivered by",
+  "hemfixarna": "Hemfixarna",
+  "suggestedDate": "Suggested date for installation",
+  "products": "Ordered products and services: ",
+  "talkToPro": "Dryft"
+}

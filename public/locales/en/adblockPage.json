@@ -1,0 +1,11 @@
+{
+  "header": "The website couldn't load correctly",
+  "firstInfoSection": "It looks like your browser is blocking our cookie settings. Please follow the steps below to access all features.",
+  "contactUsTitle": "Need assistance?",
+  "listTitle": "What you can try:",
+  "listItem1": "Temporarily disable your ad blocker. 🚫",
+  "listItem2": "Reload the page. 🔄",
+  "infoSectionTitle": "What’s causing this?",
+  "infoSectionText": "Our website uses cookies to improve your experience. If you’re using a browser extension that blocks cookies, it may prevent the site from functioning properly.",
+  "reloadPage": "Reload the page"
+}

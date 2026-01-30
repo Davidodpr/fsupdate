@@ -1,0 +1,33 @@
+import React, { ReactNode } from 'react'
+import initTranslations from 'app/i18n'
+import { Metadata } from 'next'
+import TranslationsProvider from 'providers/TranslationProvider'
+import getI18nNamespaces from '@/appComponents/getI18nNamespaces'
+
+interface Props {
+  children: ReactNode
+  params: Promise<{
+    locale: string
+  }>
+}
+
+export const metadata: Metadata = {
+  title: 'Elavtal | Flyttsmart',
+  description: 'Jämför och teckna elavtal enkelt',
+}
+
+const i18nNamespaces = getI18nNamespaces('elavtal')
+
+export default async function ElavtalLayout(props: Props) {
+  const params = await props.params
+  const { locale } = params
+  const { children } = props
+
+  const { resources } = await initTranslations(locale, i18nNamespaces)
+
+  return (
+    <TranslationsProvider namespaces={i18nNamespaces} locale={locale} resources={resources}>
+      {children}
+    </TranslationsProvider>
+  )
+}

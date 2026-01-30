@@ -1,0 +1,11 @@
+{
+  "header": "Webbplatsen kunde inte laddas korrekt!",
+  "firstInfoSection": "Din webbläsare verkar blockera vår cookiehantering. Följ stegen nedan för att få tillgång till alla funktioner.",
+  "contactUsTitle": "Behöver du hjälp?",
+  "listTitle": "Vad du kan testa att göra:",
+  "listItem1": "Inaktivera din annonseringsblockerare tillfälligt. 🚫",
+  "listItem2": "Ladda om sidan. 🔄",
+  "infoSectionTitle": "Varför händer detta?",
+  "infoSectionText": "Vår webbplats använder cookies för att ge dig en bättre upplevelse. Om du har en webbläsartillägg som blockerar cookies, kan det hindra sidan från att fungera korrekt.",
+  "reloadPage": "Ladda om sidan"
+}

@@ -1,0 +1,12 @@
+{
+  "startDate": "Start date",
+  "label": "Homecleaning",
+  "CONFIRMATION": {
+    "title": "Hurray, your home will be sparkling clean!",
+    "address": "Address",
+    "frequency": "Frequency",
+    "yourPrice": "Your price",
+    "successFurtherInfoText": "We will call you shortly to review the final details.",
+    "subtitle": "We have received your order for home cleaning."
+  }
+}

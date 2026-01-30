@@ -1,0 +1,91 @@
+import { useTranslation } from 'react-i18next'
+import { useRouter } from 'next/navigation'
+import useResponsive from '@/common/hooks/useResponsive'
+import Button from '@/components/atoms/Button'
+import Flex from '@/components/atoms/Flex'
+import ArrowRightThin from '@/components/atoms/Icons/ArrowRightThin'
+import ImageKit from '@/components/atoms/ImageKit'
+import Text from '@/components/atoms/Text'
+import CloseThin from '@/public/images/Close_thin.svg'
+import { welcomeSectionWrapperVariants, closeWrapperVariants, styledFlexVariants } from './WelcomeSection.variants'
+
+interface WelcomeSectionProps {
+  setShowWelcomeSection: (value: boolean) => void
+  assignedMcAdminId?: string
+  assignedMcAdminName?: string
+}
+
+const WelcomeSection = ({ setShowWelcomeSection, assignedMcAdminId, assignedMcAdminName }: WelcomeSectionProps) => {
+  const { t } = useTranslation('movePage')
+  const router = useRouter()
+  const { isTabletPortraitOrGreater } = useResponsive()
+
+  // Extract only the first name if multiple names are separated by " / "
+  const firstName = assignedMcAdminName?.split('/')[0]?.trim() || 'Joel'
+
+  return (
+    <>
+      <section className={welcomeSectionWrapperVariants()}>
+        <Flex alignItems={isTabletPortraitOrGreater ? 'start' : 'center'} style={{ gap: 24 }}>
+          <Flex direction="column">
+            <Text style={{ color: 'var(--fs-colors-secondaryMain)', textAlign: isTabletPortraitOrGreater ? 'left' : 'left' }} variant="larger" spacing="none">
+              {t('WELCOME_SECTION.welcome')}
+            </Text>
+            <Flex
+              className={styledFlexVariants()}
+              direction={isTabletPortraitOrGreater ? 'row' : 'column'}
+              alignItems={isTabletPortraitOrGreater ? 'start' : 'center'}
+              justifyContent="center"
+            >
+              <Flex direction="column">
+                <Text spacing="none" style={{ color: 'var(--fs-colors-secondaryDark)', fontSize: 'var(--fs-fontSizes-5)', textAlign: isTabletPortraitOrGreater ? 'left' : 'left' }}>
+                  {t('WELCOME_SECTION.welcomeText')}
+                </Text>
+                <Text spacing="none" style={{ color: 'var(--fs-colors-secondaryDark)', fontSize: 'var(--fs-fontSizes-5)', textAlign: isTabletPortraitOrGreater ? 'left' : 'left' }}>
+                  {t('WELCOME_SECTION.welcomeTextSubSection')}
+                </Text>
+                <Flex alignItems="end" style={{ paddingTop: 13 }} justifyContent={isTabletPortraitOrGreater ? 'start' : 'start'}>
+                  <div style={{ borderRadius: '50%', border: '1px solid #bfbfbf', width: 32, height: 32, overflow: 'hidden' }}>
+                    <ImageKit src={`/Marketing/site_images/${assignedMcAdminId}.jpg`} alt="Moving Coordinator" width={32} height={32} />
+                  </div>
+                  <Text
+                    spacing="none"
+                    style={{
+                      color: 'var(--fs-colors-secondaryMain)',
+                      fontSize: 'var(--fs-fontSizes-5)',
+                      textAlign: isTabletPortraitOrGreater ? 'left' : 'center',
+                      paddingLeft: 4,
+                      fontWeight: 'var(--fs-fontWeights-bold)',
+                    }}
+                  >
+                    {t('WELCOME_SECTION.movingCoordinator', { name: firstName })}
+                  </Text>
+                </Flex>
+              </Flex>
+              <Button
+                largerArrowRight
+                iconRight={<ArrowRightThin />}
+                iconColor="#fff"
+                withMaxContentWidth={isTabletPortraitOrGreater}
+                withFullWidth={!isTabletPortraitOrGreater}
+                padding={isTabletPortraitOrGreater ? '4px 32px' : '10px 16px 10px 32px'}
+                text={t('WELCOME_SECTION.getQuotations')}
+                onClick={() => router.push('/app/movehelp')}
+              />
+            </Flex>
+          </Flex>
+          <div className={closeWrapperVariants()}>
+            <CloseThin
+              onClick={() => {
+                setShowWelcomeSection(false)
+                window.localStorage.setItem('hasClosedWelcome', 'true')
+              }}
+            />
+          </div>
+        </Flex>
+      </section>
+    </>
+  )
+}
+
+export default WelcomeSection

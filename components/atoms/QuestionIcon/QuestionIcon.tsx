@@ -1,0 +1,40 @@
+import React from 'react'
+
+export interface QuestionIconProps {
+  color?: string
+  width?: number
+  height?: number
+  className?: string
+}
+
+const QuestionIcon = ({ color, width = 25, height = 25, className }: QuestionIconProps) => {
+  // Use CSS custom property as default, but allow override with color prop
+  const strokeColor = color || 'var(--color-secondary-main)'
+  const fillColor = color || 'var(--color-secondary-main)'
+
+  return (
+    <svg width={width} height={height} viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+      <path
+        d="M12.75 21.9805C17.7206 21.9805 21.75 17.951 21.75 12.9805C21.75 8.00991 17.7206 3.98047 12.75 3.98047C7.77944 3.98047 3.75 8.00991 3.75 12.9805C3.75 17.951 7.77944 21.9805 12.75 21.9805Z"
+        stroke={strokeColor}
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        data-testid="icon-path"
+      />
+      <path
+        d="M12.75 18.793C13.2678 18.793 13.6875 18.3732 13.6875 17.8555C13.6875 17.3377 13.2678 16.918 12.75 16.918C12.2322 16.918 11.8125 17.3377 11.8125 17.8555C11.8125 18.3732 12.2322 18.793 12.75 18.793Z"
+        fill={fillColor}
+      />
+      <path
+        d="M12.75 14.4805V13.7305C13.2692 13.7305 13.7767 13.5765 14.2084 13.2881C14.6401 12.9996 14.9765 12.5897 15.1752 12.11C15.3739 11.6304 15.4258 11.1026 15.3246 10.5934C15.2233 10.0842 14.9733 9.61643 14.6062 9.24932C14.239 8.8822 13.7713 8.63219 13.2621 8.53091C12.7529 8.42962 12.2251 8.48161 11.7455 8.68029C11.2658 8.87897 10.8558 9.21542 10.5674 9.6471C10.279 10.0788 10.125 10.5863 10.125 11.1055"
+        stroke={strokeColor}
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
+export default QuestionIcon

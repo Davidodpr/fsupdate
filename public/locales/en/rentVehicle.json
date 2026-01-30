@@ -1,0 +1,57 @@
+{
+  "pageTitle": "Moving truck/Trailer",
+  "heroTitle": "Moving truck/Trailer",
+  "heroDescription": "We offer affordable rental cars for both small and big transportation needs, in collaboration with OKQ8.",
+  "heroImageUrl": "",
+  "USPs": {
+    "1": "15% discount on truck rentals in 2024",
+    "2": "Use campaign code FLYTT15",
+    "3": "Free to cancel and rebook"
+  },
+  "truck": "Truck",
+  "trailer": "Trailer",
+  "trailerFromPrice": "from 255 sek",
+  "truckFromPrice": "from 625 sek",
+  "truckButtonText": "Read more and book",
+  "trailerButtonText": "Read more and book",
+  "truckDescription": "Perfect if you want to manage the entire move by yourself, or just transport bulky furniture. Pick between multiple models, the largest can fit a one bedroom apartment in one go. All you need is a normal category B driving licence.",
+  "trailerDescription": "Suitable if you have a car with a tow bar and don’t need huge amounts of cargo space. Perfect when you need to drive by the recycling center, the storage, the furniture store or go other errands before, during or after the move.",
+  "exitPopupTitle": "How did it go?",
+  "exitPopupDescription": "Did you book a moving truck or trailer? Otherwise we are happy to help!",
+  "exitPopupCompleteAction": "It’s booked and done!",
+  "exitPopupCancelAction": "I need help",
+  "QNA": [
+    {
+      "question": "Do I need a special drivers licence?",
+      "answer": {
+        "type": "text",
+        "value": "Nope, you can drive all of OKQ8’s vehicles and trailers with a normal category B driving licence."
+      }
+    },
+    {
+      "question": "Where do I pick up the moving truck/trailer?",
+      "answer": {
+        "type": "text",
+        "value": "You do the pick up and return on one of OKQ8’s 300 stations all across the country. You decide which one when you do the booking."
+      }
+    },
+    {
+      "question": "How should I load the moving truck?",
+      "answer": {
+        "type": "bullets",
+        "value": [
+          "Start with the biggest furniture and secure them using tie down straps.",
+          "Wrap fragile furniture in carpets or mattresses.",
+          "Add smaller furniture and moving boxes.",
+          "Need to stack the boxes? Put the heaviest ones at the bottom.",
+          "Need something as soon as you arrive? Pack it last."
+        ]
+      }
+    }
+  ],
+  "chatDescription": "Do you have other questions? Our move experts are here for you.",
+  "chatButtonText": "Chat",
+  "callButtonText": "Call",
+  "callCenterNumber": "0812008822",
+  "FAQHeader": "Quick answers to common questions"
+}

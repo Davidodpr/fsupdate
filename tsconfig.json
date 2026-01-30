@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext", "es6"],
+    "checkJs": false,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "typeRoots": ["./node_modules/@types", "./@types"],
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/common/*": ["common/*"],
+      "@/modules/*": ["modules/*"],
+      "@/pages/*": ["pages/*"],
+      "@/public/*": ["public/*"],
+      "@/styles/*": ["styles/*"],
+      "@/theme/*": ["theme/*"],
+      "@/hooks/*": ["common/hooks/*"],
+      "@/api/'": ["common/api/*"],
+      "@/context/'": ["common/context/*"],
+      "@/utils/*": ["common/utils/*"],
+      "@/enums/*": ["common/enums/*"],
+      "@/query-client/*": ["common/query-client/*"],
+      "@/types/*": ["common/types/*"],
+      "@/templates/*": ["templates/*"],
+      "@/constants/*": ["constants/*"],
+      "@/pagesOld/*": ["pagesOld/*"],
+      "@/pageTypes/*": ["types/*"],
+      "i18n": ["app/i18n.js"],
+      "@/layoutComponents/*": ["app/(startpage)/[locale]/_components/*"],
+      "@/appComponents/*": ["app/_components/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": ["index.d.ts", "next.config.js", "**/*.ts", "**/*.tsx", "**/*.js", "jest.setup.js", ".next/types/**/*.ts"],
+  "exclude": ["node_modules", "blueprint-templates", "next-env.d.ts", "scripts", "visual-comparison.ts"]
+}

@@ -1,0 +1,12 @@
+{
+  "startDate": "Startdatum",
+  "label": "Hemstädning",
+  "CONFIRMATION": {
+    "title": "Hurra, nu slipper du städa!",
+    "address": "Adress",
+    "frequency": "Frekvens",
+    "yourPrice": "Ditt pris",
+    "successFurtherInfoText": "Vi ringer dig inom kort, för att gå igenom de sista detaljerna.",
+    "subtitle": "Vi har tagit emot din bokning av hemstädning."
+  }
+}

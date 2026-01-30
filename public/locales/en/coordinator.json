@@ -1,0 +1,28 @@
+{
+  "metaTitle": "Flyttsmart Moving Coordinator",
+  "metaDescription": "{{name}} called you from Flyttsmart. Call back at {{phone}} or send an email.",
+  "pageTitle": "Missed call?",
+  "pageSubtitle": "Here's your moving coordinator",
+  "coordinator": "Moving Coordinator",
+  "calledYouFrom": "called you from",
+  "heroImageAlt": "{{name}}, your moving coordinator at Flyttsmart",
+  "cta": {
+    "callBack": "Call back now",
+    "email": "Email",
+    "sms": "SMS",
+    "callAriaLabel": "Call {{name}} at {{phone}}",
+    "emailAriaLabel": "Email {{name}} at {{email}}",
+    "smsAriaLabel": "Send SMS to Flyttsmart"
+  },
+  "description": "When invited to <1>Flyttsmart</1>, you get a personal coordinator who guides you through the entire move – from contract signing to moving day.",
+  "testimonials": {
+    "title": "+200,000 helped customers",
+    "subtitle": "What do other customers say?",
+    "starsRating": "{{rating}} stars"
+  },
+  "notFound": {
+    "title": "Coordinator not found",
+    "description": "We couldn't find a moving coordinator with that phone number.",
+    "backToHome": "Back to homepage"
+  }
+}

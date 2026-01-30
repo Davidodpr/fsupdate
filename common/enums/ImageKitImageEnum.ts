@@ -1,0 +1,18 @@
+export const IMAGEKIT_IMAGES = {
+  MOVECLEAN_HERO: 'https://ik.imagekit.io/flyttsmart/Suppliers/Movehelp_and_cleaning/flyttsmart_moveclean_bg_5HInQHlf6.png?updatedAt=1700479458830',
+  MOVEHELP_HERO: 'https://ik.imagekit.io/flyttsmart/Suppliers/Movehelp_and_cleaning/flyttsmart_movehelp_R23Hj_E77.png',
+  SHOWCLEANING_HERO: 'https://ik.imagekit.io/flyttsmart/Suppliers/Movehelp_and_cleaning/showcleaning_image_0fT8BQuIL.jpeg?updatedAt=1701340214235',
+  APARTMENT_NUMBER_GUIDE: 'https://ik.imagekit.io/flyttsmart/Products/Electricity/apt-number-guide__1__sHq0ZAsPI.svg?updatedAt=1686664728097',
+  BROADBAND_SPEED: 'https://ik.imagekit.io/flyttsmart/Products/Broadband/speed_kOaENWwnf.svg?updatedAt=1687272482982',
+  RECOMMENDATION_EXPERT: 'https://ik.imagekit.io/flyttsmart/Marketing/Andreas_T5Co0hhti.svg?updatedAt=1684119690319',
+  DYNAMIC_PRICE_PER_HOUR_MOVEHELP: 'https://ik.imagekit.io/flyttsmart/Products/MovingAndCleaning/movehelp_image_0_2PJoqK6.png?updatedAt=1702395033952',
+  DYNAMIC_PRICE_PER_HOUR_MOVECLEAN: 'https://ik.imagekit.io/flyttsmart/Suppliers/Movehelp_and_cleaning/flyttsmart_moveclean_bg_5HInQHlf6.png?updatedAt=1700479459273',
+  DYNAMIC_PRICE_PER_HOUR_PACKAGING: 'https://ik.imagekit.io/flyttsmart/Products/MovingAndCleaning/packaging_image_GwfD0PqbV.png?updatedAt=1702477146032',
+  MOVE_EXPERT: 'https://ik.imagekit.io/flyttsmart/Products/MovingAndCleaning/Talk%20to%20a%20move%20expert_Z7bkuvnj_a.svg?updatedAt=1702628641542',
+  HANDYMAN: 'https://ik.imagekit.io/flyttsmart/Products/MovingAndCleaning/Talk%20to%20a%20handyman_iIVScLwku.svg?updatedAt=1702628641646',
+  LAWYER: 'https://ik.imagekit.io/flyttsmart/Products/MovingAndCleaning/Talk%20to%20a%20lawyer_eNYwsCKyt.svg?updatedAt=1702628641540',
+  MOVEHELP_BG_MOBILE: 'https://ik.imagekit.io/flyttsmart/Products/MovingAndCleaning/movehlp_bg_mobile_4Oi7R_zOm.jpg?updatedAt=1702981364842',
+  MOVEHELP_BG_DESKTOP: 'https://ik.imagekit.io/flyttsmart/Products/MovingAndCleaning/movehlp_bg_MWHjYOvtL.jpg?updatedAt=1702981283593',
+  PAINTING_BG_MOBILE: 'https://ik.imagekit.io/flyttsmart/Products/Painting/anshu-a-08tZCw1ePhg-unsplash_4VL7hbSZt.jpg?updatedAt=1706688119715',
+  PAINTING_BG_DESKTOP: 'https://ik.imagekit.io/flyttsmart/Products/Painting/anshu-a-08tZCw1ePhg-unsplash_4VL7hbSZt.jpg?updatedAt=1706688119715',
+}

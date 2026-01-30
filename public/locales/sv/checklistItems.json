@@ -1,0 +1,187 @@
+{
+  "CHECKLIST_ITEMS": [
+    {
+      "name": "addresschange",
+      "title": "Flyttanmälan till Skatteverket",
+      "subtitle": "Kostnadsfritt",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Ska du bo på din nya adress i över sex månader? Då måste du anmäla flytten till Skatteverket."
+        },
+        {
+          "text": "Få det gjort snabbt och enkelt direkt här på Flyttsmart, så har du en sak mindre att tänka på."
+        }
+      ],
+      "linkText:": "",
+      "linkUrl": "/addresschange"
+    },
+    {
+      "name": "power",
+      "title": "Elavtal",
+      "subtitle": "Från [price] kr/månad",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Jämför beräknade elpriser för din nya bostad och teckna ett elavtal på två minuter."
+        },
+        {
+          "text": "Passa även på att säga upp ditt nuvarande avtal – dubbla räkningar gör ingen glad!"
+        }
+      ],
+      "linkText:": "",
+      "linkUrl": "/electricity"
+    },
+    {
+      "name": "internet",
+      "title": "Bredband",
+      "subtitle": "Från [price] kr/månad",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Se alla bredband som är tillgängliga på din nya adress och välj det som passar dig bäst."
+        },
+        {
+          "text": "Säg upp ditt nuvarande bredband när du ändå är i farten – hur smidigt som helst!"
+        }
+      ],
+      "linkText:": "",
+      "linkUrl": "/broadband?new=true"
+    },
+    {
+      "name": "insurance",
+      "title": "Hemförsäkring",
+      "subtitle": "10% rabatt på If hemförsäkring",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Tecka en hemförsäkring hos If, så får du 10 % rabatt hela det första året!"
+        },
+        {
+          "text": "Säg även upp din nuvarande hemförsäkring – den behöver du inte så länge till!"
+        }
+      ],
+      "linkText:": "",
+      "linkUrl": "/insurance"
+    },
+    {
+      "name": "showCleaning",
+      "title": "Visningsstädning",
+      "subtitle": "",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "linkText:": "",
+      "linkUrl": "/showcleaning"
+    },
+    {
+      "name": "movehelp",
+      "title": "Flytthjälp",
+      "subtitle": "Boka flytthjälp från [price] kr",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Låt någon av våra utvalda och kvalitetssäkrade flyttfirmor göra det tunga jobbet."
+        },
+        {
+          "text": "Din rygg kommer att tacka dig – och du kan vara säker på att dina saker är i trygga händer."
+        }
+      ],
+      "linkText:": "",
+      "linkUrl": "/movehelp?product=moving"
+    },
+    {
+      "name": "moveclean",
+      "title": "Flyttstädning",
+      "subtitle": "Boka flyttstädning från [price] kr",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "De flesta som väljer att flyttstäda själva ångrar sitt beslut. Många ger faktiskt upp mitt i."
+        },
+        {
+          "text": "Anlita en av våra kvalitetssäkrade städfirmor på en gång, så slipper du vara efterklok."
+        }
+      ],
+      "linkText:": "",
+      "linkUrl": "/movehelp?product=cleaning"
+    },
+    {
+      "name": "movehelpCombined",
+      "title": "Flytthjälp/Flyttstädning",
+      "subtitle": "Boka flytthjälp från [price] kr",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Låt någon av våra utvalda och kvalitetssäkrade flyttfirmor göra det tunga jobbet. Din rygg kommer att tacka dig – och du kan vara säker på att dina saker är i trygga händer."
+        }
+      ],
+      "linkText:": "",
+      "linkUrl": "/movehelp"
+    },
+    {
+      "name": "diy",
+      "title": "Skaffa flyttkartonger",
+      "subtitle": "Snabb hemleverans ingår!",
+      "MODAL_DESCRIPTION": [
+        {
+          "text": "Bananlådor och papperskassar är ingen bra idé, om du vill att dina saker ska komma fram hela.  "
+        },
+        {
+          "text": "Beställ våra rejäla flyttkartonger och ett prisvärt flyttkit idag – börja packa redan imorgon!"
+        }
+      ],
+      "linkText:": "",
+      "linkUrl": "/flyttkartonger"
+    }
+  ],
+  "CHECKLIST_ITEMS_MOVEPAGE": [
+    {
+      "name": "addresschange",
+      "title": "Flyttanmälan",
+      "subtitle": "Anmäl din flytt till Skatteverket här",
+      "linkText": "Anmäl din flytt",
+      "linkUrl": "/app/addresschange"
+    },
+    {
+      "name": "power",
+      "title": "Elavtal",
+      "subtitle": "Jämför, teckna och säg upp elavtal {{break}} - Allt på ett ställe",
+      "linkText": "Hantera elavtal",
+      "linkUrl": "/app/electricity"
+    },
+    {
+      "name": "internet",
+      "title": "Bredband",
+      "subtitle": "Se och jämför tillgängliga bredband till {{address}}",
+      "linkText": "Hantera bredband",
+      "linkUrl": "/app/broadband"
+    },
+    {
+      "name": "insurance",
+      "title": "Hemförsäkring",
+      "subtitle": "Få hjälp med din hemförsäkring till {{address}}",
+      "linkText": "Flytta hemförsäkring",
+      "linkUrl": "/app/insurance"
+    },
+    {
+      "name": "showCleaning",
+      "title": "Visningsstädning",
+      "subtitle": "",
+      "linkText": "Anmäl din flytt",
+      "linkUrl": "/app/showcleaning"
+    },
+    {
+      "name": "movehelp",
+      "title": "Flytthjälp",
+      "subtitle": "Få en prisvärd flyttoffert - anpassad för just din flytt.",
+      "linkText": "Få offert",
+      "linkUrl": "/app/movehelp"
+    },
+    {
+      "name": "moveclean",
+      "title": "Flyttstädning",
+      "subtitle": "Jämför de bästa, mest prisvärda städfirmorna nära dig och boka direkt!",
+      "linkText": "Boka flyttstädning",
+      "linkUrl": "/app/moveclean"
+    }
+  ]
+}

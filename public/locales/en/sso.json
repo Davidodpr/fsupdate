@@ -1,0 +1,21 @@
+{
+  "prepareMovepage": "Preparing your move page",
+  "welcomeToFlyttsmart": "Welcome to Flyttsmart!",
+  "welcomeText": "A service for those who want a simple, flexible and safe moving experience!",
+  "getItDone": "Get it done",
+  "terms": "By using Flyttsmart I accept the  ",
+  "termsLinkText": "user agreement.",
+  "tryAgainText": "We could not get your move page.",
+  "contactUsText": "Please contact us, if the problem remains.",
+  "login": "Log in to flyttsmart.se",
+  "loginFailed": "Login failed",
+  "10Seconds": "It may take up to 10 seconds",
+  "loginFailedText": "Something went wrong with the login, most likely becuase the invitation code is already used. Please try to login again and conctact us if the issue persists.",
+  "LOGIN_TEXTS": {
+    "1": "Preparing your move",
+    "2": "Finding moving companies",
+    "3": "Collects electricity contracts",
+    "4": "Compiles cleaning companies",
+    "5": "Comparing broadband"
+  }
+}

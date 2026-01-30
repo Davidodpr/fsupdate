@@ -1,0 +1,32 @@
+{
+  "title": "Electricity Contract Leaderboard",
+  "subtitle": "Top 25",
+  "description": "See who's at the top right now ⚡",
+  "leaderboard": {
+    "rank": "Rank",
+    "broker": "Broker",
+    "documents": "Signatures",
+    "noData": "No data available",
+    "loading": "Loading leaderboard...",
+    "error": "Could not load leaderboard",
+    "retry": "Try again",
+    "unknownBroker": "Unknown broker",
+    "topPerformers": "Top Performers",
+    "otherPositions": "Places 4-25"
+  },
+  "metrics": {
+    "documentsUnit": "pcs",
+    "signaturesUnit": "Signatures"
+  },
+  "footer": {
+    "refreshAutomatically": "Updates automatically every 5 minutes"
+  },
+  "rules": {
+    "title": "Competition Rules",
+    "content": "Starting from <strong>September 1st</strong>, you have the opportunity to help your customers with electricity contracts already at contract signing. Flyttsmart ensures that customers receive help with both termination and new contracts.\n\nEach unique power of attorney gives <strong>1 or 2 points</strong>, which means that a contract signing can give a maximum of <strong>2 points</strong>. <strong>1 point</strong> if the buyer signs the power of attorney (new contract) and <strong>1 point</strong> if the seller signs the power of attorney (termination).\n\nThe broker who collects the most points between <strong>September 1st</strong> and <strong>November 30th</strong> wins a <span class=\"golden-ticket\">GOLDEN TICKET</span>, worth <span class=\"prize-money\">SEK 10,000</span>. We will also draw a bonus winner from all those who have submitted electricity powers of attorney, worth <span class=\"prize-money\">SEK 3,000</span>."
+  },
+  "contact": {
+    "title": "Questions?",
+    "text": "Contact Sebastian@flyttsmart.se"
+  }
+}

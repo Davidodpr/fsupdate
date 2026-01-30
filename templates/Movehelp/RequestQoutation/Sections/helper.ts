@@ -1,0 +1,8 @@
+export const TO_ADDRESS_ERROR = 'toAddress'
+export const FROM_ADDRESS_ERROR = 'fromAddress'
+export const SQM_ERROR = 'sqm'
+export const RESIDENCETYPE_ERROR = 'residenceType'
+export const STAIRS_ERROR = 'stairs'
+export const HEAVY_ITEM_ERROR = 'heavyItem'
+export const ADDITIONAL_SPACE_ERROR = 'additionalSpace'
+export const PARKING_ANSWER_ERROR = 'parkingAnswer'
