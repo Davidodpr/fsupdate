@@ -6,6 +6,7 @@ import { clsx } from 'clsx'
 import dynamic from 'next/dynamic'
 import useResponsive from '@/common/hooks/useResponsive'
 import { useCookieFirst } from '@cookiefirst/cookiefirst-react'
+import type { GoogleReview, GoogleReviewCountAndRating } from 'app/_actions/googleReviews'
 import Contact from './components/contact'
 import FAQ from './components/faq'
 import HowItWorks from './components/howItWorks'
@@ -17,9 +18,11 @@ const Testimonials = dynamic(() => import('./components/testimonials'), { ssr: f
 
 interface LandingPageProps {
   isServerIosOrSafari: boolean
+  googleReviews?: GoogleReview[] | null
+  googleRating?: GoogleReviewCountAndRating | null
 }
 
-export const LandingPage = ({ isServerIosOrSafari }: LandingPageProps) => {
+export const LandingPage = ({ isServerIosOrSafari, googleReviews, googleRating }: LandingPageProps) => {
   const { changeLanguage } = useCookieFirst()
   const { i18n } = useTranslation('')
   changeLanguage(i18n.language)
@@ -44,7 +47,7 @@ export const LandingPage = ({ isServerIosOrSafari }: LandingPageProps) => {
           )}
         >
           <div className="w-full px-4 md:px-8 max-w-[1232px]">
-            <Testimonials />
+            <Testimonials googleReviews={googleReviews} googleRating={googleRating} />
           </div>
         </section>
 

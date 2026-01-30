@@ -30,7 +30,7 @@ export function middleware(request: NextRequest) {
     }
   }
   if (request.nextUrl.pathname === '/' || request.nextUrl.pathname === '/en') {
-    if (cookie) {
+    if (process.env.NODE_ENV !== 'development' && cookie) {
       return NextResponse.redirect(new URL(`${request.nextUrl.origin}${request.nextUrl.pathname}/app/movepage`))
     }
   }
