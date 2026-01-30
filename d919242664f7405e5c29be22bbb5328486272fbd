@@ -1,0 +1,34 @@
+=== ÄNDRINGAR: Animerad checklist i hero-mockupen ===
+
+BAKGRUND:
+Ersatte den statiska scrollande app-screenshoten i iPhone-mockupen på landningsidan
+med en live CSS-animerad dashboard som visar hur appen fungerar.
+
+ÄNDRADE FILER:
+- templates/landing/components/landingHero.tsx
+  → Tog bort Image-import och statisk screenshot
+  → Tog bort style jsx-block med scroll/success/checkmark-animationer
+  → Importerar och renderar AnimatedDashboard inuti telefon-framen
+
+- templates/landing/components/AnimatedDashboard.tsx (NY FIL)
+  → Pure CSS-animerad dashboard-komponent (inga JS-timers)
+  → Header med "Din flytt", från/till-adresser, progress bar
+  → 7 checklist-items som bockas av ett i taget (individuella keyframes per item)
+  → "Personlig kontakt" banner under checklistan
+  → "Flytten klar!" celebration-overlay (grön gradient, stor bock)
+  → 10s cykel, loopar oändligt, instant reset (inte fade-out)
+
+- styles/globals.css
+  → 14 nya @keyframes: check-0 till check-6, checkmark-0 till checkmark-6,
+    dashboard-progress, dashboard-celebration
+  → Motsvarande .animated-dashboard .dashboard-check-N utility-klasser
+
+- app/_components/topNav/laptopMenu.tsx
+- app/_components/topNav/mobileMenu.tsx
+  → Login-knappar pekar till /i/testmode i development-läge
+
+TEKNISKA BESLUT:
+- Individuella keyframes per item istället för animation-delay (delay funkar bara
+  på första iterationen av infinite animation, inte vid loop)
+- CSS-only, ingen JavaScript state — allt drivs av @keyframes
+- Visas på alla skärmstorlekar (inte bara mobil)
