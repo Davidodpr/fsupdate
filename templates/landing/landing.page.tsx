@@ -7,7 +7,6 @@ import dynamic from 'next/dynamic'
 import useResponsive from '@/common/hooks/useResponsive'
 import { useCookieFirst } from '@cookiefirst/cookiefirst-react'
 import type { GoogleReview, GoogleReviewCountAndRating } from 'app/_actions/googleReviews.types'
-import Contact from './components/contact'
 import FAQ from './components/faq'
 import HowItWorks from './components/howItWorks'
 import LandingHero from './components/landingHero'
@@ -81,17 +80,31 @@ export const LandingPage = ({ isServerIosOrSafari, googleReviews, googleRating }
           </div>
         </section>
 
-        {/* Contact & Footer Sections */}
-        <section
-          id="contact"
-          className={clsx(
-            'w-screen flex pt-8 justify-center',
-            'bg-[var(--color-white-main)] text-[var(--color-secondary-main)]',
-            'py-16 md:py-24 pb-8'
-          )}
-        >
+        {/* CTA Section */}
+        <section className="w-screen flex justify-center bg-white py-16 md:py-20">
           <div className="w-full px-4 md:px-8 max-w-[1232px]">
-            <Contact />
+            <div className="text-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-[var(--color-secondary-main)] mb-4">
+                Har du frågor?
+              </h2>
+              <p className="text-[var(--color-secondary-main)]/60 mb-8 max-w-[480px] mx-auto">
+                Vi finns här för dig. Ring, maila eller läs mer om hur vi kan hjälpa dig flytta smartare.
+              </p>
+              <div className="flex flex-wrap justify-center gap-4">
+                <a
+                  href="/kontakt"
+                  className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-[var(--color-primary-main)] text-white font-semibold hover:bg-[var(--color-primary-main)]/85 transition-colors"
+                >
+                  Kontakta oss
+                </a>
+                <a
+                  href="/tjanster"
+                  className="inline-flex items-center gap-2 px-8 py-3 rounded-full border-2 border-[var(--color-secondary-main)]/15 text-[var(--color-secondary-main)] font-semibold hover:border-[var(--color-primary-main)] hover:text-[var(--color-primary-main)] transition-colors"
+                >
+                  Se våra tjänster
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 

@@ -1,14 +1,69 @@
-import React from 'react'
-import { useTranslation } from 'react-i18next'
+'use client'
+
+import React, { useState } from 'react'
 import NextLink from 'next/link'
 import { useRouter, usePathname } from 'next/navigation'
-import ServiceUrlEnum from '@/common/enums/ServiceUrlEnum'
+import { isClientDemoMode } from '@/common/utils/demoMode'
 import Button from '@/components/atoms/Button'
 import Flex from '@/components/atoms/Flex'
-import { LanguageSelect } from '@/components/molecules/LanguageSelect'
-import Link from '@/components/molecules/Link'
-import Globe from '@/public/images/Globe.svg'
-import { headerMenuButtonVariants, styledLinkVariants } from './Menu.variants'
+
+interface DropdownItem {
+  label: string
+  href: string
+}
+
+interface NavItemProps {
+  label: string
+  href?: string
+  items?: DropdownItem[]
+  currentPath: string
+}
+
+function NavItem({ label, href, items, currentPath }: NavItemProps) {
+  const [open, setOpen] = useState(false)
+  const isActive = href ? currentPath === href : items?.some((item) => currentPath === item.href)
+
+  if (!items) {
+    return (
+      <NextLink
+        href={href || '/'}
+        className={`relative text-[15px] font-bold uppercase transition-colors pb-1 ${isActive ? 'text-[var(--color-primary-main)]' : 'text-[var(--color-secondary-main)] hover:text-[var(--color-primary-main)]'}`}
+      >
+        {label}
+        {isActive && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[var(--color-primary-main)] rounded-full" />}
+      </NextLink>
+    )
+  }
+
+  return (
+    <div className="relative" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+      <button
+        className={`relative text-[15px] font-bold uppercase transition-colors flex items-center gap-1 pb-1 ${isActive ? 'text-[var(--color-primary-main)]' : 'text-[var(--color-secondary-main)] hover:text-[var(--color-primary-main)]'}`}
+      >
+        {isActive && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[var(--color-primary-main)] rounded-full" />}
+        {label}
+        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" className={`transition-transform ${open ? 'rotate-180' : ''}`}>
+          <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </button>
+      {open && (
+        <div className="absolute top-full left-0 pt-2 min-w-[220px] z-50">
+          <div className="bg-white rounded-lg shadow-lg border border-gray-100 py-2">
+            {items.map((item) => (
+              <NextLink
+                key={item.href}
+                href={item.href}
+                className={`block px-5 py-2.5 text-sm transition-colors ${currentPath === item.href ? 'text-[var(--color-primary-main)] bg-[var(--color-primary-main)]/5' : 'text-[var(--color-secondary-main)] hover:bg-gray-50 hover:text-[var(--color-primary-main)]'}`}
+              >
+                {item.label}
+              </NextLink>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
 
 interface Props {
   onlyLogin: boolean
@@ -17,76 +72,37 @@ interface Props {
 const LaptopMenu = ({ onlyLogin }: Props) => {
   const router = useRouter()
   const pathname = usePathname()
-  const isExternalSite = pathname.includes(`/${ServiceUrlEnum.EXTERNAL_MOVEHELP}`) || pathname.includes(`/${ServiceUrlEnum.EXTERNAL_MOVECLEAN}`)
-  const { t } = useTranslation('header')
+  const loginPath = isClientDemoMode() ? '/demo/login' : process.env.NODE_ENV === 'development' ? '/i/testmode' : `/login${pathname !== '/' ? `?ref=${pathname}` : ''}`
+
+  // Strip locale prefix for matching (e.g. /sv/tjanster -> /tjanster)
+  const cleanPath = pathname.replace(/^\/(sv|en)/, '') || '/'
+
+  if (onlyLogin) {
+    return <Button onClick={() => router.push(loginPath)} text="LOGGA IN" className="!uppercase !px-13 !py-3" />
+  }
 
   return (
-    <>
-      {!onlyLogin && (
-        <div className={headerMenuButtonVariants()}>
-          <NextLink href="#faq" className={styledLinkVariants()}>
-            {t('MENU.faq')}
-          </NextLink>
-        </div>
-      )}
-      {!onlyLogin && (
-        <div className={headerMenuButtonVariants()}>
-          <NextLink href="#contact" className={styledLinkVariants()}>
-            {' '}
-            {t('MENU.contact')}
-          </NextLink>
-        </div>
-      )}
-      {!onlyLogin && (
-        <div className={headerMenuButtonVariants()}>
-          <NextLink href="https://jobb.flyttsmart.se/" className={styledLinkVariants()}>
-            {t('MENU.jobs')}
-          </NextLink>
-        </div>
-      )}
-      {isExternalSite ? (
-        <Flex direction="row" alignItems="center">
-          <Link
-            href={`/${ServiceUrlEnum.EXTERNAL_MOVEHELP}?step=1`}
-            sx={{
-              margin: '0px 32px',
-              color: 'var(--fs-colors-secondaryMain)',
-            }}
-            noUnderline
-          >
-            {t('EXTERNAL.toMovehelp')}
-          </Link>
-          <Link
-            href={`/${ServiceUrlEnum.EXTERNAL_MOVECLEAN}?step=1`}
-            sx={{
-              margin: '0px 32px',
-              color: 'var(--fs-colors-secondaryMain)',
-            }}
-            noUnderline
-          >
-            {t('EXTERNAL.toMoveclean')}
-          </Link>
-          <Link
-            href={'/'}
-            sx={{
-              margin: '0px 32px',
-              color: 'var(--fs-colors-tertiaryMain)',
-            }}
-            noUnderline
-          >
-            {t('EXTERNAL.toFlyttsmart')}
-          </Link>
-        </Flex>
-      ) : (
-        <Button onClick={() => router.push(process.env.NODE_ENV === 'development' ? '/i/testmode' : `/login${pathname !== '/' ? `?ref=${pathname}` : ''}`)} text={t('MENU.login')} className="!uppercase !px-13 !py-3" />
-      )}
-      <Flex className="ml-8" display="flex">
-        <Flex display="flex" alignItems="center">
-          <Globe height={22} width={22} />
-        </Flex>
-        <LanguageSelect />
-      </Flex>
-    </>
+    <Flex alignItems="center" className="gap-10">
+      <NavItem label="Våra tjänster" href="/tjanster" currentPath={cleanPath} />
+      <NavItem
+        label="Samarbetspartners"
+        currentPath={cleanPath}
+        items={[
+          { label: 'Mäklarsamarbeten', href: '/samarbetspartners' },
+          { label: 'Leverantörer', href: '/samarbetspartners' },
+        ]}
+      />
+      <NavItem
+        label="Om oss"
+        currentPath={cleanPath}
+        items={[
+          { label: 'Vi på Flyttsmart', href: '/om-oss' },
+          { label: 'Kontakta oss', href: '/kontakt' },
+          { label: 'Jobba hos oss', href: '/karriar' },
+        ]}
+      />
+      <Button onClick={() => router.push(loginPath)} text="LOGGA IN" className="!uppercase !px-13 !py-3" />
+    </Flex>
   )
 }
 
