@@ -1,6 +1,7 @@
 'use client'
 
 import { clsx } from 'clsx'
+import Image from 'next/image'
 import { useState } from 'react'
 
 // ---------------------------------------------------------------------------
@@ -188,11 +189,8 @@ const TeamSection = () => {
 
         {/* Team image */}
         <div className="max-w-[1200px] mx-auto px-4 md:px-8 pb-16 md:pb-24">
-          <div className="relative w-full aspect-[21/9] rounded-xl overflow-hidden bg-gradient-to-br from-[var(--color-primary-main)]/20 to-[var(--color-primary-main)]/5">
-            {/* Replace this div with: <Image src="/images/team.jpg" alt="Teamet på Flyttsmart" fill className="object-cover" /> */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <p className="text-white/30 text-sm font-medium">Teambild - byt ut mot riktig bild</p>
-            </div>
+          <div className="relative w-full aspect-[21/9] rounded-xl overflow-hidden">
+            <Image src="/images/team.jpg" alt="Teamet på Flyttsmart" fill className="object-cover" sizes="(max-width: 1200px) 100vw, 1200px" priority />
           </div>
         </div>
       </div>
