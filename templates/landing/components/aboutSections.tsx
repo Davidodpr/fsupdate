@@ -165,24 +165,34 @@ const TeamSection = () => {
     <section>
       {/* Hero */}
       <div className="bg-[var(--color-secondary-main)] text-white">
-        <div className="max-w-[1200px] mx-auto px-4 md:px-8 py-16 md:py-24">
-          <div className="max-w-[640px]">
+        <div className="max-w-[1200px] mx-auto px-4 md:px-8 pt-16 md:pt-24 pb-0">
+          <div className="max-w-[640px] pb-10">
             <h1 className="text-3xl md:text-4xl lg:text-[44px] font-bold mb-5 leading-[1.15]">
               Vi tror att flytta i Sverige kan vara enkelt. På riktigt.
             </h1>
-            <p className="text-white/55 text-lg leading-relaxed mb-10">
+            <p className="text-white/55 text-lg leading-relaxed">
               Flyttsmart grundades 2019 med en enkel idé: samla allt på ett ställe. Inte som en marknadsplats - utan som ett verktyg som faktiskt tar dig igenom flytten.
             </p>
           </div>
 
           {/* Stats inline */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-5 pt-8 border-t border-white/10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-5 py-8 border-t border-white/10">
             {stats.map((stat) => (
               <div key={stat.label}>
                 <div className="text-2xl font-bold text-[var(--color-primary-main)]">{stat.value}</div>
                 <div className="text-white/40 text-sm mt-0.5">{stat.label}</div>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Team image */}
+        <div className="max-w-[1200px] mx-auto px-4 md:px-8 pb-16 md:pb-24">
+          <div className="relative w-full aspect-[21/9] rounded-xl overflow-hidden bg-gradient-to-br from-[var(--color-primary-main)]/20 to-[var(--color-primary-main)]/5">
+            {/* Replace this div with: <Image src="/images/team.jpg" alt="Teamet på Flyttsmart" fill className="object-cover" /> */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <p className="text-white/30 text-sm font-medium">Teambild - byt ut mot riktig bild</p>
+            </div>
           </div>
         </div>
       </div>
