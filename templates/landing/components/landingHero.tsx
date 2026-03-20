@@ -13,11 +13,11 @@ const LandingHero = () => {
   const [showFloatingCta, setShowFloatingCta] = useState(false)
   const loginUrl = process.env.NODE_ENV === 'development' ? '/i/testmode' : `/login${pathname !== '/' ? `?ref=${pathname}` : ''}`
   const heroCtaClassName = clsx(
-    '!border-[#f7d791]',
-    '!bg-[linear-gradient(135deg,#8f5a16_0%,#c8872c_24%,#f7d98f_50%,#cd8d30_72%,#7d4d11_100%)]',
-    'shadow-[inset_0_1px_0_rgba(255,255,255,0.45),inset_0_-6px_10px_rgba(92,49,9,0.28),0_14px_28px_rgba(0,0,0,0.24)]',
-    'hover:!border-[#ffe8b8]',
-    'hover:!bg-[linear-gradient(135deg,#9b651d_0%,#d89b42_24%,#fee3a4_50%,#d8973c_72%,#875517_100%)]',
+    '!border-[#ffb87a]',
+    '!bg-[linear-gradient(135deg,#c45e1a_0%,#e8802e_24%,#ffc08a_50%,#e07628_72%,#a84d12_100%)]',
+    'shadow-[inset_0_1px_0_rgba(255,255,255,0.45),inset_0_-6px_10px_rgba(120,40,5,0.28),0_14px_28px_rgba(0,0,0,0.24)]',
+    'hover:!border-[#ffd4a8]',
+    'hover:!bg-[linear-gradient(135deg,#d06a22_0%,#f09040_24%,#ffd0a0_50%,#ee8434_72%,#b85818_100%)]',
     'active:scale-[0.99]'
   )
 
