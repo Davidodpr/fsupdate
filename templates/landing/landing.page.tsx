@@ -36,6 +36,18 @@ export const LandingPage = ({ isServerIosOrSafari, googleReviews, googleRating }
         {/* Partners Section */}
         <Partners />
 
+        {/* Press mentions */}
+        <div className="w-screen flex justify-center bg-white border-t border-gray-100 py-6">
+          <div className="w-full px-4 md:px-8 max-w-[1232px] flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-10">
+            <span className="text-[var(--color-secondary-main)]/30 text-xs font-medium uppercase tracking-widest shrink-0">Som sett i</span>
+            <div className="flex items-center gap-8 sm:gap-10">
+              <span className="text-[var(--color-secondary-main)]/50 text-sm font-bold tracking-tight">Dagens industri</span>
+              <span className="text-[var(--color-secondary-main)]/50 text-sm font-bold tracking-tight">Aftonbladet</span>
+              <span className="text-[var(--color-secondary-main)]/50 text-sm font-bold tracking-tight">Breakit</span>
+            </div>
+          </div>
+        </div>
+
         {/* Testimonials Section - lighter gradient */}
         <section
           className={clsx(
