@@ -27,7 +27,7 @@ export default function PageLayoutClientHeader({ isServerMobile }: { isServerMob
           {currentMove?.id ? (
             <LoggedInTopNav />
           ) : (
-            <TopNav isServerMobile={isServerMobile} noMenu={noMenu} onlyLogin={isCoordinatorPage || (pathname !== '/' && pathname !== '/en')} />
+            <TopNav isServerMobile={isServerMobile} noMenu={noMenu} onlyLogin={isCoordinatorPage} />
           )}
         </header>
       )}
