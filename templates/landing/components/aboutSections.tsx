@@ -60,7 +60,7 @@ const TeamSection = () => {
         {/* Team image */}
         <div className="max-w-[1200px] mx-auto px-4 md:px-8 pb-10 md:pb-14">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/team.jpg" alt="Teamet på Flyttsmart" className="w-full rounded-xl object-cover aspect-[21/9]" loading="eager" />
+          <img src="/images/team-office.png" alt="Teamet på Flyttsmart" className="w-full rounded-xl object-cover aspect-[21/9]" loading="eager" />
         </div>
       </div>
 

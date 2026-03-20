@@ -68,15 +68,20 @@ const AnimatedDashboard = () => {
       </div>
 
       {/* Personal contact banner */}
-      <div className="bg-white rounded-xl px-4 py-3 mt-2 shadow-[0_1px_3px_rgba(0,0,0,0.06)] flex items-center gap-3">
+      <div className="bg-white rounded-xl px-4 py-4 mt-2 shadow-[0_1px_3px_rgba(0,0,0,0.06)] flex items-center gap-3">
         <img
-          src="/images/Andreas.png"
+          src="/images/team-nina.webp"
           alt="Din flyttkoordinator"
-          className="w-9 h-9 rounded-full object-cover flex-shrink-0"
+          className="w-11 h-11 rounded-full object-cover flex-shrink-0"
         />
         <div className="flex-1 min-w-0">
-          <p className="text-[11px] font-bold text-[#214766]">Personlig kontakt</p>
-          <p className="text-[9px] text-[#214766]/50">Din flyttkoordinator hjälper dig</p>
+          <p className="text-[12px] font-bold text-[#214766]">Personlig kontakt</p>
+          <p className="text-[10px] text-[#214766]/50">Din flyttkoordinator hjälper dig</p>
+        </div>
+        <div className="w-8 h-8 rounded-full bg-[#51c8b4]/10 flex items-center justify-center flex-shrink-0">
+          <svg className="w-4 h-4 text-[#51c8b4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          </svg>
         </div>
       </div>
 
@@ -84,9 +89,9 @@ const AnimatedDashboard = () => {
       <div className="animate-dashboard-celebration absolute inset-0 z-10 flex flex-col items-center justify-center bg-gradient-to-b from-[#51c8b4] to-[#37ae9a] px-6">
         {/* Coordinator photos */}
         <div className="flex items-center justify-center mb-4">
-          <img src="/images/Andreas.png" alt="" className="w-12 h-12 rounded-full object-cover border-2 border-white/40 relative z-30" />
-          <img src="/images/hannes.svg" alt="" className="w-12 h-12 rounded-full object-cover border-2 border-white/40 -ml-3 relative z-20" />
-          <img src="/images/Philip.svg" alt="" className="w-12 h-12 rounded-full object-cover border-2 border-white/40 -ml-3 relative z-10" />
+          <img src="/images/team-nina.webp" alt="Nina" className="w-14 h-14 rounded-full object-cover border-2 border-white/40 relative z-30" />
+          <img src="/images/team-andreas.webp" alt="Andreas" className="w-14 h-14 rounded-full object-cover border-2 border-white/40 -ml-3 relative z-20" />
+          <img src="/images/team-joel.webp" alt="Joel" className="w-14 h-14 rounded-full object-cover border-2 border-white/40 -ml-3 relative z-10" />
         </div>
         <p className="text-xl font-bold text-white mb-1">Välkommen hem!</p>
         <p className="text-[13px] text-white/80 text-center leading-relaxed">

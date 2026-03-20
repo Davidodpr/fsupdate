@@ -11,6 +11,7 @@ import FAQ from './components/faq'
 import HowItWorks from './components/howItWorks'
 import LandingHero from './components/landingHero'
 import Milestones from './components/milestones'
+import Partners from './components/Partners'
 
 const Testimonials = dynamic(() => import('./components/testimonials'), { ssr: false })
 
@@ -31,6 +32,9 @@ export const LandingPage = ({ isServerIosOrSafari, googleReviews, googleRating }
       <div className="overflow-x-hidden overflow-y-auto scroll-smooth sm:scroll-auto">
         {/* Hero Section - component handles its own background */}
         <LandingHero />
+
+        {/* Partners marquee */}
+        <Partners />
 
         {/* Testimonials - white section */}
         <section className="w-screen flex justify-center bg-white py-10 md:py-14">

@@ -23,12 +23,9 @@ const Partners = () => {
       <div className="max-w-[1200px] mx-auto px-4 md:px-8">
         {/* Header */}
         <div className="text-center mb-6 md:mb-8">
-          <p className="text-xs text-[var(--color-primary-main)] font-semibold uppercase tracking-wider mb-1">
+          <p className="text-xs text-[var(--color-primary-main)] font-semibold uppercase tracking-wider">
             Samarbeten
           </p>
-          <h3 className="text-lg md:text-xl font-bold text-[var(--color-secondary-main)]">
-            {t('PRESS_AND_PARTNERS.partners')}
-          </h3>
         </div>
       </div>
 

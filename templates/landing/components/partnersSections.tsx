@@ -80,14 +80,14 @@ const distributionBenefits = [
   'Du syns som avsändare genom hela flytten',
   'Nöjdare kunder ger starkare omdömen och fler affärer',
   'Helt kostnadsfritt - vi tar betalt av leverantörerna',
-  'Ingen integration krävs - funkar även med en enkel länk',
+  'Ingen integration krävs',
 ]
 
 const brokerSteps = [
   {
     number: '1',
     title: 'Affären är klar',
-    description: 'Köparens konto i Flyttsmart aktiveras automatiskt via ert system. Ni behöver inte göra något extra.',
+    description: 'Köparens och säljarens konton i Flyttsmart aktiveras automatiskt via ert system. Ni behöver inte göra något extra.',
   },
   {
     number: '2',
@@ -239,10 +239,10 @@ const Suppliers = () => {
           Leverantörer
         </p>
         <h2 className="text-2xl md:text-3xl font-bold text-[var(--color-secondary-main)] mb-4 leading-snug">
-          Nå tusentals kunder i exakt rätt ögonblick.
+          Nå tiotusentals kunder i exakt rätt ögonblick.
         </h2>
         <p className="text-[var(--color-secondary-main)]/80 text-[15px] leading-relaxed">
-          Varje månad flyttar tusentals svenskar genom Flyttsmart. De behöver flytt, städ, el, bredband, försäkring och mer - och de letar aktivt efter leverantörer. Vi kopplar ihop er, men bara om du håller måttet.
+          Varje månad flyttar tiotusentals svenskar genom Flyttsmart. De behöver flytt, städ, el, bredband, försäkring och mer - och de letar aktivt efter leverantörer. Vi kopplar ihop er, men bara om du håller måttet.
         </p>
       </div>
 

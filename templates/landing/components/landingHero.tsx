@@ -33,14 +33,9 @@ const LandingHero = () => {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-[var(--color-accent-main)]/10 rounded-full blur-3xl" />
       </div>
       <div className="max-w-[1200px] mx-auto px-6 md:px-8 w-full relative z-10">
-        <div
-          className={clsx(
-            'grid gap-4 lg:gap-16 items-center',
-            isTabletPortraitOrGreater ? 'grid-cols-2' : 'grid-cols-1'
-          )}
-        >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-16 items-center">
           {/* Content */}
-          <div className={clsx('text-center lg:text-left', !isTabletPortraitOrGreater && 'order-1')}>
+          <div className="text-center lg:text-left order-1">
             {/* Badge */}
             <div className="inline-flex items-center gap-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2.5 mb-8">
               <span className="w-2.5 h-2.5 bg-[var(--color-primary-main)] rounded-full animate-pulse" />
@@ -99,7 +94,7 @@ const LandingHero = () => {
           </div>
 
           {/* Phone Mockup */}
-          <div className={clsx('relative flex justify-center lg:justify-end', !isTabletPortraitOrGreater && 'order-2 -mt-2')}>
+          <div className="relative flex justify-center lg:justify-end order-2 -mt-2 lg:mt-0">
             {/* Bright glow effect behind phone */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[400px] md:h-[400px] bg-[var(--color-primary-main)]/30 rounded-full blur-[60px]" />
 
@@ -150,7 +145,7 @@ const LandingHero = () => {
           iconRight={<BankId className="w-6 h-6" />}
           text="KOM IGÅNG"
           onClick={() => router.push(process.env.NODE_ENV === 'development' ? '/i/testmode' : `/login${pathname !== '/' ? `?ref=${pathname}` : ''}`)}
-          className="w-full"
+          withFullWidth
         />
       </div>
     </section>

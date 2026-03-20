@@ -36,11 +36,11 @@ const Testimonials = ({ googleReviews, googleRating }: TestimonialsProps) => {
     (r) => r.rating >= 3 && r.text
   ) ?? []
 
-  const hasGoogleReviews = filteredGoogleReviews.length > 0
+  const hasGoogleReviews = filteredGoogleReviews.length >= 6
   const carouselItems = t('landing:TESTAMONIALS', { returnObjects: true }) as { rating: string; name: string; bio: string; words: string }[]
 
   const cards: Card[] = hasGoogleReviews
-    ? filteredGoogleReviews.map((r) => ({ text: r.text, name: r.author_name, subtitle: r.relative_time_description, rating: r.rating }))
+    ? filteredGoogleReviews.map((r) => ({ text: r.text ?? '', name: r.author_name, subtitle: r.relative_time_description, rating: r.rating }))
     : carouselItems.map((r) => ({ text: r.words, name: r.name, subtitle: r.bio, rating: parseInt(r.rating || '5') }))
 
   const perPage = !isTabletPortraitOrGreater ? 1 : !isDesktopOrGreater ? 2 : 3
