@@ -1,20 +1,25 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { useTranslation } from 'react-i18next'
 import { clsx } from 'clsx'
 import { useRouter, usePathname } from 'next/navigation'
-import useResponsive from '@/common/hooks/useResponsive'
 import Button from '@/components/atoms/Button'
 import BankId from '@/public/images/BankId.svg'
 import AnimatedDashboard from './AnimatedDashboard'
 
 const LandingHero = () => {
   const router = useRouter()
-  const { t } = useTranslation('landing')
   const pathname = usePathname()
-  const { isTabletPortraitOrGreater } = useResponsive()
   const [showFloatingCta, setShowFloatingCta] = useState(false)
+  const loginUrl = process.env.NODE_ENV === 'development' ? '/i/testmode' : `/login${pathname !== '/' ? `?ref=${pathname}` : ''}`
+  const heroCtaClassName = clsx(
+    '!border-[#f7d791]',
+    '!bg-[linear-gradient(135deg,#8f5a16_0%,#c8872c_24%,#f7d98f_50%,#cd8d30_72%,#7d4d11_100%)]',
+    'shadow-[inset_0_1px_0_rgba(255,255,255,0.45),inset_0_-6px_10px_rgba(92,49,9,0.28),0_14px_28px_rgba(0,0,0,0.24)]',
+    'hover:!border-[#ffe8b8]',
+    'hover:!bg-[linear-gradient(135deg,#9b651d_0%,#d89b42_24%,#fee3a4_50%,#d8973c_72%,#875517_100%)]',
+    'active:scale-[0.99]'
+  )
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,9 +42,12 @@ const LandingHero = () => {
           {/* Content */}
           <div className="text-center lg:text-left order-1">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2.5 mb-8">
-              <span className="w-2.5 h-2.5 bg-[var(--color-primary-main)] rounded-full animate-pulse" />
-              <span className="text-base font-semibold text-white">
+            <div className="inline-flex items-center gap-2.5 bg-gradient-to-r from-[#51c8b4]/20 to-white/10 backdrop-blur-sm border border-[#51c8b4]/30 rounded-full px-5 py-2.5 mb-8">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#51c8b4] opacity-75" />
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#51c8b4]" />
+              </span>
+              <span className="text-sm font-semibold text-white tracking-wide">
                 200 000+ nöjda flyttare
               </span>
             </div>
@@ -61,13 +69,28 @@ const LandingHero = () => {
 
             {/* CTA */}
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-              <Button
-                padding="16px 32px"
-                variant="primaryAltInverted"
-                iconRight={<BankId className="w-6 h-6" />}
-                text="KOM IGÅNG"
-                onClick={() => router.push(process.env.NODE_ENV === 'development' ? '/i/testmode' : `/login${pathname !== '/' ? `?ref=${pathname}` : ''}`)}
-              />
+              <div className="relative">
+                <div className="absolute -inset-[3px] rounded-[var(--radius-button)] overflow-hidden pointer-events-none">
+                  <div className="cta-metal-ring absolute top-1/2 left-1/2 w-[320%] h-[320%]" />
+                </div>
+                <div className="absolute -inset-[5px] rounded-[var(--radius-button)] overflow-hidden pointer-events-none blur-[7px] opacity-70">
+                  <div className="cta-metal-ring-soft absolute top-1/2 left-1/2 w-[320%] h-[320%]" />
+                </div>
+                <div className="absolute -inset-[6px] rounded-[var(--radius-button)] overflow-hidden pointer-events-none opacity-90 mix-blend-screen">
+                  <div className="cta-metal-sparks absolute top-1/2 left-1/2 w-[320%] h-[320%]" />
+                </div>
+                <div className="absolute inset-[3px] rounded-[calc(var(--radius-button)-3px)] cta-metal-core pointer-events-none z-[1]" />
+                <div className="relative z-[2]">
+                  <Button
+                    className={heroCtaClassName}
+                    padding="16px 32px"
+                    variant="primaryAltInverted"
+                    iconRight={<BankId className="w-6 h-6" />}
+                    text="KOM IGÅNG"
+                    onClick={() => router.push(loginUrl)}
+                  />
+                </div>
+              </div>
               <button
                 onClick={() => {
                   document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })
@@ -140,11 +163,12 @@ const LandingHero = () => {
         )}
       >
         <Button
+          className={heroCtaClassName}
           padding="16px 32px"
           variant="primaryAltInverted"
           iconRight={<BankId className="w-6 h-6" />}
           text="KOM IGÅNG"
-          onClick={() => router.push(process.env.NODE_ENV === 'development' ? '/i/testmode' : `/login${pathname !== '/' ? `?ref=${pathname}` : ''}`)}
+          onClick={() => router.push(loginUrl)}
           withFullWidth
         />
       </div>
