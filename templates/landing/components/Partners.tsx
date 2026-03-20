@@ -10,7 +10,7 @@ const LogoItem = ({ src, alt }: { src: string; alt: string }) => (
       alt={alt}
       loading="lazy"
       decoding="async"
-      className="max-h-full max-w-full object-contain"
+      className="max-h-full max-w-full object-contain grayscale opacity-60"
     />
   </div>
 )
