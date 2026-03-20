@@ -95,7 +95,7 @@ const LaptopMenu = ({ onlyLogin }: Props) => {
         currentPath={cleanPath}
         items={[
           { label: 'Vi på Flyttsmart', href: '/om-oss' },
-          { label: 'Jobba hos oss', href: '/karriar' },
+          { label: 'Jobba hos oss', href: 'https://jobb.flyttsmart.se/' },
         ]}
       />
       <Button onClick={() => router.push(loginPath)} text="LOGGA IN" className="!uppercase !px-13 !py-3" />

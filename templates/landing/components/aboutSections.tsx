@@ -252,7 +252,7 @@ const TeamSection = () => {
               <a href="mailto:hej@flyttsmart.se" className="inline-flex items-center px-5 py-2.5 rounded-lg bg-[var(--color-primary-main)] text-white font-semibold text-sm hover:bg-[var(--color-primary-main)]/85 transition-colors whitespace-nowrap">
                 Maila oss &rarr;
               </a>
-              <a href="/karriar" className="inline-flex items-center px-5 py-2.5 rounded-lg border border-white/15 text-white font-semibold text-sm hover:border-white/30 transition-colors whitespace-nowrap">
+              <a href="https://jobb.flyttsmart.se/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-5 py-2.5 rounded-lg border border-white/15 text-white font-semibold text-sm hover:border-white/30 transition-colors whitespace-nowrap">
                 Lediga tjänster
               </a>
             </div>
