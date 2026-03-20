@@ -134,7 +134,7 @@ const TeamSection = () => {
           <div className="bg-[var(--color-background-default)] rounded-xl p-7 md:p-10">
             <h2 className="text-base font-bold text-[var(--color-secondary-main)] mb-3">Vart vi är på väg</h2>
             <p className="text-[var(--color-secondary-main)]/55 text-sm leading-relaxed max-w-[600px]">
-              1,5 miljoner människor flyttar i Sverige varje år. Vi vill att Flyttsmart ska vara lika självklart som att googla - det ställe man alltid vänder sig till. En självklarhet för alla som flyttar.
+              1,5 miljoner människor flyttar i Sverige varje år. Ingen av dem borde behöva ringa tio bolag, jämföra offerter i Excel eller hoppas att flyttfirman dyker upp. Vi bygger tjänsten som gör att flytten bara fungerar - från dag ett till sista kartongen.
             </p>
           </div>
         </div>
