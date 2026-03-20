@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { useIntercom } from 'react-use-intercom'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { useLogin } from '@/common/context/login/Login.provider'
+import { isClientDemoMode } from '@/common/utils/demoMode'
 import { useThemeContext } from '@/common/context/theme/themeContext.provider'
 import { useUserContext } from '@/common/context/user/UserProvider'
 import { ThemeEnum } from '@/common/enums/ThemeEnum'
@@ -16,6 +17,7 @@ import { Init } from '@/templates/LoginTemplate/Init/Init'
 
 const LoginMain = () => {
   const router = useRouter()
+  const isDemoMode = isClientDemoMode()
   const refQuery = useSearchParams().get('ref')
   const partnerQuery = useSearchParams().get('partner')
   const oldNewUserQuery = useSearchParams().get('oldNewUser')
@@ -28,14 +30,18 @@ const LoginMain = () => {
   } = useUserContext()
 
   useEffect(() => {
+    if (isDemoMode) return
+
     setTimeout(() => {
       boot()
     }, 100)
-  }, [boot])
+  }, [boot, isDemoMode])
 
   useEffect(() => {
+    if (isDemoMode) return
+
     if (!!currentMove?.id) router.push(MOVEPAGEURL)
-  }, [currentMove, router])
+  }, [currentMove, isDemoMode, router])
 
   useEffect(() => {
     if (!!refQuery) {

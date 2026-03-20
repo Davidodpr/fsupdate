@@ -6,6 +6,7 @@ import { cookies } from 'next/headers'
 import Script from 'next/script'
 import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
+import { isServerDemoMode } from '@/common/utils/demoMode'
 import Spinner, { SpinnerWrapper } from '@/components/atoms/Spinner'
 import '@/styles/_reset.css'
 import '@/styles/globals.css'
@@ -114,24 +115,30 @@ export function generateStaticParams() {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const NEXT_LOCALE = (await cookies()).get('NEXT_LOCALE')?.value || 'sv'
+  const isDemoMode = isServerDemoMode
+
   return (
     <html lang={NEXT_LOCALE} className={Gilroy.className} translate="no">
       <head>
-        <GaScript />
+        {!isDemoMode && <GaScript />}
         <meta name="facebook-domain-verification" content="b5183k22di5r7qb6f35s55bl3sh2us" />
         <meta name="google" content="notranslate" />
       </head>
       <body>
-        <noscript
-          dangerouslySetInnerHTML={{
-            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${process.env.GTM_ID}"
+        {!isDemoMode && (
+          <>
+            <noscript
+              dangerouslySetInnerHTML={{
+                __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${process.env.GTM_ID}"
                         height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
-          }}
-        ></noscript>
-        <Script async src="https://apis.google.com/js/api.js?loading=async" type="text/javascript"></Script>
+              }}
+            ></noscript>
+            <Script async src="https://apis.google.com/js/api.js?loading=async" type="text/javascript"></Script>
+          </>
+        )}
         <Suspense fallback={<SpinnerWrapper>{<Spinner scale={2} color="green" />}</SpinnerWrapper>}>
           <AppProviders>
-            <TrackPageVisit />
+            {!isDemoMode && <TrackPageVisit />}
             {children}
           </AppProviders>
         </Suspense>

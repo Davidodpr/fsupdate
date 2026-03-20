@@ -4,7 +4,10 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
+    "dev:turbo": "next dev --turbopack",
+    "demo": "DEMO_MODE=true NEXT_PUBLIC_DEMO_MODE=true next dev",
+    "demo:turbo": "DEMO_MODE=true NEXT_PUBLIC_DEMO_MODE=true next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "test": "jest",

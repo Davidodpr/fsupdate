@@ -6,12 +6,14 @@ import Footer from 'app/_components/footer/FooterClient'
 import clsx from 'clsx'
 import Cookies from 'js-cookie'
 import { usePathname } from 'next/navigation'
+import { isClientDemoMode } from '@/common/utils/demoMode'
 import { useUserContext } from '@/common/context/user/UserProvider'
 import { longLocale, ShortLocale } from '@/common/enums/LocaleEnum'
 import useResponsive from '@/common/hooks/useResponsive'
 
 export function PageLayoutClient({ children }: { children: React.ReactNode }) {
   const { boot } = useIntercom()
+  const isDemoMode = isClientDemoMode()
   const pathname = usePathname()
   const withInneHeight = pathname?.includes('fixarenovera')
   const noFooter = ['sso'].includes(pathname) || pathname === '/' || pathname === '/en'
@@ -42,6 +44,8 @@ export function PageLayoutClient({ children }: { children: React.ReactNode }) {
   }, [hasFetchedData, profile, contact, boot])
 
   useEffect(() => {
+    if (isDemoMode) return
+
     if (typeof window !== 'undefined' && !hasBootedIntercom && !!boot) {
       setTimeout(() => {
         window.addEventListener(
@@ -60,7 +64,7 @@ export function PageLayoutClient({ children }: { children: React.ReactNode }) {
         }
       }, 100)
     }
-  }, [boot, bootFunction, hasBootedIntercom])
+  }, [boot, bootFunction, hasBootedIntercom, isDemoMode])
 
   return (
     <>

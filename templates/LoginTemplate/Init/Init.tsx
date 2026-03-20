@@ -1,8 +1,10 @@
 import { useEffect, useState, KeyboardEvent } from 'react'
 import { Trans, useTranslation } from 'react-i18next'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { initLogin } from '@/common/api/login'
 import { useLogin } from '@/common/context/login/Login.provider'
+import { isClientDemoMode } from '@/common/utils/demoMode'
 import { useUserContext } from '@/common/context/user/UserProvider'
 import { extractDtoValidationErrors } from '@/common/helpers/extractDtoValidationErrors'
 import useResponsive from '@/common/hooks/useResponsive'
@@ -36,6 +38,7 @@ interface InitProps {
 
 export const Init = ({ leadHasAlreadyUsedInvitationLink = false }: InitProps) => {
   const { t } = useTranslation(['login'])
+  const router = useRouter()
   const [isLoading, setIsLoading] = useState<boolean>(true)
   const { setIsBankIdOnThisDeviceLogin, isBankIdOnThisDeviceLogin, setLoginState, setPno } = useLogin()
   const { isTabletPortraitOrGreater } = useResponsive()
@@ -67,6 +70,11 @@ export const Init = ({ leadHasAlreadyUsedInvitationLink = false }: InitProps) =>
   }, [user?.hasFetchedData])
 
   const initBankidIdentification = async (pno?: string) => {
+    if (isClientDemoMode()) {
+      router.push('/app/welcome?userCreated=true&demo=true')
+      return
+    }
+
     try {
       const response = await initLogin(isBankIdOnThisDeviceLogin, pno)
       if (response) {

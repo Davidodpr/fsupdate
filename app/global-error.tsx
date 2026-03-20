@@ -4,15 +4,20 @@ import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import TopNav from 'app/_components/topNav/index'
 import Error from 'next'
+import { isClientDemoMode } from '@/common/utils/demoMode'
 import { ErrorPage } from '@/components/molecules/ErrorPage'
-import * as Sentry from '@sentry/nextjs'
 import StyledFlex from './_components/StyledLayoutFlex'
 
 
 export default function GlobalError({ error, reset }: { error: Error & { digest?: string }; reset(): void }) {
   const { t } = useTranslation(['error'])
+
   useEffect(() => {
-    Sentry.captureException(error)
+    if (isClientDemoMode()) return
+
+    void import('@sentry/nextjs').then((Sentry) => {
+      Sentry.captureException(error)
+    })
   }, [error])
 
   return (

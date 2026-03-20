@@ -8,18 +8,28 @@ import { InfoMissingProvider } from '@/common/context/infoMissing/infoMissing.pr
 import { ColourModeProvider, CreateThemeContext } from '@/common/context/theme/themeContext.provider'
 import { CreateUserContext, UserProvider } from '@/common/context/user/UserProvider'
 import { CreateUtilityContext, UtilityProvider } from '@/common/context/utility/UtilityProvider'
+import { isClientDemoMode } from '@/common/utils/demoMode'
 import { CookieCategories } from '@/common/types/global'
 import Flex from '@/components/atoms/Flex'
 import Spinner from '@/components/atoms/Spinner'
 import { ReactCookieFirst } from '@cookiefirst/cookiefirst-react'
-
 
 const MemoizedUtilityProvider = memo(UtilityProvider)
 const contextObject = CreateUserContext()
 const utilityObject = CreateUtilityContext()
 const themeObject = CreateThemeContext()
 
+const DemoProviders = ({ children }: { children: React.ReactNode }) => (
+  <IntercomProvider appId={process.env.NEXT_PUBLIC_INTERCOM_ID as string} autoBoot={false}>
+    <UserProvider context={contextObject}>
+      <ColourModeProvider context={themeObject}>{children}</ColourModeProvider>
+    </UserProvider>
+  </IntercomProvider>
+)
+
 export function AppProviders({ children }: { children: React.ReactNode }) {
+  const isDemoMode = isClientDemoMode()
+
   const [showCookie, setShowCookie] = useState(false)
   const [consentChecked, setConsentChecked] = useState(false)
   const [scriptBlocked, setScriptBlocked] = useState(false)
@@ -45,14 +55,16 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
   })
 
   useEffect(() => {
+    if (isDemoMode) return
     if (!!cookiesAcceptedQuery?.toString().length) {
       window?.sessionStorage.setItem('cookiesAccepted', cookiesAcceptedQuery.toString())
     }
     const shouldShow = cookiesAcceptedQuery?.toString() !== 'false' && window.location.hostname.includes('flyttsmart.se')
     setShowCookie(shouldShow)
-  }, [cookiesAcceptedQuery])
+  }, [cookiesAcceptedQuery, isDemoMode])
 
   useEffect(() => {
+    if (isDemoMode) return
     const checkConsentOnEvent = () => {
       const CF = window.CookieFirst
       if (CF?.consent) {
@@ -92,9 +104,10 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
         window.removeEventListener('cf_init', checkConsentOnEvent)
       }
     }
-  }, [])
+  }, [isDemoMode])
 
   useEffect(() => {
+    if (isDemoMode) return
     // No need to test this locally since cookie consent is not required
     if (window.location.hostname.includes('flyttsmart.se')) {
       if (cookieConsent) {
@@ -109,7 +122,11 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
         }
       }
     }
-  }, [cookieConsent, scriptBlocked, hasTriedInitializingConsent, pathname, router])
+  }, [cookieConsent, scriptBlocked, hasTriedInitializingConsent, pathname, router, isDemoMode])
+
+  if (isDemoMode) {
+    return <DemoProviders>{children}</DemoProviders>
+  }
 
   if (!consentChecked && pathname.includes('/adblock')) {
     return (
