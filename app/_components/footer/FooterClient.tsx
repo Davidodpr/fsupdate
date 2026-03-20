@@ -52,9 +52,6 @@ const Footer = ({ flyttsmartGoogleReviewCountAndRating, googleReviews, showBackg
   return (
     <>
       <div className={marginTopWrapperVariants({ noMarginTop: pathname.includes('app/movepage') })}>
-        {!pathname.includes('/app/') && !pathname.includes('/coordinator/') && pathname !== '/' && pathname !== '/en' && !id && hasFetchedData && !['/tjanster', '/samarbetspartners', '/om-oss', '/kontakt', '/karriar'].some((p) => pathname.includes(p)) && (
-          <ExternalPageFooterSection aboutFlyttsmartFooterRef={aboutFlyttsmartFooterRef} />
-        )}
         {flyttsmartGoogleReviewCountAndRating && (
           <FlyttsmartGoogleRatingRowWithCards flyttsmartGoogleReviewCountAndRating={flyttsmartGoogleReviewCountAndRating} googleReviews={googleReviews} />
         )}
