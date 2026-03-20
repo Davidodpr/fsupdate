@@ -51,21 +51,23 @@ const Footer = ({ flyttsmartGoogleReviewCountAndRating, googleReviews, showBackg
 
   return (
     <>
-      <div className={marginTopWrapperVariants({ noMarginTop: pathname.includes('app/movepage') })}>
-        {flyttsmartGoogleReviewCountAndRating && (
-          <FlyttsmartGoogleRatingRowWithCards flyttsmartGoogleReviewCountAndRating={flyttsmartGoogleReviewCountAndRating} googleReviews={googleReviews} />
-        )}
-        {pathname.includes('app/movepage') && <ContactSection />}
-        {currentServiceType && (pathname.includes('/app') || !!id) && pathname !== '/app/movepage' && (
-          <ServiceFooter
-            currentServiceType={currentServiceType}
-            backgroundRef={backgroundRef}
-            showBackground={showBackground}
-            setShowBackground={setShowBackground}
-            aboutFlyttsmartFooterRef={aboutFlyttsmartFooterRef}
-          />
-        )}
-      </div>
+      {(flyttsmartGoogleReviewCountAndRating || pathname.includes('app/movepage') || (currentServiceType && (pathname.includes('/app') || !!id))) && (
+        <div className={marginTopWrapperVariants({ noMarginTop: pathname.includes('app/movepage') })}>
+          {flyttsmartGoogleReviewCountAndRating && (
+            <FlyttsmartGoogleRatingRowWithCards flyttsmartGoogleReviewCountAndRating={flyttsmartGoogleReviewCountAndRating} googleReviews={googleReviews} />
+          )}
+          {pathname.includes('app/movepage') && <ContactSection />}
+          {currentServiceType && (pathname.includes('/app') || !!id) && pathname !== '/app/movepage' && (
+            <ServiceFooter
+              currentServiceType={currentServiceType}
+              backgroundRef={backgroundRef}
+              showBackground={showBackground}
+              setShowBackground={setShowBackground}
+              aboutFlyttsmartFooterRef={aboutFlyttsmartFooterRef}
+            />
+          )}
+        </div>
+      )}
 
       <div className={wrapperVariants()}>
         <div className={containerVariants()}>
