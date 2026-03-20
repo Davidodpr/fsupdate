@@ -1,7 +1,6 @@
 'use client'
 
 import { clsx } from 'clsx'
-import Image from 'next/image'
 import { useState } from 'react'
 
 // ---------------------------------------------------------------------------
@@ -164,115 +163,97 @@ const FaqItem = ({ question, answer }: FaqItemProps) => {
 const TeamSection = () => {
   return (
     <section>
-      {/* Hero */}
+      {/* Hero + image */}
       <div className="bg-[var(--color-secondary-main)] text-white">
-        <div className="max-w-[1200px] mx-auto px-4 md:px-8 pt-16 md:pt-24 pb-0">
-          <div className="max-w-[640px] pb-10">
-            <h1 className="text-3xl md:text-4xl lg:text-[44px] font-bold mb-5 leading-[1.15]">
+        <div className="max-w-[1200px] mx-auto px-4 md:px-8 pt-12 md:pt-16">
+          <div className="max-w-[580px] mb-8">
+            <p className="text-[var(--color-primary-main)] text-xs font-semibold uppercase tracking-widest mb-3">Om Flyttsmart</p>
+            <h1 className="text-2xl md:text-3xl font-bold mb-3 leading-snug">
               Vi tror att flytta i Sverige kan vara enkelt. På riktigt.
             </h1>
-            <p className="text-white/55 text-lg leading-relaxed">
+            <p className="text-white/50 text-[15px] leading-relaxed">
               Flyttsmart grundades 2019 med en enkel idé: samla allt på ett ställe. Inte som en marknadsplats - utan som ett verktyg som faktiskt tar dig igenom flytten.
             </p>
           </div>
 
-          {/* Stats inline */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-5 py-8 border-t border-white/10">
+          {/* Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-4 py-6 border-t border-white/10">
             {stats.map((stat) => (
               <div key={stat.label}>
-                <div className="text-2xl font-bold text-[var(--color-primary-main)]">{stat.value}</div>
-                <div className="text-white/40 text-sm mt-0.5">{stat.label}</div>
+                <div className="text-xl font-bold text-[var(--color-primary-main)]">{stat.value}</div>
+                <div className="text-white/35 text-sm">{stat.label}</div>
               </div>
             ))}
           </div>
         </div>
 
         {/* Team image */}
-        <div className="max-w-[1200px] mx-auto px-4 md:px-8 pb-16 md:pb-24">
-          <div className="relative w-full aspect-[21/9] rounded-xl overflow-hidden">
-            <Image src="/images/team.jpg" alt="Teamet på Flyttsmart" fill className="object-cover" sizes="(max-width: 1200px) 100vw, 1200px" priority />
-          </div>
+        <div className="max-w-[1200px] mx-auto px-4 md:px-8 pb-10 md:pb-14">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/team.jpg" alt="Teamet på Flyttsmart" className="w-full rounded-xl object-cover aspect-[21/9]" loading="eager" />
         </div>
       </div>
 
-      {/* Story */}
-      <div className="max-w-[1200px] mx-auto px-4 md:px-8 py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-10 md:gap-16 items-start">
-          <div>
-            <h2 className="text-xl md:text-2xl font-bold text-[var(--color-secondary-main)] leading-snug">
-              Tio samtal, tio bolag, noll översikt. Det var problemet.
-            </h2>
-          </div>
-          <div className="space-y-4 text-[var(--color-secondary-main)]/65 leading-relaxed">
-            <p>
-              Alla som flyttat vet hur det är. Ringa elleverantörer, jämföra bredbandserbjudanden, boka flyttfirma, fixa hemförsäkring, anmäla adressändring. Och det ska helst vara klart innan inflyttningsdagen.
-            </p>
-            <p>
-              Erik hade flyttat sju gånger på fem år. Varje gång samma cirkus. Så han byggde det han saknade - ett ställe där allt finns samlat, där du gör din flytt en gång och vi sköter resten.
-            </p>
-            <p>
-              Idag är vi 20 personer i Stockholm. Vi har hjälpt över 200 000 personer flytta. Och vi har knappt börjat.
-            </p>
+      <div className="max-w-[1200px] mx-auto px-4 md:px-8">
+        {/* Story */}
+        <div className="py-12 md:py-14 grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-8 md:gap-14 items-start">
+          <h2 className="text-base font-bold text-[var(--color-secondary-main)] leading-snug">
+            Tio samtal, tio bolag, noll översikt. Det var problemet.
+          </h2>
+          <div className="space-y-3 text-[var(--color-secondary-main)]/60 text-sm leading-relaxed">
+            <p>Alla som flyttat vet hur det är. Ringa elleverantörer, jämföra bredbandserbjudanden, boka flyttfirma, fixa hemförsäkring, anmäla adressändring. Och det ska helst vara klart innan inflyttningsdagen.</p>
+            <p>Erik hade flyttat sju gånger på fem år. Varje gång samma cirkus. Så han byggde det han saknade - ett ställe där allt finns samlat, där du gör din flytt en gång och vi sköter resten.</p>
+            <p>Idag är vi 20 personer i Stockholm. Vi har hjälpt över 200 000 personer flytta. Och vi har knappt börjat.</p>
           </div>
         </div>
-      </div>
 
-      {/* Values */}
-      <div className="bg-[var(--color-background-default)]">
-        <div className="max-w-[1200px] mx-auto px-4 md:px-8 py-16 md:py-20">
-          <h2 className="text-base font-bold text-[var(--color-secondary-main)] mb-8">Vad vi tror på</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-gray-200 rounded-xl overflow-hidden">
+        {/* Values */}
+        <div className="pb-12 md:pb-14">
+          <h2 className="text-base font-bold text-[var(--color-secondary-main)] mb-6">Vad vi tror på</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-gray-100 rounded-xl overflow-hidden">
             {values.map((value) => (
-              <div key={value.label} className="bg-[var(--color-background-default)] p-7 md:p-8">
-                <h3 className="text-[15px] font-bold text-[var(--color-secondary-main)] mb-2">{value.label}</h3>
-                <p className="text-[var(--color-secondary-main)]/50 text-sm leading-relaxed">{value.description}</p>
+              <div key={value.label} className="bg-white p-6">
+                <h3 className="text-sm font-bold text-[var(--color-secondary-main)] mb-1.5">{value.label}</h3>
+                <p className="text-[var(--color-secondary-main)]/45 text-sm leading-relaxed">{value.description}</p>
               </div>
             ))}
           </div>
         </div>
-      </div>
 
-      {/* Team */}
-      <div className="max-w-[1200px] mx-auto px-4 md:px-8 py-16 md:py-20">
-        <h2 className="text-base font-bold text-[var(--color-secondary-main)] mb-8">Några av oss</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-100 rounded-xl overflow-hidden">
-          {teamMembers.map((member) => (
-            <div key={member.name} className="bg-white p-6 md:p-7">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-9 h-9 rounded-full bg-[var(--color-primary-main)]/10 text-[var(--color-primary-main)] flex items-center justify-center font-bold text-[11px]">
-                  {member.initials}
+        {/* Team */}
+        <div className="pb-12 md:pb-14">
+          <h2 className="text-base font-bold text-[var(--color-secondary-main)] mb-6">Några av oss</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-100 rounded-xl overflow-hidden">
+            {teamMembers.map((member) => (
+              <div key={member.name} className="bg-white p-5">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-[var(--color-primary-main)]/10 text-[var(--color-primary-main)] flex items-center justify-center font-bold text-[10px]">
+                    {member.initials}
+                  </div>
+                  <div>
+                    <div className="font-bold text-[var(--color-secondary-main)] text-sm leading-tight">{member.name}</div>
+                    <div className="text-[var(--color-primary-main)] text-xs font-medium">{member.role}</div>
+                  </div>
                 </div>
-                <div>
-                  <div className="font-bold text-[var(--color-secondary-main)] text-sm leading-tight">{member.name}</div>
-                  <div className="text-[var(--color-primary-main)] text-xs font-medium">{member.role}</div>
-                </div>
+                <p className="text-[var(--color-secondary-main)]/40 text-sm leading-relaxed">{member.detail}</p>
               </div>
-              <p className="text-[var(--color-secondary-main)]/45 text-sm leading-relaxed">{member.detail}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* Closing CTA */}
-      <div className="bg-[var(--color-background-default)]">
-        <div className="max-w-[1200px] mx-auto px-4 md:px-8 py-14 md:py-16">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        {/* CTA */}
+        <div className="pb-12 md:pb-16">
+          <div className="bg-[var(--color-secondary-main)] rounded-xl p-7 md:p-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
             <div>
-              <h3 className="text-lg font-bold text-[var(--color-secondary-main)] mb-1">Vill du veta mer?</h3>
-              <p className="text-[var(--color-secondary-main)]/50 text-sm">Hör av dig, boka en demo, eller kolla våra lediga tjänster.</p>
+              <h3 className="text-[15px] md:text-base font-bold text-white mb-1">Vill du veta mer?</h3>
+              <p className="text-white/45 text-sm">Hör av dig eller kolla våra lediga tjänster.</p>
             </div>
             <div className="flex gap-3">
-              <a
-                href="/kontakt"
-                className="inline-flex items-center px-5 py-2.5 rounded-lg bg-[var(--color-secondary-main)] text-white font-semibold text-sm hover:bg-[var(--color-secondary-main)]/85 transition-colors"
-              >
-                Kontakta oss
+              <a href="/kontakt" className="inline-flex items-center px-5 py-2.5 rounded-lg bg-[var(--color-primary-main)] text-white font-semibold text-sm hover:bg-[var(--color-primary-main)]/85 transition-colors whitespace-nowrap">
+                Kontakta oss &rarr;
               </a>
-              <a
-                href="/karriar"
-                className="inline-flex items-center px-5 py-2.5 rounded-lg border border-gray-200 text-[var(--color-secondary-main)] font-semibold text-sm hover:border-[var(--color-primary-main)] hover:text-[var(--color-primary-main)] transition-colors"
-              >
-                Se lediga tjänster
+              <a href="/karriar" className="inline-flex items-center px-5 py-2.5 rounded-lg border border-white/15 text-white font-semibold text-sm hover:border-white/30 transition-colors whitespace-nowrap">
+                Lediga tjänster
               </a>
             </div>
           </div>
