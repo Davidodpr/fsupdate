@@ -88,8 +88,8 @@ const LaptopMenu = ({ onlyLogin }: Props) => {
         label="Samarbetspartners"
         currentPath={cleanPath}
         items={[
-          { label: 'Mäklarsamarbeten', href: '/samarbetspartners' },
-          { label: 'Leverantörer', href: '/samarbetspartners' },
+          { label: 'Mäklarsamarbeten', href: '/samarbetspartners#maklarsamarbeten' },
+          { label: 'Leverantörer', href: '/samarbetspartners#leverantorer' },
         ]}
       />
       <NavItem

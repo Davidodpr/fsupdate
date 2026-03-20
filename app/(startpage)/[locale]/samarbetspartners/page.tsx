@@ -16,22 +16,16 @@ export default function SamarbetspartnersPage() {
     <main>
       {/* Tab navigation */}
       <div className="sticky top-14 sm:top-[86px] z-40 bg-white border-b border-gray-100">
-        <div className="max-w-[1200px] mx-auto px-4 md:px-8 flex gap-8">
+        <div className="max-w-[1200px] mx-auto px-4 md:px-8 flex gap-6">
           <button
             onClick={() => scrollTo(maklarRef)}
-            className={clsx(
-              'py-4 text-sm font-semibold border-b-2 transition-colors',
-              'text-[var(--color-primary-main)] border-[var(--color-primary-main)]'
-            )}
+            className="py-3 text-sm font-semibold text-[var(--color-secondary-main)] hover:text-[var(--color-primary-main)] transition-colors"
           >
             Mäklarsamarbeten
           </button>
           <button
             onClick={() => scrollTo(leverantorRef)}
-            className={clsx(
-              'py-4 text-sm font-semibold border-b-2 transition-colors',
-              'text-[var(--color-secondary-main)]/60 border-transparent hover:text-[var(--color-secondary-main)] hover:border-gray-300'
-            )}
+            className="py-3 text-sm font-semibold text-[var(--color-secondary-main)]/60 hover:text-[var(--color-primary-main)] transition-colors"
           >
             Leverantörer
           </button>

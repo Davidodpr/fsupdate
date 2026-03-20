@@ -91,8 +91,8 @@ const MobileMenu = ({ onlyLogin }: Props) => {
                     title="Samarbetspartners"
                     onClose={() => setOpen(false)}
                     items={[
-                      { label: 'Mäklarsamarbeten', href: '/samarbetspartners' },
-                      { label: 'Leverantörer', href: '/samarbetspartners' },
+                      { label: 'Mäklarsamarbeten', href: '/samarbetspartners#maklarsamarbeten' },
+                      { label: 'Leverantörer', href: '/samarbetspartners#leverantorer' },
                     ]}
                   />
 
