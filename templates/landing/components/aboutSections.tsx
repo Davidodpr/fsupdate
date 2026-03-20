@@ -1,72 +1,45 @@
 'use client'
 
-import { clsx } from 'clsx'
-
 // ---------------------------------------------------------------------------
 // Data
 // ---------------------------------------------------------------------------
 
-const teamMembers = [
-  {
-    name: 'Erik Lindström',
-    role: 'VD & grundare',
-    detail: 'Har själv flyttat sju gånger på fem år. Startade Flyttsmart för att slippa ringa tio olika bolag.',
-    initials: 'EL',
-  },
-  {
-    name: 'Sara Andersson',
-    role: 'Head of Partnerships',
-    detail: 'Bakgrund från fastighetsbranschen. Pratar med mäklare på dagarna, lyssnar på true crime på nätterna.',
-    initials: 'SA',
-  },
-  {
-    name: 'Marcus Holm',
-    role: 'Tech Lead',
-    detail: 'Tidigare Klarna. Dricker för mycket kaffe och skriver för lite kommentarer i koden.',
-    initials: 'MH',
-  },
-  {
-    name: 'Johan Berg',
-    role: 'Produktchef',
-    detail: 'Besatt av att ta bort knappar. Om det kan göras enklare, Johan hittar ett sätt.',
-    initials: 'JB',
-  },
-  {
-    name: 'Elin Svensson',
-    role: 'Kundansvarig',
-    detail: 'Leder kundteamet med järnhand i sammetsvante. Svarar snabbare på mail än de flesta svarar på sms.',
-    initials: 'ES',
-  },
-  {
-    name: 'Anna Nilsson',
-    role: 'Leverantörskvalitet',
-    detail: 'Kvalitetsgranskar varenda partner i nätverket. Säger nej fler gånger än hon säger ja - och det är grejen.',
-    initials: 'AN',
-  },
-]
-
-const values = [
-  {
-    label: 'Kundbesatta',
-    description: 'Varje beslut börjar med en fråga: vad löser detta för den som just ska flytta? Inte vad som är lättast för oss.',
-  },
-  {
-    label: 'Transparenta',
-    description: 'Inga dolda avgifter. Inga överraskningar. Du ser exakt vad du betalar och varför - innan du bestämmer dig.',
-  },
-  {
-    label: 'Ambitiösa',
-    description: '200 000 hjälpta flyttare är ett bra start. Vi siktar på att bli lika självklara som att googla när Sverige ska flytta.',
-  },
-]
-
 const stats = [
-  { value: '200 000+', label: 'Hjälpta flyttare' },
-  { value: '40+', label: 'Samarbetspartners' },
-  { value: '96,4 %', label: 'Nöjdhetsgrad' },
-  { value: '2019', label: 'Grundat' },
+  { value: '190 000+', label: 'Hjälpta flyttare' },
+  { value: '120+', label: 'Leverantörer' },
+  { value: '500+', label: 'Mäklarkontor' },
+  { value: '9,6/10', label: 'Kundbetyg' },
 ]
 
+const howItWorks = [
+  {
+    title: 'Du bokar',
+    description: 'Flytt, städ, el, bredband, försäkring. Allt i ett gränssnitt, på ett par minuter.',
+  },
+  {
+    title: 'Vi tar ansvar',
+    description: 'Vi är din avtalspart. Försäkring, support, fakturering och RUT-avdrag - vi sköter allt.',
+  },
+  {
+    title: 'Du flyttar',
+    description: 'En kontaktperson hela vägen. Ring, maila eller smsa - vi finns där tills allt är klart.',
+  },
+]
+
+const qualities = [
+  {
+    title: 'Kvalitetssäkrade leverantörer',
+    description: 'Varje leverantör granskas: försäkringar, trafikitillstånd, F-skatt, omdömen och Konsumentverket. Löpande uppföljning - de som inte håller måttet åker ut.',
+  },
+  {
+    title: 'Personlig koordinator',
+    description: 'Ingen chatbot. Du får en riktig person som följer din flytt från bokning till inflyttning. 98,6% av kunderna är nöjda med den personliga servicen.',
+  },
+  {
+    title: 'Hela Sverige',
+    description: 'Vi täcker alla 21 län. Samma kvalitet och samma ansvar oavsett om du flyttar inom Malmö eller från Luleå till Göteborg.',
+  },
+]
 
 // ---------------------------------------------------------------------------
 // TeamSection (Om oss)
@@ -75,16 +48,16 @@ const stats = [
 const TeamSection = () => {
   return (
     <section>
-      {/* Hero + image */}
+      {/* Hero */}
       <div className="bg-[var(--color-secondary-main)] text-white">
         <div className="max-w-[1200px] mx-auto px-4 md:px-8 pt-12 md:pt-16">
-          <div className="max-w-[580px] mb-8">
+          <div className="max-w-[600px] mb-8">
             <p className="text-[var(--color-primary-main)] text-xs font-semibold uppercase tracking-widest mb-3">Om Flyttsmart</p>
-            <h1 className="text-2xl md:text-3xl font-bold mb-3 leading-snug">
-              Vi tror att flytta i Sverige kan vara enkelt. På riktigt.
+            <h1 className="text-2xl md:text-3xl font-bold mb-4 leading-snug">
+              Vi äger inte en enda flyttbil. Det är hela poängen.
             </h1>
             <p className="text-white/50 text-[15px] leading-relaxed">
-              Flyttsmart grundades 2019 med en enkel idé: samla allt på ett ställe. Inte som en marknadsplats - utan som ett verktyg som faktiskt tar dig igenom flytten.
+              Flyttsmart är Sveriges första och enda digitala flyttjänst. Du bokar allt på ett ställe - vi tar fullt ansvar för leveransen. Försäkring, support, fakturering. En kontaktperson hela vägen.
             </p>
           </div>
 
@@ -107,49 +80,62 @@ const TeamSection = () => {
       </div>
 
       <div className="max-w-[1200px] mx-auto px-4 md:px-8">
-        {/* Story */}
+        {/* The pitch */}
         <div className="py-12 md:py-14 grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-8 md:gap-14 items-start">
           <h2 className="text-base font-bold text-[var(--color-secondary-main)] leading-snug">
-            Tio samtal, tio bolag, noll översikt. Det var problemet.
+            Tänk Uber - fast för flytten.
           </h2>
           <div className="space-y-3 text-[var(--color-secondary-main)]/60 text-sm leading-relaxed">
-            <p>Alla som flyttat vet hur det är. Ringa elleverantörer, jämföra bredbandserbjudanden, boka flyttfirma, fixa hemförsäkring, anmäla adressändring. Och det ska helst vara klart innan inflyttningsdagen.</p>
-            <p>Erik hade flyttat sju gånger på fem år. Varje gång samma cirkus. Så han byggde det han saknade - ett ställe där allt finns samlat, där du gör din flytt en gång och vi sköter resten.</p>
-            <p>Idag är vi 20 personer i Stockholm. Vi har hjälpt över 200 000 personer flytta. Och vi har knappt börjat.</p>
+            <p>
+              Vi startade 2020 för att lösa ett problem alla som flyttat känner igen: tio samtal, tio bolag, noll koll. Så vi byggde ett ställe där du gör allt en gång - och vi tar ansvar för resten.
+            </p>
+            <p>
+              Vi är inte en marknadsplats som skickar dig vidare. När du bokar genom Flyttsmart är vi din avtalspart. Vi har försäkringarna, vi har supporten, vi sköter faktureringen. Du har en person att ringa om något inte stämmer.
+            </p>
+            <p>
+              120+ kvalitetssäkrade leverantörer i hela Sverige. 16 personer i teamet. 190 000 hjälpta flyttare. Från 2 300 användare första året till Sveriges största digitala flyttjänst på under fem år.
+            </p>
           </div>
         </div>
 
-        {/* Values */}
+        {/* How it works */}
         <div className="pb-12 md:pb-14">
-          <h2 className="text-base font-bold text-[var(--color-secondary-main)] mb-6">Vad vi tror på</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-gray-100 rounded-xl overflow-hidden">
-            {values.map((value) => (
-              <div key={value.label} className="bg-white p-6">
-                <h3 className="text-sm font-bold text-[var(--color-secondary-main)] mb-1.5">{value.label}</h3>
-                <p className="text-[var(--color-secondary-main)]/45 text-sm leading-relaxed">{value.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Team */}
-        <div className="pb-12 md:pb-14">
-          <h2 className="text-base font-bold text-[var(--color-secondary-main)] mb-6">Några av oss</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-100 rounded-xl overflow-hidden">
-            {teamMembers.map((member) => (
-              <div key={member.name} className="bg-white p-5">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-8 h-8 rounded-full bg-[var(--color-primary-main)]/10 text-[var(--color-primary-main)] flex items-center justify-center font-bold text-[10px]">
-                    {member.initials}
-                  </div>
-                  <div>
-                    <div className="font-bold text-[var(--color-secondary-main)] text-sm leading-tight">{member.name}</div>
-                    <div className="text-[var(--color-primary-main)] text-xs font-medium">{member.role}</div>
-                  </div>
+          <h2 className="text-base font-bold text-[var(--color-secondary-main)] mb-7">Så fungerar det</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {howItWorks.map((step, i) => (
+              <div key={step.title} className="flex gap-4">
+                <span className="text-3xl font-bold text-[var(--color-primary-main)]/15 shrink-0 leading-none mt-0.5 select-none">
+                  {i + 1}
+                </span>
+                <div>
+                  <h3 className="text-[15px] font-bold text-[var(--color-secondary-main)] mb-1">{step.title}</h3>
+                  <p className="text-[var(--color-secondary-main)]/50 text-sm leading-relaxed">{step.description}</p>
                 </div>
-                <p className="text-[var(--color-secondary-main)]/40 text-sm leading-relaxed">{member.detail}</p>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* What sets us apart */}
+        <div className="pb-12 md:pb-14">
+          <h2 className="text-base font-bold text-[var(--color-secondary-main)] mb-6">Varför det fungerar</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-gray-100 rounded-xl overflow-hidden">
+            {qualities.map((q) => (
+              <div key={q.title} className="bg-white p-6">
+                <h3 className="text-sm font-bold text-[var(--color-secondary-main)] mb-1.5">{q.title}</h3>
+                <p className="text-[var(--color-secondary-main)]/45 text-sm leading-relaxed">{q.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Vision */}
+        <div className="pb-12 md:pb-14">
+          <div className="bg-[var(--color-background-default)] rounded-xl p-7 md:p-10">
+            <h2 className="text-base font-bold text-[var(--color-secondary-main)] mb-3">Vart vi är på väg</h2>
+            <p className="text-[var(--color-secondary-main)]/55 text-sm leading-relaxed max-w-[600px]">
+              1,5 miljoner människor flyttar i Sverige varje år. Vi vill att Flyttsmart ska vara lika självklart som att googla - det ställe man alltid vänder sig till. En självklarhet för alla som flyttar.
+            </p>
           </div>
         </div>
 
