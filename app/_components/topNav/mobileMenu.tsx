@@ -96,14 +96,13 @@ const MobileMenu = ({ onlyLogin }: Props) => {
                     ]}
                   />
 
-                  <MobileSection
-                    title="Om oss"
-                    onClose={() => setOpen(false)}
-                    items={[
-                      { label: 'Vi på Flyttsmart', href: '/om-oss' },
-                      { label: 'Jobba hos oss', href: 'https://jobb.flyttsmart.se/' },
-                    ]}
-                  />
+                  <NextLink
+                    href="/om-oss"
+                    onClick={() => setOpen(false)}
+                    className="py-3 text-xl font-bold uppercase text-[var(--color-secondary-main)] w-full text-center"
+                  >
+                    Om oss
+                  </NextLink>
 
                   <div className="mt-8">
                     <Button onClick={() => { setOpen(false); router.push(loginPath) }} text="LOGGA IN" className="uppercase" />

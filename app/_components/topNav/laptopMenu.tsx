@@ -90,14 +90,7 @@ const LaptopMenu = ({ onlyLogin }: Props) => {
           { label: 'Leverantörer', href: '/samarbetspartners#leverantorer' },
         ]}
       />
-      <NavItem
-        label="Om oss"
-        currentPath={cleanPath}
-        items={[
-          { label: 'Vi på Flyttsmart', href: '/om-oss' },
-          { label: 'Jobba hos oss', href: 'https://jobb.flyttsmart.se/' },
-        ]}
-      />
+      <NavItem label="Om oss" href="/om-oss" currentPath={cleanPath} />
       <Button onClick={() => router.push(loginPath)} text="LOGGA IN" className="!uppercase !px-13 !py-3" />
     </Flex>
   )
