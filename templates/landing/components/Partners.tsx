@@ -4,13 +4,13 @@ import { useTranslation } from 'react-i18next'
 import { partnerLogos } from './partnerLogos'
 
 const LogoItem = ({ src, alt }: { src: string; alt: string }) => (
-  <div className="flex-shrink-0 flex items-center justify-center rounded-xl border border-[#e6edf4] bg-[#eef3f7] px-4 py-3 h-16 md:h-20 w-36 md:w-44">
+  <div className="flex-shrink-0 flex items-center justify-center px-5 py-3 h-12 md:h-14 w-28 md:w-36">
     <img
       src={src}
       alt={alt}
       loading="lazy"
       decoding="async"
-      className="max-h-full max-w-full object-contain grayscale opacity-60"
+      className="max-h-full max-w-full object-contain grayscale opacity-60 hover:opacity-90 hover:grayscale-0 transition-all duration-300"
     />
   </div>
 )
@@ -22,7 +22,7 @@ const Partners = () => {
     <section className="bg-white py-8 md:py-12 overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-4 md:px-8">
         {/* Header */}
-        <div className="text-center mb-8 md:mb-10">
+        <div className="text-center mb-6 md:mb-8">
           <p className="text-xs text-[var(--color-primary-main)] font-semibold uppercase tracking-wider mb-1">
             Samarbeten
           </p>
@@ -32,9 +32,9 @@ const Partners = () => {
         </div>
       </div>
 
-      {/* Scrolling logo marquee */}
-      <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-        <div className="flex gap-4 animate-scroll-infinite">
+      {/* Scrolling logo marquee - true infinite */}
+      <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+        <div className="flex w-max gap-6 animate-scroll-infinite">
           {partnerLogos.map((logo) => (
             <LogoItem key={logo.src} src={logo.src} alt={logo.alt} />
           ))}
@@ -44,6 +44,7 @@ const Partners = () => {
           ))}
         </div>
       </div>
+
     </section>
   )
 }

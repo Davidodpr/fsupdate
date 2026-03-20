@@ -5,25 +5,10 @@
 // ---------------------------------------------------------------------------
 
 const stats = [
-  { value: '190 000+', label: 'Hjälpta flyttare' },
+  { value: '200 000+', label: 'Hjälpta flyttare' },
   { value: '120+', label: 'Leverantörer' },
   { value: '500+', label: 'Mäklarkontor' },
   { value: '9,6/10', label: 'Kundbetyg' },
-]
-
-const howItWorks = [
-  {
-    title: 'Du bokar',
-    description: 'Flytt, städ, el, bredband, försäkring. Allt i ett gränssnitt, på ett par minuter.',
-  },
-  {
-    title: 'Vi tar ansvar',
-    description: 'Vi är din avtalspart. Försäkring, support, fakturering och RUT-avdrag - vi sköter allt.',
-  },
-  {
-    title: 'Du flyttar',
-    description: 'En kontaktperson hela vägen. Ring, maila eller smsa - vi finns där tills allt är klart.',
-  },
 ]
 
 const qualities = [
@@ -98,27 +83,9 @@ const TeamSection = () => {
           </div>
         </div>
 
-        {/* How it works */}
-        <div className="pb-12 md:pb-14">
-          <h2 className="text-base font-bold text-[var(--color-secondary-main)] mb-7">Så fungerar det</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {howItWorks.map((step, i) => (
-              <div key={step.title} className="flex gap-4">
-                <span className="text-3xl font-bold text-[var(--color-primary-main)]/15 shrink-0 leading-none mt-0.5 select-none">
-                  {i + 1}
-                </span>
-                <div>
-                  <h3 className="text-[15px] font-bold text-[var(--color-secondary-main)] mb-1">{step.title}</h3>
-                  <p className="text-[var(--color-secondary-main)]/50 text-sm leading-relaxed">{step.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* What sets us apart */}
         <div className="pb-12 md:pb-14">
-          <h2 className="text-base font-bold text-[var(--color-secondary-main)] mb-6">Varför det fungerar</h2>
+          <h2 className="text-base font-bold text-[var(--color-secondary-main)] mb-6">Vad gör vi annorlunda</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-gray-100 rounded-xl overflow-hidden">
             {qualities.map((q) => (
               <div key={q.title} className="bg-white p-6">
@@ -147,10 +114,10 @@ const TeamSection = () => {
               <p className="text-white/45 text-sm">Hör av dig eller kolla våra lediga tjänster.</p>
             </div>
             <div className="flex gap-3">
-              <a href="mailto:hej@flyttsmart.se" className="inline-flex items-center px-5 py-2.5 rounded-lg bg-[var(--color-primary-main)] text-white font-semibold text-sm hover:bg-[var(--color-primary-main)]/85 transition-colors whitespace-nowrap">
+              <a href="mailto:hej@flyttsmart.se" style={{ backgroundColor: '#51c8b4', color: '#ffffff' }} className="inline-flex items-center px-5 py-2.5 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity whitespace-nowrap">
                 Maila oss &rarr;
               </a>
-              <a href="https://jobb.flyttsmart.se/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-5 py-2.5 rounded-lg border border-white/30 text-white font-semibold text-sm hover:bg-white/10 transition-colors whitespace-nowrap">
+              <a href="https://jobb.flyttsmart.se/" target="_blank" rel="noopener noreferrer" style={{ color: '#ffffff' }} className="inline-flex items-center px-5 py-2.5 rounded-lg border border-white/50 font-semibold text-sm hover:bg-white/10 transition-colors whitespace-nowrap">
                 Lediga tjänster
               </a>
             </div>

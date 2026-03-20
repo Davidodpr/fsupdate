@@ -63,8 +63,8 @@ const HowItWorks = () => {
               key={index}
               className={clsx(
                 'relative bg-white rounded-2xl p-6 md:p-8',
-                'border border-[var(--color-primary-main)]/10',
-                'hover:border-[var(--color-primary-main)]/30',
+                'border border-gray-200',
+                'hover:border-[var(--color-primary-main)]/40',
                 'hover:shadow-[0_8px_30px_rgba(81,200,180,0.15)]',
                 'transition-all duration-300',
                 'group'

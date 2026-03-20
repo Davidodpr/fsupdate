@@ -1004,11 +1004,24 @@ html {
 }
 
 .animate-scroll-infinite {
-  animation: scroll-infinite 25s linear infinite;
+  animation: scroll-infinite 60s linear infinite;
 }
 
 .animate-scroll-infinite:hover {
   animation-play-state: paused;
+}
+
+.animate-scroll-infinite-reverse {
+  animation: scroll-infinite-reverse 55s linear infinite;
+}
+
+@keyframes scroll-infinite-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* Animated Dashboard (hero phone mockup) */

@@ -1,8 +1,10 @@
+'use client'
+
+import { useState, useEffect, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
 import { clsx } from 'clsx'
-import useResponsive from '@/common/hooks/useResponsive'
-import Carousel from '@/components/organisms/Carousel'
 import Star from '@/public/images/Star.svg'
+import useResponsive from '@/common/hooks/useResponsive'
 import type { GoogleReview, GoogleReviewCountAndRating } from 'app/_actions/googleReviews.types'
 
 interface TestimonialsProps {
@@ -10,111 +12,147 @@ interface TestimonialsProps {
   googleRating?: GoogleReviewCountAndRating | null
 }
 
+interface Card {
+  text: string
+  name: string
+  subtitle?: string
+  rating: number
+}
+
+const GoogleIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24">
+    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4" />
+    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
+    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" />
+    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
+  </svg>
+)
+
 const Testimonials = ({ googleReviews, googleRating }: TestimonialsProps) => {
-  const { isTabletPortraitOrGreater, isDesktopOrGreater } = useResponsive()
   const { t } = useTranslation(['common', 'landing'])
+  const { isTabletPortraitOrGreater, isDesktopOrGreater } = useResponsive()
 
   const filteredGoogleReviews = googleReviews?.filter(
     (r) => r.rating >= 3 && r.text
   ) ?? []
 
   const hasGoogleReviews = filteredGoogleReviews.length > 0
-  const carouselItems = t('landing:TESTAMONIALS', { returnObjects: true }) as []
+  const carouselItems = t('landing:TESTAMONIALS', { returnObjects: true }) as { rating: string; name: string; bio: string; words: string }[]
 
-  const items = hasGoogleReviews ? filteredGoogleReviews : carouselItems
-  const settings = {
-    infinite: items.length > 3,
-    speed: 700,
-    slidesToShow: !isTabletPortraitOrGreater ? 1 : !isDesktopOrGreater ? 2 : 3,
-    slidesToScroll: !isTabletPortraitOrGreater ? 1 : !isDesktopOrGreater ? 2 : 3,
-    autoplay: true,
-    autoplaySpeed: 8000,
-  }
+  const cards: Card[] = hasGoogleReviews
+    ? filteredGoogleReviews.map((r) => ({ text: r.text, name: r.author_name, subtitle: r.relative_time_description, rating: r.rating }))
+    : carouselItems.map((r) => ({ text: r.words, name: r.name, subtitle: r.bio, rating: parseInt(r.rating || '5') }))
+
+  const perPage = !isTabletPortraitOrGreater ? 1 : !isDesktopOrGreater ? 2 : 3
+  const maxPage = Math.max(0, Math.ceil(cards.length / perPage) - 1)
+  const [page, setPage] = useState(0)
+  const [fading, setFading] = useState(false)
+
+  const goToPage = useCallback((next: number) => {
+    setFading(true)
+    setTimeout(() => {
+      setPage(next)
+      setFading(false)
+    }, 300)
+  }, [])
+
+  // Auto-rotate every 6s
+  useEffect(() => {
+    if (maxPage === 0) return
+    const timer = setInterval(() => {
+      goToPage(page >= maxPage ? 0 : page + 1)
+    }, 6000)
+    return () => clearInterval(timer)
+  }, [page, maxPage, goToPage])
+
+  const visibleCards = cards.slice(page * perPage, page * perPage + perPage)
 
   return (
     <div>
-      {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
-        <div>
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-1">
-            {t('landing:testamonial_title')}
-          </h2>
-          {hasGoogleReviews && googleRating?.rating && (
-            <div className="flex items-center gap-2 mt-2">
-              <div className="flex gap-0.5">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star
-                    key={i}
-                    className={clsx(
-                      'w-4 h-4',
-                      i < Math.round(googleRating.rating!) ? 'fill-[var(--color-accent-main)]' : 'fill-white/20'
-                    )}
-                  />
-                ))}
-              </div>
-              <span className="text-white/50 text-sm">
-                {googleRating.rating} på Google
-                {googleRating.reviewCount && ` · ${googleRating.reviewCount} recensioner`}
-              </span>
-            </div>
-          )}
-        </div>
+      {/* Header + dots */}
+      <div className="flex items-end justify-between mb-8">
+        <h2 className="text-xl md:text-2xl font-bold text-[var(--color-secondary-main)]">
+          {t('landing:testamonial_title')}
+        </h2>
+        {maxPage > 0 && (
+          <div className="flex gap-1.5">
+            {Array.from({ length: maxPage + 1 }).map((_, i) => (
+              <button
+                key={i}
+                onClick={() => goToPage(i)}
+                className={clsx(
+                  'h-1.5 rounded-full transition-all duration-300',
+                  i === page ? 'w-6 bg-[var(--color-primary-main)]' : 'w-1.5 bg-gray-200 hover:bg-gray-300'
+                )}
+                aria-label={`Sida ${i + 1}`}
+              />
+            ))}
+          </div>
+        )}
       </div>
 
-      {/* Reviews */}
-      <Carousel {...settings} nav="arrows">
-        {hasGoogleReviews
-          ? filteredGoogleReviews.map((review) => (
-              <div key={review.author_name + review.time} className="px-2">
-                <div className="bg-white rounded-xl p-6 h-[280px] flex flex-col">
-                  <div className="mb-3">
-                    <Rating rating={review.rating} max={5} />
-                  </div>
-                  <p className="flex-1 text-[var(--color-secondary-main)]/70 text-sm leading-relaxed overflow-hidden line-clamp-6">
-                    {review.text}
-                  </p>
-                  <div className="pt-4 mt-auto border-t border-gray-100">
-                    <div className="font-semibold text-[var(--color-secondary-main)] text-sm">{review.author_name}</div>
-                    {review.relative_time_description && (
-                      <div className="text-[var(--color-secondary-main)]/40 text-xs mt-0.5">{review.relative_time_description}</div>
-                    )}
-                  </div>
-                </div>
-              </div>
-            ))
-          : carouselItems.map(({ rating, name, bio, words }) => (
-              <div key={name} className="px-2">
-                <div className="bg-white rounded-xl p-6 h-[280px] flex flex-col">
-                  <div className="mb-3">
-                    <Rating rating={parseInt(rating || '0')} max={5} />
-                  </div>
-                  <p className="flex-1 text-[var(--color-secondary-main)]/70 text-sm leading-relaxed overflow-hidden line-clamp-6">
-                    {words}
-                  </p>
-                  <div className="pt-4 mt-auto border-t border-gray-100">
-                    <div className="font-semibold text-[var(--color-secondary-main)] text-sm">{name}</div>
-                    <div className="text-[var(--color-secondary-main)]/40 text-xs mt-0.5">{bio}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-      </Carousel>
+      {/* Cards */}
+      <div
+        className={clsx(
+          'grid gap-5 transition-opacity duration-300',
+          fading ? 'opacity-0' : 'opacity-100',
+          perPage === 1 && 'grid-cols-1',
+          perPage === 2 && 'grid-cols-2',
+          perPage === 3 && 'grid-cols-3'
+        )}
+      >
+        {visibleCards.map((card, i) => (
+          <div
+            key={`${page}-${i}`}
+            className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col min-h-[220px]"
+          >
+            {/* Stars */}
+            <div className="flex gap-0.5 mb-4">
+              {Array.from({ length: 5 }).map((_, j) => (
+                <Star
+                  key={j}
+                  className={clsx(
+                    'w-4 h-4',
+                    j < card.rating ? 'fill-amber-400' : 'fill-gray-200'
+                  )}
+                />
+              ))}
+            </div>
+
+            {/* Quote */}
+            <p className="text-[var(--color-secondary-main)]/70 text-sm leading-relaxed italic flex-1 line-clamp-5">
+              &ldquo;{card.text}&rdquo;
+            </p>
+
+            {/* Author */}
+            <div className="flex items-center justify-between mt-5 pt-4 border-t border-gray-50">
+              <span className="text-sm font-semibold text-[var(--color-secondary-main)]">{card.name}</span>
+              <GoogleIcon />
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Google rating badge */}
+      <div className="flex items-center justify-center gap-2.5 mt-8">
+        <GoogleIcon />
+        <span className="text-[var(--color-secondary-main)]/50 text-sm">
+          {googleRating?.rating ?? '4.7'} på Google
+        </span>
+        <div className="flex gap-0.5">
+          {Array.from({ length: 5 }).map((_, i) => (
+            <Star
+              key={i}
+              className={clsx(
+                'w-3.5 h-3.5',
+                i < Math.round(googleRating?.rating ?? 5) ? 'fill-amber-400' : 'fill-gray-200'
+              )}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
 
 export default Testimonials
-
-const Rating = ({ rating, max }: { rating: number; max: number }) => (
-  <div className="flex gap-0.5">
-    {Array.from({ length: max }).map((_, i) => (
-      <Star
-        key={i}
-        className={clsx(
-          'w-3.5 h-3.5',
-          i < rating ? 'fill-[var(--color-accent-main)]' : 'fill-gray-200'
-        )}
-      />
-    ))}
-  </div>
-)

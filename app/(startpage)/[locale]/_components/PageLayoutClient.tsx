@@ -16,7 +16,7 @@ export function PageLayoutClient({ children }: { children: React.ReactNode }) {
   const isDemoMode = isClientDemoMode()
   const pathname = usePathname()
   const withInneHeight = pathname?.includes('fixarenovera')
-  const noFooter = ['sso'].includes(pathname) || pathname === '/' || pathname === '/en'
+  const noFooter = ['sso'].includes(pathname) || pathname === '/' || pathname === '/en' || pathname === '/sv' || pathname === '/sv/'
   const backgroundRef = useRef<HTMLDivElement>(null)
   const { isTabletLandscapeOrGreater } = useResponsive()
   const [showBackground, setShowBackground] = useState(false)

@@ -61,7 +61,7 @@ const LandingHero = () => {
 
             {/* Subheadline */}
             <p className="text-lg md:text-xl text-white/80 mb-10 max-w-[480px] mx-auto lg:mx-0 leading-relaxed">
-              Det självklara sättet att flytta. Personlig checklista, utvalda leverantörer och support - helt gratis.
+              Det självklara sättet att flytta. Personlig service, utvalda leverantörer och support genom hela flytten - helt gratis.
             </p>
 
             {/* CTA */}
@@ -85,6 +85,17 @@ const LandingHero = () => {
             <span className="text-sm text-white/60 mt-4 block text-center lg:text-left">
               Kostnadsfritt &bull; Tar 2 min
             </span>
+
+            {/* Press - Som sett i */}
+            <div className="flex items-center gap-4 mt-8 justify-center lg:justify-start">
+              <span className="text-white/25 text-[10px] font-medium uppercase tracking-widest shrink-0">Som sett i</span>
+              <div className="flex items-center gap-6">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/press/di-logo.svg" alt="Dagens industri" className="h-4 md:h-5 brightness-0 invert opacity-25" />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/press/breakit-logo.svg" alt="Breakit" className="h-3.5 md:h-4 brightness-0 invert opacity-25" />
+              </div>
+            </div>
           </div>
 
           {/* Phone Mockup */}

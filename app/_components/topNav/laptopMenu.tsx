@@ -82,14 +82,7 @@ const LaptopMenu = ({ onlyLogin }: Props) => {
   return (
     <Flex alignItems="center" className="gap-10">
       <NavItem label="Våra tjänster" href="/#how-it-works" currentPath={cleanPath} />
-      <NavItem
-        label="Samarbetspartners"
-        currentPath={cleanPath}
-        items={[
-          { label: 'Mäklarsamarbeten', href: '/samarbetspartners#maklarsamarbeten' },
-          { label: 'Leverantörer', href: '/samarbetspartners#leverantorer' },
-        ]}
-      />
+      <NavItem label="Samarbetspartners" href="/samarbetspartners" currentPath={cleanPath} />
       <NavItem label="Om oss" href="/om-oss" currentPath={cleanPath} />
       <Button onClick={() => router.push(loginPath)} text="LOGGA IN" className="!uppercase !px-13 !py-3" />
     </Flex>

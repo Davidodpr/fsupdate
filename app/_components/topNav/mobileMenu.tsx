@@ -87,14 +87,13 @@ const MobileMenu = ({ onlyLogin }: Props) => {
                     Våra tjänster
                   </NextLink>
 
-                  <MobileSection
-                    title="Samarbetspartners"
-                    onClose={() => setOpen(false)}
-                    items={[
-                      { label: 'Mäklarsamarbeten', href: '/samarbetspartners#maklarsamarbeten' },
-                      { label: 'Leverantörer', href: '/samarbetspartners#leverantorer' },
-                    ]}
-                  />
+                  <NextLink
+                    href="/samarbetspartners"
+                    onClick={() => setOpen(false)}
+                    className="py-3 text-xl font-bold uppercase text-[var(--color-secondary-main)] w-full text-center"
+                  >
+                    Samarbetspartners
+                  </NextLink>
 
                   <NextLink
                     href="/om-oss"
