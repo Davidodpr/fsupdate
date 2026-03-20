@@ -73,23 +73,23 @@ const Services = () => {
       : `/login${pathname !== '/' ? `?ref=${pathname}` : ''}`
 
   return (
-    <section className="pb-16 md:pb-24">
-      {/* Page header */}
-      <div className="max-w-[1200px] mx-auto px-4 md:px-8 pt-12 md:pt-16 pb-12 md:pb-16">
-        <p className="text-[var(--color-primary-main)] text-sm font-semibold uppercase tracking-wider mb-3">
+    <section className="max-w-[1200px] mx-auto px-4 md:px-8 pt-12 pb-16 md:pt-16 md:pb-24">
+      {/* Header */}
+      <div className="mb-10 md:mb-14 max-w-[580px]">
+        <p className="text-[var(--color-primary-main)] text-xs font-semibold uppercase tracking-widest mb-3">
           Våra tjänster
         </p>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--color-secondary-main)] mb-4 leading-tight max-w-[640px]">
+        <h1 className="text-2xl md:text-3xl font-bold text-[var(--color-secondary-main)] mb-3 leading-snug">
           En flytt, ett ställe - allt ordnat
         </h1>
-        <p className="text-lg text-[var(--color-secondary-main)]/60 max-w-[520px] leading-relaxed">
+        <p className="text-[var(--color-secondary-main)]/55 text-[15px] leading-relaxed">
           Vi har hjälpt 200 000+ personer flytta. Från städ och el till adressändring - du slipper springa runt.
         </p>
       </div>
 
-      <div className="max-w-[1200px] mx-auto px-4 md:px-8">
+      <div>
         {/* Services grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-100 rounded-xl overflow-hidden mb-16 md:mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-100 rounded-xl overflow-hidden mb-14 md:mb-16">
           {services.map((service) => (
             <div key={service.title} className="bg-white p-6 md:p-7">
               <div className="w-9 h-9 rounded-lg bg-[var(--color-primary-main)]/10 flex items-center justify-center mb-4">
@@ -121,13 +121,10 @@ const Services = () => {
         </div>
 
         {/* How it works */}
-        <div className="mb-16 md:mb-20">
-          <h2 className="text-xl md:text-2xl font-bold text-[var(--color-secondary-main)] mb-2">
+        <div className="mb-14 md:mb-16">
+          <h2 className="text-base font-bold text-[var(--color-secondary-main)] mb-7">
             Så fungerar det
           </h2>
-          <p className="text-[var(--color-secondary-main)]/55 mb-8">
-            Tre steg - sedan har du koll på hela flytten.
-          </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {steps.map((step) => (
@@ -149,29 +146,18 @@ const Services = () => {
         </div>
 
         {/* CTA */}
-        <div className="bg-[var(--color-secondary-main)] rounded-xl p-7 md:p-10 text-white flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+        <div className="bg-[var(--color-secondary-main)] rounded-xl p-7 md:p-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
           <div>
-            <h2 className="text-lg md:text-xl font-bold mb-1">Redo att flytta smartare?</h2>
-            <p className="text-white/50 text-sm">Skapa ett konto på 2 minuter. Kostnadsfritt, alltid.</p>
+            <h3 className="text-[15px] md:text-base font-bold text-white mb-1">Redo att flytta smartare?</h3>
+            <p className="text-white/45 text-sm">Skapa ett konto på 2 minuter. Kostnadsfritt, alltid.</p>
           </div>
           <button
             onClick={() => router.push(loginUrl)}
-            className={clsx(
-              'inline-flex items-center gap-2 rounded-lg font-bold text-sm',
-              'bg-[var(--color-accent-main)] text-white',
-              'px-6 py-3',
-              'hover:bg-[#ff9240]',
-              'transition-colors duration-200',
-              'shrink-0'
-            )}
+            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-[var(--color-primary-main)] text-white font-semibold text-sm hover:bg-[var(--color-primary-main)]/85 transition-colors shrink-0 whitespace-nowrap"
           >
-            Kom igång gratis
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5} aria-hidden="true">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
+            Kom igång gratis &rarr;
           </button>
         </div>
-      </div>
     </section>
   )
 }
