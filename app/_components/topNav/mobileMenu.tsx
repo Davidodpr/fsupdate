@@ -101,7 +101,6 @@ const MobileMenu = ({ onlyLogin }: Props) => {
                     onClose={() => setOpen(false)}
                     items={[
                       { label: 'Vi på Flyttsmart', href: '/om-oss' },
-                      { label: 'Kontakta oss', href: '/kontakt' },
                       { label: 'Jobba hos oss', href: '/karriar' },
                     ]}
                   />

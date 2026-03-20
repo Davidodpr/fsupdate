@@ -23,24 +23,22 @@ function NavItem({ label, href, items, currentPath }: NavItemProps) {
   const [open, setOpen] = useState(false)
   const isActive = href ? currentPath === href : items?.some((item) => currentPath === item.href)
 
+  const baseClass = `relative text-sm font-semibold transition-colors pb-1 ${isActive ? 'text-[var(--color-primary-main)]' : 'text-[var(--color-secondary-main)] hover:text-[var(--color-primary-main)]'}`
+  const underline = isActive ? <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[var(--color-primary-main)] rounded-full" /> : null
+
   if (!items) {
     return (
-      <NextLink
-        href={href || '/'}
-        className={`relative text-[15px] font-bold uppercase transition-colors pb-1 ${isActive ? 'text-[var(--color-primary-main)]' : 'text-[var(--color-secondary-main)] hover:text-[var(--color-primary-main)]'}`}
-      >
+      <NextLink href={href || '/'} className={baseClass}>
         {label}
-        {isActive && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[var(--color-primary-main)] rounded-full" />}
+        {underline}
       </NextLink>
     )
   }
 
   return (
     <div className="relative" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
-      <button
-        className={`relative text-[15px] font-bold uppercase transition-colors flex items-center gap-1 pb-1 ${isActive ? 'text-[var(--color-primary-main)]' : 'text-[var(--color-secondary-main)] hover:text-[var(--color-primary-main)]'}`}
-      >
-        {isActive && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[var(--color-primary-main)] rounded-full" />}
+      <button className={`${baseClass} flex items-center gap-1`}>
+        {underline}
         {label}
         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" className={`transition-transform ${open ? 'rotate-180' : ''}`}>
           <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -97,7 +95,6 @@ const LaptopMenu = ({ onlyLogin }: Props) => {
         currentPath={cleanPath}
         items={[
           { label: 'Vi på Flyttsmart', href: '/om-oss' },
-          { label: 'Kontakta oss', href: '/kontakt' },
           { label: 'Jobba hos oss', href: '/karriar' },
         ]}
       />
