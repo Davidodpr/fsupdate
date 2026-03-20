@@ -81,7 +81,7 @@ const LaptopMenu = ({ onlyLogin }: Props) => {
 
   return (
     <Flex alignItems="center" className="gap-10">
-      <NavItem label="Våra tjänster" href="/tjanster" currentPath={cleanPath} />
+      <NavItem label="Våra tjänster" href="/#how-it-works" currentPath={cleanPath} />
       <NavItem
         label="Samarbetspartners"
         currentPath={cleanPath}

@@ -80,7 +80,7 @@ const MobileMenu = ({ onlyLogin }: Props) => {
               {!onlyLogin && (
                 <>
                   <NextLink
-                    href="/tjanster"
+                    href="/#how-it-works"
                     onClick={() => setOpen(false)}
                     className="py-3 text-xl font-bold uppercase text-[var(--color-secondary-main)] w-full text-center"
                   >
