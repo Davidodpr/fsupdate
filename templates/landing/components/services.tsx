@@ -87,77 +87,75 @@ const Services = () => {
         </p>
       </div>
 
-      <div>
-        {/* Services grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-100 rounded-xl overflow-hidden mb-14 md:mb-16">
-          {services.map((service) => (
-            <div key={service.title} className="bg-white p-6 md:p-7">
-              <div className="w-9 h-9 rounded-lg bg-[var(--color-primary-main)]/10 flex items-center justify-center mb-4">
-                <svg
-                  className="w-4.5 h-4.5 text-[var(--color-primary-main)]"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.75}
-                  aria-hidden="true"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d={service.iconPath} />
-                </svg>
-              </div>
-              <h3 className="text-base font-bold text-[var(--color-secondary-main)] mb-1.5">
-                {service.title}
-              </h3>
-              <p className="text-[var(--color-secondary-main)]/55 text-sm leading-relaxed mb-3">
-                {service.description}
-              </p>
-              <div className="flex items-center gap-1.5 text-[var(--color-primary-main)]">
-                <svg className="w-3.5 h-3.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-                <span className="font-medium text-sm">{service.highlight}</span>
+      {/* Services grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-100 rounded-xl overflow-hidden mb-14 md:mb-16">
+        {services.map((service) => (
+          <div key={service.title} className="bg-white p-6 md:p-7">
+            <div className="w-9 h-9 rounded-lg bg-[var(--color-primary-main)]/10 flex items-center justify-center mb-4">
+              <svg
+                className="w-4.5 h-4.5 text-[var(--color-primary-main)]"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                strokeWidth={1.75}
+                aria-hidden="true"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d={service.iconPath} />
+              </svg>
+            </div>
+            <h3 className="text-base font-bold text-[var(--color-secondary-main)] mb-1.5">
+              {service.title}
+            </h3>
+            <p className="text-[var(--color-secondary-main)]/55 text-sm leading-relaxed mb-3">
+              {service.description}
+            </p>
+            <div className="flex items-center gap-1.5 text-[var(--color-primary-main)]">
+              <svg className="w-3.5 h-3.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              <span className="font-medium text-sm">{service.highlight}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* How it works */}
+      <div className="mb-14 md:mb-16">
+        <h2 className="text-base font-bold text-[var(--color-secondary-main)] mb-7">
+          Så fungerar det
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {steps.map((step) => (
+            <div key={step.number} className="flex gap-4">
+              <span className="text-3xl font-bold text-[var(--color-primary-main)]/20 shrink-0 leading-none mt-0.5">
+                {step.number}
+              </span>
+              <div>
+                <h3 className="text-[15px] font-bold text-[var(--color-secondary-main)] mb-1">
+                  {step.title}
+                </h3>
+                <p className="text-[var(--color-secondary-main)]/50 text-sm leading-relaxed">
+                  {step.description}
+                </p>
               </div>
             </div>
           ))}
         </div>
+      </div>
 
-        {/* How it works */}
-        <div className="mb-14 md:mb-16">
-          <h2 className="text-base font-bold text-[var(--color-secondary-main)] mb-7">
-            Så fungerar det
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {steps.map((step) => (
-              <div key={step.number} className="flex gap-4">
-                <span className="text-3xl font-bold text-[var(--color-primary-main)]/20 shrink-0 leading-none mt-0.5">
-                  {step.number}
-                </span>
-                <div>
-                  <h3 className="text-[15px] font-bold text-[var(--color-secondary-main)] mb-1">
-                    {step.title}
-                  </h3>
-                  <p className="text-[var(--color-secondary-main)]/50 text-sm leading-relaxed">
-                    {step.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+      {/* CTA */}
+      <div className="bg-[var(--color-secondary-main)] rounded-xl p-7 md:p-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
+        <div>
+          <h3 className="text-[15px] md:text-base font-bold text-white mb-1">Redo att flytta smartare?</h3>
+          <p className="text-white/45 text-sm">Skapa ett konto på 2 minuter. Kostnadsfritt, alltid.</p>
         </div>
-
-        {/* CTA */}
-        <div className="bg-[var(--color-secondary-main)] rounded-xl p-7 md:p-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
-          <div>
-            <h3 className="text-[15px] md:text-base font-bold text-white mb-1">Redo att flytta smartare?</h3>
-            <p className="text-white/45 text-sm">Skapa ett konto på 2 minuter. Kostnadsfritt, alltid.</p>
-          </div>
-          <button
-            onClick={() => router.push(loginUrl)}
-            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-[var(--color-primary-main)] text-white font-semibold text-sm hover:bg-[var(--color-primary-main)]/85 transition-colors shrink-0 whitespace-nowrap"
-          >
-            Kom igång gratis &rarr;
-          </button>
-        </div>
+        <button
+          onClick={() => router.push(loginUrl)}
+          className="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-[var(--color-primary-main)] text-white font-semibold text-sm hover:bg-[var(--color-primary-main)]/85 transition-colors shrink-0 whitespace-nowrap"
+        >
+          Kom igång gratis &rarr;
+        </button>
+      </div>
     </section>
   )
 }
