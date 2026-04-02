@@ -4,13 +4,13 @@ import { useTranslation } from 'react-i18next'
 import { partnerLogos } from './partnerLogos'
 
 const LogoItem = ({ src, alt }: { src: string; alt: string }) => (
-  <div className="flex-shrink-0 flex items-center justify-center px-5 py-3 h-12 md:h-14 w-28 md:w-36">
+  <div className="flex-shrink-0 flex items-center justify-center px-6 py-3 h-14 md:h-16 w-32 md:w-40">
     <img
       src={src}
       alt={alt}
       loading="lazy"
       decoding="async"
-      className="max-h-full max-w-full object-contain grayscale opacity-60 hover:opacity-90 hover:grayscale-0 transition-all duration-300"
+      className="max-h-full max-w-full object-contain grayscale opacity-80 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
     />
   </div>
 )
@@ -19,13 +19,16 @@ const Partners = () => {
   const { t } = useTranslation('landing')
 
   return (
-    <section className="bg-white py-8 md:py-12 overflow-hidden">
+    <section className="bg-gray-50 py-10 md:py-14 overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-4 md:px-8">
         {/* Header */}
-        <div className="text-center mb-6 md:mb-8">
-          <p className="text-xs text-[var(--color-primary-main)] font-semibold uppercase tracking-wider">
+        <div className="text-center mb-8 md:mb-10">
+          <p className="text-xs text-[var(--color-primary-main)] font-semibold uppercase tracking-wider mb-3">
             Samarbeten
           </p>
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+            Betrodda av Sveriges främsta mäklarkedjor och varumärken
+          </h2>
         </div>
       </div>
 

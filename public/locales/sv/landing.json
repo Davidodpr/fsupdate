@@ -25,21 +25,21 @@
     "partners": "Våra samarbetspartners"
   },
   "HOW_WE_HELP": {
-    "title": "Så hjälper vi dig flytta",
+    "title": "Så funkar det",
     "subtitle": "Personlig service och smart teknik - kombinationen som gör din flytt enkel",
     "step1": {
-      "title": "Din personliga plan",
-      "description": "Logga in med BankID och få en checklista anpassad efter just din flytt. Allt du behöver tänka på, samlat på ett ställe.",
-      "benefit": "Missa aldrig något viktigt"
+      "title": "Få en personlig checklista",
+      "description": "Logga in med BankID för att få en översikt av vad du behöver ordna inför flytten. Börja bocka av din checklista direkt och bli klar på 10 minuter.",
+      "benefit": "Klar på 10 minuter"
     },
     "step2": {
-      "title": "Leverantörer du kan lita på",
-      "description": "Vi har valt ut de bästa leverantörerna åt dig. Jämför och välj enkelt - helt kostnadsfritt.",
-      "benefit": "Spara tid och pengar"
+      "title": "Gör smarta och trygga val",
+      "description": "Våra leverantörer är noga utvalda och kvalitetssäkrade. Det kostar inte mer att boka via oss - vår tjänst är helt kostnadsfri.",
+      "benefit": "Alltid kostnadsfritt"
     },
     "step3": {
-      "title": "Riktiga människor hjälper",
-      "description": "Våra flyttexperter finns tillgängliga via chatt, mejl och telefon. Snabb hjälp utan krångel.",
+      "title": "Få hjälp hela vägen hem",
+      "description": "Glöm krångel och långa telefonköer. Våra flyttexperter svarar snabbt på dina frågor via chatt, mejl och telefon.",
       "benefit": "Du är aldrig ensam"
     }
   },

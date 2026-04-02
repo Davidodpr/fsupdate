@@ -70,7 +70,7 @@ interface Props {
 const LaptopMenu = ({ onlyLogin }: Props) => {
   const router = useRouter()
   const pathname = usePathname()
-  const loginPath = isClientDemoMode() ? '/demo/login' : process.env.NODE_ENV === 'development' ? '/i/testmode' : `/login${pathname !== '/' ? `?ref=${pathname}` : ''}`
+  const loginPath = '/i/testmode'
 
   // Strip locale prefix for matching (e.g. /sv/tjanster -> /tjanster)
   const cleanPath = pathname.replace(/^\/(sv|en)/, '') || '/'

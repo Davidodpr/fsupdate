@@ -11,7 +11,7 @@ const LandingHero = () => {
   const router = useRouter()
   const pathname = usePathname()
   const [showFloatingCta, setShowFloatingCta] = useState(false)
-  const loginUrl = process.env.NODE_ENV === 'development' ? '/i/testmode' : `/login${pathname !== '/' ? `?ref=${pathname}` : ''}`
+  const loginUrl = '/i/testmode'
   const heroCtaClassName = clsx(
     '!border-[#ffb87a]',
     '!bg-[linear-gradient(135deg,#c45e1a_0%,#e8802e_24%,#ffc08a_50%,#e07628_72%,#a84d12_100%)]',

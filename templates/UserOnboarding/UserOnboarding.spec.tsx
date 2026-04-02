@@ -1,6 +1,6 @@
 import { act } from 'react'
 import { Context as ResponsiveContext } from 'react-responsive'
-import { rest } from 'msw'
+import { http, HttpResponse } from 'msw'
 import { setupServer } from 'msw/node'
 import { useRouter } from 'next/navigation'
 import '@testing-library/jest-dom'
@@ -19,49 +19,46 @@ jest.mock('next/navigation', () => ({
     prefetch: () => null,
     replace: mockReplace,
   }),
+  useSearchParams: () => new URLSearchParams(),
 }))
 
-describe.skip('SingelSignOnTemplate', () => {
+describe('SingelSignOnTemplate', () => {
   const server = setupServer(
     ...[
-      rest.post('auth/users/login/sso/accept', (req, res, ctx) => {
-        return res(ctx.status(200))
+      http.post('*/auth/users/login/sso/accept', () => {
+        return new HttpResponse(null, { status: 200 })
       }),
-      rest.post('auth/users/login/sso/validate', (req, res, ctx) => {
-        return res(ctx.status(200))
+      http.post('*/auth/users/login/sso/validate', () => {
+        return new HttpResponse(null, { status: 200 })
       }),
-
-      rest.post('auth/users/login/sso', (req, res, ctx) => {
-        return res(
-          ctx.json({
-            accessToken: 'test_1231123',
-          }),
-        )
+      http.post('*/auth/users/login/sso', () => {
+        return HttpResponse.json({
+          accessToken: 'test_1231123',
+        })
       }),
     ],
   )
   const serverError = setupServer(
     ...[
-      rest.post('auth/users/login/sso/accept', (req, res, ctx) => {
-        return res(ctx.status(200))
+      http.post('*/auth/users/login/sso/accept', () => {
+        return new HttpResponse(null, { status: 200 })
       }),
-      rest.post('auth/users/login/sso/validate', (req, res, ctx) => {
-        return res(
-          ctx.status(401),
-          ctx.json({
+      http.post('*/auth/users/login/sso/validate', () => {
+        return HttpResponse.json(
+          {
             statusCode: 401,
             messageKey: 'failed',
-          }),
+          },
+          { status: 401 },
         )
       }),
-
-      rest.post('auth/users/login/sso', (req, res, ctx) => {
-        return res(
-          ctx.status(401),
-          ctx.json({
+      http.post('*/auth/users/login/sso', () => {
+        return HttpResponse.json(
+          {
             statusCode: 401,
             messageKey: 'failed',
-          }),
+          },
+          { status: 401 },
         )
       }),
     ],
@@ -69,15 +66,13 @@ describe.skip('SingelSignOnTemplate', () => {
 
   const serverAllvalid = setupServer(
     ...[
-      rest.post('auth/users/login/sso/validate', (req, res, ctx) => {
-        return res(ctx.json(true))
+      http.post('*/auth/users/login/sso/validate', () => {
+        return HttpResponse.json(true)
       }),
-      rest.post('auth/users/login/sso', (req, res, ctx) => {
-        return res(
-          ctx.json({
-            accessToken: 'test_1231123',
-          }),
-        )
+      http.post('*/auth/users/login/sso', () => {
+        return HttpResponse.json({
+          accessToken: 'test_1231123',
+        })
       }),
     ],
   )

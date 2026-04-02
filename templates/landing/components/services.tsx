@@ -71,11 +71,7 @@ const Services = () => {
   const pathname = usePathname()
   const isDemoMode = isClientDemoMode()
 
-  const loginUrl = isDemoMode
-    ? '/demo/login'
-    : process.env.NODE_ENV === 'development'
-      ? '/i/testmode'
-      : `/login${pathname !== '/' ? `?ref=${pathname}` : ''}`
+  const loginUrl = '/i/testmode'
 
   return (
     <section className="max-w-[1200px] mx-auto px-4 md:px-8 pt-12 pb-16 md:pt-16 md:pb-24">

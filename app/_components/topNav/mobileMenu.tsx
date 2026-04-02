@@ -57,7 +57,7 @@ const MobileMenu = ({ onlyLogin }: Props) => {
   const router = useRouter()
   const [open, setOpen] = useState(false)
   const pathname = usePathname()
-  const loginPath = isClientDemoMode() ? '/demo/login' : process.env.NODE_ENV === 'development' ? '/i/testmode' : `/login${pathname !== '/' ? `?ref=${pathname}` : ''}`
+  const loginPath = '/i/testmode'
 
   return (
     <>
