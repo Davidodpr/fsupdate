@@ -239,12 +239,12 @@ const ValueCards = () => {
             onClick={goToLogin}
             className={clsx(
               'inline-flex items-center gap-3 px-8 py-4 rounded-lg font-bold text-sm uppercase tracking-wider',
-              'text-white',
-              'bg-[linear-gradient(135deg,#0f4d42_0%,#1f6156_24%,#37ae9a_50%,#1f6156_72%,#0a3a31_100%)]',
-              'border border-[#51c8b4]',
-              'shadow-[inset_0_1px_0_rgba(255,255,255,0.35),inset_0_-6px_10px_rgba(10,58,49,0.32),0_14px_28px_rgba(15,77,66,0.28)]',
-              'hover:bg-[linear-gradient(135deg,#155a4e_0%,#2a7d6e_24%,#51c8b4_50%,#2a7d6e_72%,#0f4d42_100%)]',
-              'hover:border-[#9ee0d5]',
+              'text-[var(--color-secondary-main)]',
+              'bg-[linear-gradient(135deg,#51c8b4_0%,#7dd4c1_24%,#b5ead8_50%,#7dd4c1_72%,#51c8b4_100%)]',
+              'border border-[#c5ede6]',
+              'shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-6px_10px_rgba(15,77,66,0.18),0_14px_28px_rgba(15,77,66,0.22)]',
+              'hover:bg-[linear-gradient(135deg,#5cd1bc_0%,#8fe0cd_24%,#c8f0e0_50%,#8fe0cd_72%,#5cd1bc_100%)]',
+              'hover:border-[#ecf9f7]',
               'motion-safe:active:scale-[0.99]',
               'transition-all duration-200'
             )}
