@@ -239,12 +239,12 @@ const ValueCards = () => {
             onClick={goToLogin}
             className={clsx(
               'inline-flex items-center gap-3 px-8 py-4 rounded-lg font-bold text-sm uppercase tracking-wider',
-              'text-[var(--color-secondary-main)]',
-              'bg-[linear-gradient(135deg,#51c8b4_0%,#7dd4c1_24%,#b5ead8_50%,#7dd4c1_72%,#51c8b4_100%)]',
-              'border border-[#c5ede6]',
-              'shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-6px_10px_rgba(15,77,66,0.18),0_14px_28px_rgba(15,77,66,0.22)]',
-              'hover:bg-[linear-gradient(135deg,#5cd1bc_0%,#8fe0cd_24%,#c8f0e0_50%,#8fe0cd_72%,#5cd1bc_100%)]',
-              'hover:border-[#ecf9f7]',
+              'text-white',
+              'bg-[linear-gradient(135deg,#c45e1a_0%,#e8802e_24%,#ffc08a_50%,#e07628_72%,#a84d12_100%)]',
+              'border border-[#ffb87a]',
+              'shadow-[inset_0_1px_0_rgba(255,255,255,0.45),inset_0_-6px_10px_rgba(120,40,5,0.28),0_14px_28px_rgba(0,0,0,0.24)]',
+              'hover:bg-[linear-gradient(135deg,#d06a22_0%,#f09040_24%,#ffd0a0_50%,#ee8434_72%,#b85818_100%)]',
+              'hover:border-[#ffd4a8]',
               'motion-safe:active:scale-[0.99]',
               'transition-all duration-200'
             )}
