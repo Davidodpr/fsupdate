@@ -12,6 +12,7 @@ import HowItWorks from './components/howItWorks'
 import LandingHero from './components/landingHero'
 import Milestones from './components/milestones'
 import Partners from './components/Partners'
+import ValueCards from './components/valueCards'
 
 const Testimonials = dynamic(() => import('./components/testimonials'), { ssr: false })
 
@@ -45,6 +46,9 @@ export const LandingPage = ({ isServerIosOrSafari, googleReviews, googleRating }
 
         {/* How It Works Section */}
         <HowItWorks />
+
+        {/* Value Cards - what's behind the login */}
+        <ValueCards />
 
         {/* Milestones - light, compact */}
         <section className="w-screen flex justify-center bg-white border-t border-gray-100">
