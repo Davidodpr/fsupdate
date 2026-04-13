@@ -8,6 +8,7 @@ type HeroCard = {
   eyebrow: string
   headline: string
   bullets: string[]
+  linkText: string
   ariaLabel: string
   featured?: boolean
 }
@@ -15,40 +16,43 @@ type HeroCard = {
 const heroCards: HeroCard[] = [
   {
     key: 'el',
-    eyebrow: 'EL · UTAN BINDNING',
+    eyebrow: 'ELAVTAL',
     headline: 'Spara på elen utan bindning',
     bullets: [
       '800 kr i välkomstrabatt första året',
       'Inga bindningstider eller dolda avgifter',
       'Vi förhandlar med Sveriges elbolag åt dig',
     ],
+    linkText: 'Jämför elavtal',
     ariaLabel:
-      'Elavtal: spara på elen utan bindning med 800 kronor välkomstrabatt. Logga in för att komma igång.',
+      'Elavtal: spara på elen utan bindning med 800 kronor välkomstrabatt. Logga in för att jämföra.',
   },
   {
     key: 'flytt',
-    eyebrow: 'FLYTT & STÄD · PERSONLIG SERVICE',
-    headline: 'Slipp flyttstressen helt',
+    eyebrow: 'FLYTTHJÄLP & FLYTTSTÄD',
+    headline: 'Vi bokar flyttfirma och flyttstäd åt dig',
     bullets: [
       'Personlig flyttrådgivare hela vägen',
       'Bara kvalitetssäkrade firmor, vi har testat dem',
       'Vi tar ansvaret om något krånglar',
     ],
+    linkText: 'Få flytthjälp',
     ariaLabel:
-      'Flytt och städ: vi tar hand om hela flytten med personlig rådgivare. Logga in för att komma igång.',
+      'Flytthjälp och flyttstäd: vi bokar flyttfirma och städ åt dig med personlig rådgivare. Logga in för att komma igång.',
     featured: true,
   },
   {
     key: 'bredband',
-    eyebrow: 'BREDBAND · OBEROENDE GUIDE',
-    headline: 'Rätt bredband för din adress',
+    eyebrow: 'BREDBAND',
+    headline: 'Hitta bästa bredbandet för din adress',
     bullets: [
       'Vi jämför alla operatörer på din gata',
       'Oberoende, inga provisioner styr förslagen',
       'Förslag på 30 sekunder, bara skriv adressen',
     ],
+    linkText: 'Jämför bredband',
     ariaLabel:
-      'Bredband: vi hittar rätt bredband för din adress. Logga in för att komma igång.',
+      'Bredband: vi hittar bästa bredbandet för din adress. Logga in för att jämföra.',
   },
 ]
 
@@ -174,17 +178,17 @@ const ValueCards = () => {
                   ))}
                 </ul>
 
-                {/* Arrow hint at bottom */}
+                {/* Service-specific hint at bottom */}
                 <div
                   className={clsx(
                     'flex items-center gap-2 text-[13px] font-semibold mt-6 pt-5 border-t',
                     'transition-all duration-200',
                     isFeatured
-                      ? 'text-white/80 border-white/15 group-hover:text-white group-hover:gap-3'
+                      ? 'text-white/85 border-white/15 group-hover:text-white group-hover:gap-3'
                       : 'text-[var(--color-primary-main)] border-gray-100 group-hover:gap-3'
                   )}
                 >
-                  <span>Logga in med BankID</span>
+                  <span>{card.linkText}</span>
                   <svg
                     className="w-4 h-4"
                     fill="none"
@@ -236,11 +240,11 @@ const ValueCards = () => {
             className={clsx(
               'inline-flex items-center gap-3 px-8 py-4 rounded-lg font-bold text-sm uppercase tracking-wider',
               'text-white',
-              'bg-[linear-gradient(135deg,#c45e1a_0%,#e8802e_24%,#ffc08a_50%,#e07628_72%,#a84d12_100%)]',
-              'border border-[#ffb87a]',
-              'shadow-[inset_0_1px_0_rgba(255,255,255,0.45),inset_0_-6px_10px_rgba(120,40,5,0.28),0_14px_28px_rgba(0,0,0,0.24)]',
-              'hover:bg-[linear-gradient(135deg,#d06a22_0%,#f09040_24%,#ffd0a0_50%,#ee8434_72%,#b85818_100%)]',
-              'hover:border-[#ffd4a8]',
+              'bg-[linear-gradient(135deg,#0f4d42_0%,#1f6156_24%,#37ae9a_50%,#1f6156_72%,#0a3a31_100%)]',
+              'border border-[#51c8b4]',
+              'shadow-[inset_0_1px_0_rgba(255,255,255,0.35),inset_0_-6px_10px_rgba(10,58,49,0.32),0_14px_28px_rgba(15,77,66,0.28)]',
+              'hover:bg-[linear-gradient(135deg,#155a4e_0%,#2a7d6e_24%,#51c8b4_50%,#2a7d6e_72%,#0f4d42_100%)]',
+              'hover:border-[#9ee0d5]',
               'motion-safe:active:scale-[0.99]',
               'transition-all duration-200'
             )}
