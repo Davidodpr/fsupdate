@@ -13,11 +13,11 @@ const LandingHero = () => {
   const [showFloatingCta, setShowFloatingCta] = useState(false)
   const loginUrl = '/i/testmode'
   const heroCtaClassName = clsx(
-    '!border-[#ffb87a]',
-    '!bg-[linear-gradient(135deg,#c45e1a_0%,#e8802e_24%,#ffc08a_50%,#e07628_72%,#a84d12_100%)]',
-    'shadow-[inset_0_1px_0_rgba(255,255,255,0.45),inset_0_-6px_10px_rgba(120,40,5,0.28),0_14px_28px_rgba(0,0,0,0.24)]',
-    'hover:!border-[#ffd4a8]',
-    'hover:!bg-[linear-gradient(135deg,#d06a22_0%,#f09040_24%,#ffd0a0_50%,#ee8434_72%,#b85818_100%)]',
+    '!border-[#51c8b4]',
+    '!bg-[linear-gradient(135deg,#0f4d42_0%,#1f6156_24%,#37ae9a_50%,#1f6156_72%,#0a3a31_100%)]',
+    'shadow-[inset_0_1px_0_rgba(255,255,255,0.35),inset_0_-6px_10px_rgba(10,58,49,0.32),0_14px_28px_rgba(15,77,66,0.28)]',
+    'hover:!border-[#9ee0d5]',
+    'hover:!bg-[linear-gradient(135deg,#155a4e_0%,#2a7d6e_24%,#51c8b4_50%,#2a7d6e_72%,#0f4d42_100%)]',
     'active:scale-[0.99]'
   )
 
